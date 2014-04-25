@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+
+	<application>fraudshieldsapp</application>
+	<version>1</version>
+
+
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/classes/log4j.properties" />
+		<!-- <property name="javax.net.ssl.keyStoreType" value="PKCS12"/> <property 
+			name="javax.net.ssl.keyStore" value="WEB-INF/classes/test_cert_2.p12"/> <property 
+			name="javax.net.ssl.keyStorePassword" value="password"/> -->
+	</system-properties>
+	<ssl-enabled>true</ssl-enabled>
+	<sessions-enabled>true</sessions-enabled>
+	<threadsafe>true</threadsafe>
+	<static-files>
+		<include path="/VAADIN/**"></include>
+		<include path="/**.js">
+			<http-header name="Access-Control-Allow-Origin" value="*" />
+		</include>
+		<include path="/**.xml">
+			<http-header name="Access-Control-Allow-Origin" value="*" />
+		</include>
+		<include path="/**.html">
+			<http-header name="Access-Control-Allow-Origin" value="*" />
+		</include>
+	</static-files>
+</appengine-web-app>

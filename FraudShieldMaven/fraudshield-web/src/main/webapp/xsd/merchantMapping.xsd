@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:element name="fields">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="field" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="merchantLabel" />
+							<xs:element type="xs:string" name="dbLabel" minOccurs="0"/>
+							<xs:element type="xs:string" name="dbfield" />
+							<xs:element name="type">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:enumeration value="java.lang.Boolean" />
+										<xs:enumeration value="java.lang.Byte" />
+										<xs:enumeration value="java.lang.Short" />
+										<xs:enumeration value="java.lang.Integer" />
+										<xs:enumeration value="java.lang.Long" />
+										<xs:enumeration value="java.lang.Float" />
+										<xs:enumeration value="java.lang.Double" />
+										<xs:enumeration value="java.lang.String" />
+										<xs:enumeration value="java.util.Date" />
+										<xs:enumeration value="com.google.appengine.api.datastore.Text" />
+										<xs:enumeration value="com.google.appengine.api.datastore.Blob" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element type="xs:string" name="mandatory" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<fields xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="test">
+   <field>
+     <merchantLabel>username</merchantLabel>
+     <dbLabel>username</dbLabel>
+     <dbfield>user_name</dbfield>
+     <type>java.lang.String</type>
+     <mandatory>true</mandatory>
+   </field>
+   <field>
+     <merchantLabel>firstName</merchantLabel>
+     <dbLabel>firstName</dbLabel>
+     <dbfield>first_name</dbfield>
+     <type>java.lang.String</type>
+     <mandatory>true</mandatory>
+   </field>
+   <field>
+     <merchantLabel>lastName</merchantLabel>
+     <dbLabel>lastName</dbLabel>
+     <dbfield>last_name</dbfield>
+     <type>java.lang.String</type>
+     <mandatory>true</mandatory>
+   </field>
+   <field>
+     <merchantLabel>email</merchantLabel>
+     <dbLabel>email</dbLabel>
+     <dbfield>e-mail</dbfield>
+     <type>java.lang.String</type>
+     <mandatory>false</mandatory>
+   </field> 
+</fields>

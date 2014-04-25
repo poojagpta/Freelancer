@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <cronentries>
+  <cron>
+    <url>/rest/search/update-index</url>
+    <description>Update the full text search index after every 30 min</description>
+    <schedule>every 30 minutes</schedule>
+  </cron>
+</cronentries> -->
+
+
+<!-- The following '<cronentries/>' node is empty to disable the cron from app engine. In order to enable the cron remove the following empty <cronentires/> node, uncomment the above xml and upload the cron.xml to app-engine-->
+
+<cronentries/>

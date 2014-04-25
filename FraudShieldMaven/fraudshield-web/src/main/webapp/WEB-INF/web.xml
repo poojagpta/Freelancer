@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    xsi:schemaLocation="
+        http://java.sun.com/xml/ns/javaee
+        http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+    version="2.5">
+
+    <listener>
+        <listener-class>com.stern.fraudshields.web.ContextInitializer</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.OrderDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/__utm.gif</url-pattern>
+    </servlet-mapping>
+       
+    <servlet>
+        <servlet-name>ProcessOrder</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.ProcessOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProcessOrder</servlet-name>
+        <url-pattern>/processTaskOrder</url-pattern>
+    </servlet-mapping>
+    
+	<servlet>
+        <servlet-name>UploadBlob</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.UploadBlobServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadBlob</servlet-name>
+        <url-pattern>/uploadBlob</url-pattern>
+    </servlet-mapping>
+      
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+         </auth-constraint>
+    </security-constraint>
+    
+    <security-constraint>
+      <web-resource-collection>
+        <url-pattern>/*</url-pattern>
+      </web-resource-collection>
+      <user-data-constraint>
+        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+      </user-data-constraint>
+    </security-constraint>
+</web-app>

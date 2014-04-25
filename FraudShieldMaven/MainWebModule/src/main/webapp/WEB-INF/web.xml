@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GAEExample</servlet-name>
+		<servlet-class>com.gae.servlet.GAEExampleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.gae.servlet.UploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Serve</servlet-name>
+		<servlet-class>com.gae.servlet.ServeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GAEExample</servlet-name>
+		<url-pattern>/gaeexample</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Serve</servlet-name>
+		<url-pattern>/serve</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	  <description>Jersey Servlet</description>	
+	  <servlet-name>Jersey</servlet-name>
+	  <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+	  <init-param>
+    	<param-name>com.sun.jersey.config.feature.DisableWADL</param-name>
+    	<param-value>true</param-value>
+	 </init-param>
+	</servlet>
+	 <servlet-mapping>
+	  <servlet-name>Jersey</servlet-name>
+	  <url-pattern>/blobs/*</url-pattern>
+	 </servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>Jersey</servlet-name>
+	  <url-pattern>/rest/*</url-pattern>
+	 </servlet-mapping>
+	 
+	<servlet>
+        <servlet-name>datastore</servlet-name>
+        <servlet-class>com.gae.servlet.DataStoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>datastore</servlet-name>
+        <url-pattern>/create/entity</url-pattern>
+    </servlet-mapping>
+	
+	 <servlet>
+	  <servlet-name>RegisterServlet</servlet-name>
+	  <servlet-class>com.quicksale.servlets.RegisterServlet</servlet-class>
+ 	</servlet>
+	 <servlet>
+	  	<servlet-name>LoginServlet</servlet-name>
+	  	<servlet-class>com.quicksale.servlets.LoginServlet</servlet-class>
+	 </servlet>
+	 <servlet>
+	  	<servlet-name>LogoutServlet</servlet-name>
+	  	<servlet-class>com.quicksale.servlets.Logout</servlet-class>
+	 </servlet>
+	 
+	 <servlet>
+	  	<servlet-name>SystemServiceServlet</servlet-name>
+	  	<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+	  	<init-param>
+	 	  <param-name>services</param-name>
+	   	  <param-value/>
+	  	</init-param>
+	 </servlet>
+	 
+	 <servlet-mapping>
+	 	 <servlet-name>RegisterServlet</servlet-name>
+	  	<url-pattern>/register</url-pattern>
+	 </servlet-mapping>
+	 
+	 <servlet-mapping>
+	 	 <servlet-name>LoginServlet</servlet-name>
+	  	<url-pattern>/login</url-pattern>
+	 </servlet-mapping>
+	 
+	 <servlet-mapping>
+	  	<servlet-name> LogoutServlet</servlet-name>
+	  	<url-pattern>/logout</url-pattern>
+	 </servlet-mapping>
+	 <servlet-mapping>
+	  	<servlet-name>SystemServiceServlet</servlet-name>
+	  	<url-pattern>/_ah/spi/*</url-pattern>
+	 </servlet-mapping>
+	 
+	  <filter>
+	     <filter-name>LoginFilter</filter-name>
+	     <filter-class>com.quicksale.filter.LoginFilter</filter-class>
+	  </filter>
+	  <filter-mapping>
+	     <filter-name>LoginFilter</filter-name>
+	     <url-pattern>/login</url-pattern>
+	  </filter-mapping>
+	  <filter-mapping>
+	 	  <filter-name>LoginFilter</filter-name>
+	      <url-pattern>/rest/*</url-pattern>
+	   </filter-mapping>
+	 
+	 <listener>
+        <listener-class>com.stern.fraudshields.web.ContextInitializer</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.OrderDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/__utm.gif</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>ProcessOrder</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.ProcessOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProcessOrder</servlet-name>
+        <url-pattern>/processTaskOrder</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+        <servlet-name>UploadBlob</servlet-name>
+        <servlet-class>com.stern.fraudshields.web.UploadBlobServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadBlob</servlet-name>
+        <url-pattern>/uploadBlob</url-pattern>
+    </servlet-mapping>
+    
+    <security-constraint>
+        <web-resource-collection>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>*</role-name>
+         </auth-constraint>
+    </security-constraint>
+    
+    <security-constraint>
+      <web-resource-collection>
+        <url-pattern>/*</url-pattern>
+      </web-resource-collection>
+      <user-data-constraint>
+        <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+      </user-data-constraint>
+    </security-constraint>
+	
+	
+	<welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>	
+	
+</web-app>
