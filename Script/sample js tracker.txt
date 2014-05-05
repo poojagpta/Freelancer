@@ -1,0 +1,198 @@
+        function AddtoCart(vBtn) {
+            var inputData = new Array();
+            if ($(".htmlchkProduct:checked").length <= 0) {
+                return false;
+            } else {
+                try {
+                    $(".htmlchkProduct:checked").each(function (item) {
+                        
+                        var vSKUSuffix = $(this).attr("SKUSuffix");
+                        var qty = parseInt($("#txtquantity_" + vSKUSuffix).val());
+                        if (qty > 0) {
+                            inputData.push($(this).attr("SKUSuffix") + "-" + qty);
+                        }
+                        else {
+                            inputData.push($(this).attr("SKUSuffix") + "-0");
+                        }
+                    });
+                } catch (msg) {
+                    alert(msg);
+                }
+            }
+            try {
+                $.ajax({
+                    url: "/foxy0612/cartupload.aspx?req=2&type=" + vBtn.value,
+                    data: JSON.stringify(inputData),
+                    type: "Post",
+                    datatype: "json",
+                    contenttype: "application/json; charset=UTF-8;",
+                    success: function (result) {
+                        var data = JSON.parse(result);
+                        $("#ShoppingCart_Link").text("Shopping Cart(" + data.ShopingCart + ")");
+
+                        $("#WishCart_Link").text("WishList(" + data.WishCart + ")");
+
+                        $("#GiftRegistry_Link").text("GiftRegistry(" + data.GiftRegistryCart + ")");
+
+                        if ($("#ctl00_A1").text("") != null) {
+
+                            $("#ctl00_A1").text("Shopping Cart(" + data.ShopingCart + ")");
+                        }
+
+                        try {
+                            $(".htmlchkProduct:checked").each(function (item) {
+
+                                $(".htmlchkProduct:checked").attr("checked", false);
+                                
+                                var vSKUSuffix = $(this).attr("SKUSuffix");
+                                $("#txtquantity_" + vSKUSuffix).val(" ");
+                            });
+                        }
+                        catch (msg) {
+                            alert(msg);
+                        }
+                    },
+                    error: function (err) {
+                        alert("Error: " + err);
+                    }
+                });
+            } catch (msg) {
+                alert(msg);
+            }
+            return false;
+        }
+        function BindItemsGrid() {
+            var vItemNumber = $("#txtItemNumber").val();
+            try {
+                $.ajax({
+                    url: "/foxy0612/cartupload.aspx?req=1&ItemNumber=" + vItemNumber,
+                    datatype: "json",
+                    contenttype: "application/json; charset=UTF-8;",
+                    success: function (result) {
+                        $("#grid-table").html("");
+                        
+                        bindTable(result);
+                        $('#element_to_pop_up').bPopup();
+                    },
+                    error: function (err) {
+
+                        alert("Error: " + err);
+                        
+                        var obj = JSON.parse(err.responseText);
+                    }
+                });
+            } catch (msg) {
+                alert(msg);
+            }
+        }
+        function updatePagerIcons(table) {
+            var replacement =
+            {
+                'ui-icon-seek-first': 'icon-double-angle-left bigger-140',
+                'ui-icon-seek-prev': 'icon-angle-left bigger-140',
+                'ui-icon-seek-next': 'icon-angle-right bigger-140',
+                'ui-icon-seek-end': 'icon-double-angle-right bigger-140'
+            };
+            $('.ui-pg-table:not(.navtable) > tbody > tr > .ui-pg-button > .ui-icon').each(function () {
+                var icon = $(this);
+                var $class = $.trim(icon.attr('class').replace('ui-icon', ''));
+
+                if ($class in replacement) icon.attr('class', 'ui-icon ' + replacement[$class]);
+            })
+        }
+
+        function enableTooltips(table) {
+            $('.navtable .ui-pg-button').tooltip({ container: 'body' });
+            $(table).find('.ui-pg-div').tooltip({ container: 'body' });
+        }
+        function ChechBoxFormatter(cellvalue, options, cell) {
+            return "<input type='checkbox' id='htmlCbx' class='htmlchkProduct' SKUSuffix='" + cell.SKUSuffix + "'  />";
+        }
+        function QuantityFormater(cellvalue, options, cell) {
+            return "<input type='text' id='txtquantity_" + cell.SKUSuffix + "' style='width:40px'/>";
+        }
+        function bindTable(data) {
+            try { 
+                var grid_selector = "#grid-table";
+                var pager_selector = "#productgrid-pager";
+                $(grid_selector).GridUnload();
+                jQuery(grid_selector).jqGrid({
+                    data: data,
+                    height: 410,
+                    datatype: "local",
+                    colNames: ['', 'SKU', 'Name', 'SKUSuffix', 'Price', 'SalePrice', 'Quantity'],
+                    colModel: [
+                        { name: 'SKU', index: 'SKU', width: 50, editable: false, sortable: false, formatter: ChechBoxFormatter },
+                        { name: 'SKU', index: 'SKU', width: 60, editable: false, sortable: false }, //uomDesc
+                        {name: 'Name', index: 'Name', width: 400, sortable: false },
+                        { name: 'SKUSuffix', index: 'SKUSuffix', width: 100, editable: true, sortable: false },
+                        { name: 'Price', index: 'Price', width: 70, editable: true, sortable: false },
+                        { name: 'SalePrice', index: 'SalePrice', width: 70, editable: true, sortable: false },
+                        { width: 'auto', editable: true, sortable: false, formatter: QuantityFormater }
+                    ],
+                    viewrecords: true,
+                    rowNum: 10,
+                    rowList: [10, 20, 30],
+                    pager: pager_selector,
+                    altRows: true,
+                    loadComplete: function () {
+                        var table = this;
+                        setTimeout(function () {
+                            updatePagerIcons(table);
+                            enableTooltips(table);
+                        }, 0);
+                    },
+                    editurl: $path_base + "/dummy.html", //nothing is saved
+                    caption: "Orders with Item Numbers"
+                });
+                $("#gbox_grid-table").width('100%');
+                $("#gview_grid-table").width('100%');
+                $(".ui-jqgrid-hdiv").width('100%');
+                $(".ui-jqgrid-hbox").width('100%');
+                $(".ui-jqgrid-htable").width('100%');
+                $(".ui-jqgrid-bdiv").width('100%');
+                $("#grid-table").width('100%');
+                $("#productgrid-pager").width('100%');
+            } catch (msg) {
+                alert("Product grid" + msg);
+            }
+        }
+        function BindQuickOrder() {
+            try {
+                var fileInput = document.getElementById("fiFile");
+                var fileData = fileInput.files[0];   // Getting the properties of file from file field
+                var formData = new window.FormData();                  // Creating object of FormData class
+                formData.append("file", fileData); // Appending parameter named file with properties of file_field to form_data
+                $.ajax({
+                    url: "/foxy0612/cartupload.aspx?req=3",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    success: function (data) {
+                        $("#grid-table").html("");
+                        bindTable(data);
+                        $('#element_to_pop_up').bPopup();
+                    },
+                    error: function (errorData) {
+                        alert("there was a problem uploading the file.");
+                    }
+                });
+            } catch (msg) {
+                alert(msg);
+            }
+            return false;
+        }
+        function Checkfiles() {
+            var fup = document.getElementById('fiFile');
+            var fileName = fup.value;
+            var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+            if (ext == "xls"|| ext == "xlsx") {
+                return true;
+            }
+            else {
+                alert("Upload Excel Sheet only");
+                fup.focus();
+                return false;
+            }
+        }
