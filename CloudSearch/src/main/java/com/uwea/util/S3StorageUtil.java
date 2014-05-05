@@ -20,14 +20,14 @@ public static void main(String str[]) throws IOException{
 }
 	public static String putObjecttos3(String filepath) throws IOException {
 
-		InputStream stream = S3StorageUtil.class
+		/*InputStream stream = S3StorageUtil.class
 				.getResourceAsStream("/credentials.txt");
 
 		PropertiesCredentials creds = new PropertiesCredentials(stream);
-		AWSCredentials credentials = new BasicAWSCredentials(creds.getAWSAccessKeyId(),creds.getAWSSecretKey());
+		AWSCredentials credentials = new BasicAWSCredentials(creds.getAWSAccessKeyId(),creds.getAWSSecretKey());*/
 	
 
-		AmazonS3 s3 = new AmazonS3Client(credentials);   
+		AmazonS3 s3 = new AmazonS3Client();  //credentials   
   
 		File file = new File(filepath);
 

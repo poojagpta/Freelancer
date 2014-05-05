@@ -23,6 +23,11 @@
 		<form name="domain" action="createDomain" method="post">
 			<div id="searchBox">
 				<div class="searchwrapper">
+			       <% String error= (String)request.getAttribute("error"); 
+			       if(error!=null){%>
+			         <font size="3" color="red"><%=error%></font><br> <br>
+			       <% }%>
+			       
 			       Domain Name <input type="text" name="domainName"  value=<%=request.getParameter("domainName")%>></input><br> <br>
 			         Region<input type="text" name="region"  value=<%=request.getParameter("region")%>></input><br> <br>
 					Index Field <input type="text" name="indexField" value=<%=request.getParameter("indexField")%>></input><br><br> 

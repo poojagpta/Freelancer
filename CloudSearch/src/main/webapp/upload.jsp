@@ -22,6 +22,10 @@
 		<form name="upload" action="uploadDoc" method="post" enctype="multipart/form-data">
 			<div id="searchBox">
 				<div class="searchwrapper">
+				 <% String error= (String)request.getAttribute("error"); 
+			       if(error!=null){%>
+			         <font size="3" color="red"><%=error%></font><br> <br>
+			       <% }%>
 			       Upload Document &nbsp;<input type="file" name="fileNames"><br><br>	
 			       <input type="submit" id="sumitbtn" class="bluebtn" value="Upload" /><br><br>	  	
 				</div>

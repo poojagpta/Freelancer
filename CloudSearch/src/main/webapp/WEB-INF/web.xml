@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<!-- <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> -->
 
-<!-- <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="CloudSearch" version="3.0" metadata-complete="false"> -->
+	id="CloudSearch" version="3.0" metadata-complete="false">
 
 	<display-name>Archetype Created Web Application</display-name>
-	<servlet>
-		<servlet-name>searchDoc</servlet-name>
-		<servlet-class>com.uwea.Servlet.NewSearchDocument</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>searchDoc</servlet-name>
-		<url-pattern>/search</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>createDomain</servlet-name>
-		<servlet-class>com.uwea.Servlet.CreateDomain</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>createDomain</servlet-name>
-		<url-pattern>/createDomain</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>uploadDoc</servlet-name>
-		<servlet-class>com.uwea.Servlet.UploadDocument</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>uploadDoc</servlet-name>
-		<url-pattern>/uploadDoc</url-pattern>
-	</servlet-mapping>
-
+	<!-- <servlet> <servlet-name>searchDoc</servlet-name> <servlet-class>com.uwea.Servlet.NewSearchDocument</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>searchDoc</servlet-name> <url-pattern>/search</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>createDomain</servlet-name> <servlet-class>com.uwea.Servlet.CreateDomain</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>createDomain</servlet-name> <url-pattern>/createDomain</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>uploadDoc</servlet-name> <servlet-class>com.uwea.Servlet.UploadDocument</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>uploadDoc</servlet-name> <url-pattern>/uploadDoc</url-pattern> 
+		</servlet-mapping> -->
 	<servlet>
 		<servlet-name>jersey-serlvet</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
@@ -48,4 +29,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 
+	<error-page>
+		<location>/error.html</location>
+	</error-page>
 </web-app>

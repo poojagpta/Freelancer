@@ -16,6 +16,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.searchtechnologies.cloudsearch.api.CloudSearchQuery;
 import com.uwea.util.SearchDocMessages;
 
@@ -26,10 +29,13 @@ public class NewSearchDocument extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	private static Logger logger = LoggerFactory.getLogger(NewSearchDocument.class);
 
 	public void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
 
+		logger.info("Inside class NewSearchDocument");
 		// Get the query string
 		String searchType = req.getParameter("rSearch"); //$NON-NLS-1$
 		String queryString = "";
@@ -71,21 +77,21 @@ public class NewSearchDocument extends HttpServlet {
 		if (httpConn.getResponseCode() != HttpURLConnection.HTTP_OK) {
 			// throw new RuntimeException("Failed : HTTP error code : "
 			// + httpConn.getResponseCode());
-			System.out.println("There is error--->"
+			logger.error("There is error--->"
 					+ httpConn.getResponseCode());
 		}
 
 		StringBuilder jsonObject = new StringBuilder();
 
 		if (httpConn.getResponseCode() != HttpURLConnection.HTTP_OK) {
-			System.out.println("Error Message"+httpConn.getResponseCode());
+			logger.error("Error Message"+httpConn.getResponseCode());
 		
 		}else{
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(httpConn.getInputStream())));
 			String output;
 
-			System.out.println("Output from Server .... \n");
+			logger.info("Output from Server .... \n");
 			while ((output = br.readLine()) != null) {
 				jsonObject.append(output);
 			}
@@ -98,8 +104,8 @@ public class NewSearchDocument extends HttpServlet {
 		Map<String, String> linkDoc = new HashMap<String, String>(); // documentLink(jsonObject);
 		req.setAttribute("listName", linkDoc); //$NON-NLS-1$
 		req.setAttribute("queryStr", queryString);
-		System.out
-				.println("I am come till link document as going to forward the request to same page"); //$NON-NLS-1$
+
+		logger.info("Exit class NewSearchDocument");
 		req.getRequestDispatcher("search.jsp").forward(req, res); //$NON-NLS-1$
 
 	}

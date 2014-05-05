@@ -19,13 +19,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.uwea.util.DocumentUtil;
+import com.uwea.util.ErrorDefs;
 import com.uwea.util.S3StorageUtil;
 import com.uwea.util.SearchDocMessages;
-
 
 @WebServlet(value = "/uploadDoc")
 @MultipartConfig
@@ -36,12 +39,16 @@ public class UploadDocument extends HttpServlet {
 	 */
 	private static final long serialVersionUID = -944755615251271429L;
 
+	private static Logger logger = LoggerFactory
+			.getLogger(UploadDocument.class);
+
 	public void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
-
+		logger.info("Inside class UploadDocument");
 		String fileName = null;
 		int maxFileSize = 5000 * 1024;
 		int maxMemSize = 5000 * 1024;
+		boolean errorflag = false;
 
 		// Verify the content type
 		String contentType = req.getContentType();
@@ -60,7 +67,7 @@ public class UploadDocument extends HttpServlet {
 
 			try {
 				// Parse the request to get file items.
-				List fileItems = upload.parseRequest(req);
+				List fileItems = upload.parseRequest(req); // FileUploadException
 				Iterator i = fileItems.iterator();
 				while (i.hasNext()) {
 					FileItem fi = (FileItem) i.next();
@@ -85,19 +92,26 @@ public class UploadDocument extends HttpServlet {
 						fi.write(new File(fileName));
 					}
 				}
+			} catch (FileUploadException e) {
+				logger.error("UploadDocument Method service" + e.getMessage());
+				req.setAttribute("error", ErrorDefs.FILE_UPLOAD.getErrorCode()
+						.replace("%1", fileName));
+				errorflag = true;
 			} catch (Exception e) {
-
-				System.out.println("Error Occured" + e.getMessage());
+				logger.error("UploadDocument Method service" + e.getMessage());
+				req.setAttribute("error",
+						ErrorDefs.GENERAL_ERROR_OCCURED.getErrorCode());
+				errorflag = true;
 			}
+
 		}
 
 		if (fileName != null) {
 
 			String urlpath = null;
-			
+
 			// Persist the data to S3 object
 			urlpath = S3StorageUtil.putObjecttos3(fileName);
-			
 
 			// Generate SDF file
 			StringWriter stringWriter = DocumentUtil.generateJsonObject(
@@ -130,21 +144,30 @@ public class UploadDocument extends HttpServlet {
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					(httpConn.getInputStream())));
 
-			System.out.println("Output from Server .... \n"); //$NON-NLS-1$
+			logger.info("Output from Server .... \n"); //$NON-NLS-1$
 			String output;
 			while ((output = br.readLine()) != null) {
-				System.out.println(output);
+				logger.info(output);
 			}
 
 			httpConn.disconnect();
 
+			// Removed the saved file
+			File fileDel = new File(fileName);
+			fileDel.delete();
+		} else {
+			req.setAttribute("error", ErrorDefs.FILE_EXCEPTION.getErrorCode());
+			errorflag = true;
 		}
 
-		//Removed the saved file 
-		File fileDel=new File(fileName);
-		fileDel.delete();
-		
-		res.sendRedirect("search.jsp"); //$NON-NLS-1$
+		logger.info("Exiting  class UploadDocument");
+
+		if (errorflag) {
+			req.getRequestDispatcher("upload.jsp").forward(req, res);
+		} else {
+			res.sendRedirect("search.jsp"); //$NON-NLS-1$	
+		}
+
 	}
 
 }

@@ -32,25 +32,27 @@ import com.amazonaws.services.cloudsearchv2.model.IndexField;
 import com.amazonaws.services.cloudsearchv2.model.ServiceEndpoint;
 import com.amazonaws.services.cloudsearchv2.model.UpdateServiceAccessPoliciesRequest;
 import com.amazonaws.services.cloudsearchv2.model.UpdateServiceAccessPoliciesResult;
-import com.amazonaws.services.ec2.model.Region;
+import com.sun.research.ws.wadl.Request;
 import com.uwea.cache.IndexFieldCache;
+import com.uwea.util.ErrorDefs;
 import com.uwea.util.SearchDocMessages;
+import com.uwea.util.UWEAException;
 
 @WebServlet(value = "/createDomain")
-public class CreateDomain  extends HttpServlet {
+public class CreateDomain extends HttpServlet {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -4534687022493449496L;
-	
-	private String domainName; 
+
+	private String domainName;
 	private ServiceEndpoint docEndpoint;
 	private ServiceEndpoint searchEndpoint;
 	private String arn;
 	private String indexField;
-	private String region="us-east-1";
-	
+	private String region = "us-east-1";
+
 	public String getRegion() {
 		return region;
 	}
@@ -100,93 +102,121 @@ public class CreateDomain  extends HttpServlet {
 	}
 
 	private static Logger logger = LoggerFactory.getLogger(CreateDomain.class);
-	
+
 	public void service(HttpServletRequest req, HttpServletResponse res)
 			throws ServletException, IOException {
-		logger.info("");
-		domainName=req.getParameter("domainName");
-		String region1=req.getParameter("region");
-		indexField=req.getParameter("indexField");
-		
-		if(region1!=null){
-			region=region1;
-		}
-		
-		//Create Domain
-		String realEndpoint = "cloudsearch."+getRegion()+".amazonaws.com";
-		InputStream stream = CreateDomain.class.getResourceAsStream("/credentials.txt");
-		PropertiesCredentials creds = new PropertiesCredentials(stream);
-		ClientConfiguration clientConfig = new ClientConfiguration();
-		
-		AmazonCloudSearchClient configService=new AmazonCloudSearchClient(creds,clientConfig);  		
-		
-		configService.setEndpoint(realEndpoint, "cloudsearch", region);
-		CreateDomainRequest createDomainRequest = new CreateDomainRequest();
-		createDomainRequest.setDomainName(getDomainName());
-		CreateDomainResult result = configService
-				.createDomain(createDomainRequest);
-		pollForCompletion(configService, getDomainName());
-		
-		//Access policy
-		BufferedInputStream in= new BufferedInputStream(CreateDomain.class.getResourceAsStream("/accesspolicy.txt"));        
-		byte[] contents = new byte[1024];
+		logger.info("Entering class CreateDomain method Service ");
 
-		int bytesRead=0;
-		String policyDocument=""; 
-		 while( (bytesRead = in.read(contents)) != -1){ 
-			 policyDocument = new String(contents, 0, bytesRead);               
-		 }
-		
-		 policyDocument=policyDocument.replace("arn", getArn());
-		
-		UpdateServiceAccessPoliciesRequest updateServiceAccessPoliciesRequest = new UpdateServiceAccessPoliciesRequest();
-		updateServiceAccessPoliciesRequest.setDomainName(getDomainName());
-		updateServiceAccessPoliciesRequest.setAccessPolicies(policyDocument);
-        UpdateServiceAccessPoliciesResult updateServiceAccessPoliciesResult = configService.updateServiceAccessPolicies(updateServiceAccessPoliciesRequest);
-        System.out.println(updateServiceAccessPoliciesResult.getAccessPolicies());
-        
-        
-        //Create index fields
-        if(null !=getIndexField()&&!("").equals(getIndexField().trim())&&!("null").equalsIgnoreCase(getIndexField())){
-        	DefineIndex(configService,getIndexField());        	
-        }
-        DefineIndex(configService,"full_path");
-        DefineIndex(configService,"content");
-        
-        DescribeIndexFieldsRequest descindexfieldreq=new DescribeIndexFieldsRequest();
-        descindexfieldreq.setDomainName(getDomainName());
-        List list=descindexfieldreq.getFieldNames();
-        IndexFieldCache.put(list);
-        
-        //Create Properties File
-        Properties prop = new Properties();
-        prop.setProperty("SearchDocument", getSearchEndpoint().getEndpoint());
-        prop.setProperty("DocUpload", getDocEndpoint().getEndpoint());
-        prop.store(new FileWriter(SearchDocMessages.FILE_NAME), "Search/Upload Document path");  
-        
-        Properties propTest= System.getProperties();
-        
-        
-        
-        res.sendRedirect("upload.jsp");
+		domainName = req.getParameter("domainName");
+		String region1 = req.getParameter("region");
+		indexField = req.getParameter("indexField");
+		boolean errorflag = false;
+
+		if (region1 != null) {
+			region = region1;
+		}
+
+		if (domainName == null || domainName.trim().length() == 0
+				|| ("null").equals(domainName.trim())) {
+
+			req.setAttribute("error", ErrorDefs.NULL_EXCEPTION.getErrorCode()
+					.replace("%1", "DomainName"));
+			errorflag = true;
+		}
+
+		// Create Domain
+		String realEndpoint = "cloudsearch." + getRegion() + ".amazonaws.com";
+		/*InputStream stream = CreateDomain.class
+				.getResourceAsStream("/credentials.txt");
+
+		PropertiesCredentials creds = null;
+		try {
+			creds = new PropertiesCredentials(stream);
+		} catch (IOException e) {
+			logger.error(e.getMessage());
+		}*/
+
+		//If no errors then create domain else error page
+		if (!errorflag) {
+			//ClientConfiguration clientConfig = new ClientConfiguration();
+
+			AmazonCloudSearchClient configService = new AmazonCloudSearchClient();  //creds, clientConfig
+
+			configService.setEndpoint(realEndpoint, "cloudsearch", region);
+			CreateDomainRequest createDomainRequest = new CreateDomainRequest();
+			createDomainRequest.setDomainName(getDomainName());
+			CreateDomainResult result = configService
+					.createDomain(createDomainRequest);
+			pollForCompletion(configService, getDomainName());
+
+			// Access policy
+			BufferedInputStream in = new BufferedInputStream(
+					CreateDomain.class.getResourceAsStream("/accesspolicy.txt"));
+			byte[] contents = new byte[1024];
+
+			int bytesRead = 0;
+			String policyDocument = "";
+			while ((bytesRead = in.read(contents)) != -1) {
+				policyDocument = new String(contents, 0, bytesRead);
+			}
+
+			policyDocument = policyDocument.replace("arn", getArn());
+
+			UpdateServiceAccessPoliciesRequest updateServiceAccessPoliciesRequest = new UpdateServiceAccessPoliciesRequest();
+			updateServiceAccessPoliciesRequest.setDomainName(getDomainName());
+			updateServiceAccessPoliciesRequest
+					.setAccessPolicies(policyDocument);
+			UpdateServiceAccessPoliciesResult updateServiceAccessPoliciesResult = configService
+					.updateServiceAccessPolicies(updateServiceAccessPoliciesRequest);
+			logger.info(updateServiceAccessPoliciesResult.getAccessPolicies()
+					.toString());
+
+			// Create index fields
+			if (null != getIndexField() && !("").equals(getIndexField().trim())
+					&& !("null").equalsIgnoreCase(getIndexField())) {
+				DefineIndex(configService, getIndexField());
+			}
+			DefineIndex(configService, "full_path");
+			DefineIndex(configService, "content");
+
+			DescribeIndexFieldsRequest descindexfieldreq = new DescribeIndexFieldsRequest();
+			descindexfieldreq.setDomainName(getDomainName());
+			List list = descindexfieldreq.getFieldNames();
+			IndexFieldCache.put(list);
+
+			// Create Properties File
+			Properties prop = new Properties();
+			prop.setProperty("SearchDocument", getSearchEndpoint()
+					.getEndpoint());
+			prop.setProperty("DocUpload", getDocEndpoint().getEndpoint());
+			prop.store(new FileWriter(SearchDocMessages.FILE_NAME),
+					"Search/Upload Document path");
+
+		}
+
+		logger.info("Exiting class CreateDomain method Service ");
+
+		if (errorflag) {
+			req.getRequestDispatcher("index.jsp").forward(req, res);
+		} else {
+			res.sendRedirect("upload.jsp");
+		}
+
 	}
-	
-	
+
 	public boolean pollForCompletion(AmazonCloudSearchClient configService,
 			String domainName) {
 
 		long start = System.currentTimeMillis();
-		 
-		long now = System.currentTimeMillis();
+		long now = start;
 		long lastPrintTime = now;
-
 
 		DescribeDomainsRequest ddReq = new DescribeDomainsRequest();
 		List domainNames = new ArrayList();
 		domainNames.add(domainName);
 		ddReq.setDomainNames(domainNames);
-		boolean allEndpointsPresent = checkStatus(configService,ddReq);
-		
+		boolean allEndpointsPresent = checkStatus(configService, ddReq);
+
 		do {
 			if (allEndpointsPresent)
 				break;
@@ -194,49 +224,52 @@ public class CreateDomain  extends HttpServlet {
 			if (now - start > 0x36ee80L)
 				break;
 			if (now - lastPrintTime > 60000L) {
-				lastPrintTime = now;				
-			}else{
+				lastPrintTime = now;
+			} else {
 				continue;
 			}
-			allEndpointsPresent = checkStatus(configService,ddReq);
+			allEndpointsPresent = checkStatus(configService, ddReq);
 
 		} while (true);
-		
+
 		return allEndpointsPresent;
 
 	}
 
-	private boolean checkStatus(AmazonCloudSearchClient configService,DescribeDomainsRequest ddReq){
-		
-        //Check after some interval of time
+	private boolean checkStatus(AmazonCloudSearchClient configService,
+			DescribeDomainsRequest ddReq) {
+
+		// Check after some interval of time
 		DescribeDomainsResult res = configService.describeDomains(ddReq);
 		List statuses = res.getDomainStatusList();
 		if (statuses.size() > 1) {
 			new Exception("Multiple Domain exists");
 		}
-		
+
 		DomainStatus domainStatus = null;
 		if (statuses != null) {
 			domainStatus = (DomainStatus) statuses.get(0);
 			setDocEndpoint(domainStatus.getDocService());
 			setSearchEndpoint(domainStatus.getSearchService());
 			setArn(domainStatus.getARN());
-			if(getDocEndpoint().getEndpoint()!=null){
-				return true;	
-			}				
+			if (getDocEndpoint().getEndpoint() != null) {
+				return true;
+			}
 		}
 		return false;
 	}
-	
-	private void DefineIndex(AmazonCloudSearchClient configService,String indField){
+
+	private void DefineIndex(AmazonCloudSearchClient configService,
+			String indField) {
 		DefineIndexFieldRequest defineIndexFieldRequest = new DefineIndexFieldRequest();
-        defineIndexFieldRequest.setDomainName(getDomainName());
-        IndexField field = new IndexField();
-        field.setIndexFieldName(indField);
-        field.setIndexFieldType("text");
-        
-        defineIndexFieldRequest.setIndexField(field);
-        DefineIndexFieldResult defineIndexFieldResult = configService.defineIndexField(defineIndexFieldRequest);
-        System.out.println(defineIndexFieldResult.toString());
+		defineIndexFieldRequest.setDomainName(getDomainName());
+		IndexField field = new IndexField();
+		field.setIndexFieldName(indField);
+		field.setIndexFieldType("text");
+
+		defineIndexFieldRequest.setIndexField(field);
+		DefineIndexFieldResult defineIndexFieldResult = configService
+				.defineIndexField(defineIndexFieldRequest);
+		logger.info(defineIndexFieldResult.toString());
 	}
 }
