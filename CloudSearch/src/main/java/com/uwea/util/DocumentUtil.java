@@ -18,6 +18,7 @@ import org.apache.tika.metadata.Metadata;
 import org.apache.tika.parser.AutoDetectParser;
 import org.apache.tika.parser.ParseContext;
 import org.apache.tika.parser.Parser;
+import org.apache.tika.sax.BodyContentHandler;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -38,8 +39,8 @@ public class DocumentUtil {
 		filesNames = listFilesForFolder(file, filesNames);
 
 		try {
-
-			ContentHandler handler = new DefaultHandler();
+			
+			BodyContentHandler handler = new BodyContentHandler();
 			List<DocumentBO> documentBOs = new ArrayList<DocumentBO>();
 
 			// Loop through all the files
@@ -59,7 +60,9 @@ public class DocumentUtil {
 
 				Parser parser = new AutoDetectParser(); // OfficeParser
 				ParseContext parseCtx = new ParseContext();
+				 
 				parser.parse(input, handler, metadata, parseCtx);
+				
 				input.close();
 
 				// List all metadata
@@ -73,17 +76,9 @@ public class DocumentUtil {
 					}					
 				}
 
-				// Get the content of file and put it into fields
-				BufferedReader bufferedReader = new BufferedReader(
-						new FileReader(new File(fileName)));
+				
 
-				String output;
-				StringBuffer stringBuffer = new StringBuffer();
-				while ((output = bufferedReader.readLine()) != null) {
-					stringBuffer.append(output);
-				}
-
-				fields.put("content", stringBuffer.toString().getBytes("UTF-8"));
+				fields.put("content", handler.toString());
 				fields.put("full_path", urlpath);
 
 				documentBO.setFields(fields);

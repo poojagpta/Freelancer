@@ -82,7 +82,9 @@ public class NewSearchDocument extends HttpServlet {
 		}
 
 		StringBuilder jsonObject = new StringBuilder();
-
+		// Map json object and get value
+		Map<String, String> linkDoc = new HashMap<String, String>();
+		
 		if (httpConn.getResponseCode() != HttpURLConnection.HTTP_OK) {
 			logger.error("Error Message"+httpConn.getResponseCode());
 		
@@ -96,12 +98,12 @@ public class NewSearchDocument extends HttpServlet {
 				jsonObject.append(output);
 			}
 			
+			linkDoc=documentLink(jsonObject);
 		}
 
 		httpConn.disconnect();
 
-		// Map json object and get value
-		Map<String, String> linkDoc = new HashMap<String, String>(); // documentLink(jsonObject);
+		
 		req.setAttribute("listName", linkDoc); //$NON-NLS-1$
 		req.setAttribute("queryStr", queryString);
 
@@ -125,8 +127,8 @@ public class NewSearchDocument extends HttpServlet {
 			if (":".equals(documentPath.charAt(1) + "")
 					&& ":".equals(documentId.charAt(0) + "")) {
 				linkDoc.put(
-						documentPath.substring(1, documentPath.indexOf(",", 1)),
-						documentId.substring(2, documentId.indexOf(",", 1)));
+						documentPath.substring(2, documentPath.indexOf(",", 1)),
+						documentId.substring(2, documentId.indexOf("\",", 1)));
 			}
 
 		}

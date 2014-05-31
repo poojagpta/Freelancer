@@ -4,10 +4,12 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -25,6 +27,13 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.amazonaws.ClientConfiguration;
+import com.amazonaws.auth.PropertiesCredentials;
+import com.amazonaws.services.cloudsearchv2.AmazonCloudSearchClient;
+import com.amazonaws.services.cloudsearchv2.model.DescribeIndexFieldsRequest;
+import com.amazonaws.services.cloudsearchv2.model.DescribeIndexFieldsResult;
+import com.amazonaws.services.cloudsearchv2.model.IndexFieldStatus;
+import com.uwea.cache.IndexFieldCache;
 import com.uwea.util.DocumentUtil;
 import com.uwea.util.ErrorDefs;
 import com.uwea.util.S3StorageUtil;
@@ -113,6 +122,9 @@ public class UploadDocument extends HttpServlet {
 			// Persist the data to S3 object
 			urlpath = S3StorageUtil.putObjecttos3(fileName);
 
+			// Fetch Index field for domain
+			FetchIndexFields(SearchDocMessages.getString("DomainName"));
+
 			// Generate SDF file
 			StringWriter stringWriter = DocumentUtil.generateJsonObject(
 					fileName, urlpath);
@@ -170,4 +182,24 @@ public class UploadDocument extends HttpServlet {
 
 	}
 
+	public void FetchIndexFields(String domainName) throws IOException{
+		 
+		/*ClientConfiguration clientConfig = new ClientConfiguration();
+		InputStream stream = UploadDocument.class
+				.getResourceAsStream("/credentials.txt");
+		PropertiesCredentials creds =new PropertiesCredentials(stream);*/
+		AmazonCloudSearchClient configService = new AmazonCloudSearchClient();//creds,clientConfig		
+		
+		DescribeIndexFieldsRequest descindexfieldreq = new DescribeIndexFieldsRequest();
+		descindexfieldreq.setDomainName(domainName);
+		descindexfieldreq.setDeployed(true);
+		DescribeIndexFieldsResult result=configService.describeIndexFields(descindexfieldreq);
+		List<IndexFieldStatus> indexFieldsStatus =result.getIndexFields();
+		List<String> cacheList=new ArrayList<String>();
+		for(IndexFieldStatus liststatus:indexFieldsStatus){
+			cacheList.add(liststatus.getOptions().getIndexFieldName());	
+		}
+		
+		IndexFieldCache.put(cacheList);
+	}
 }

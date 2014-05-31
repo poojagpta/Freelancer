@@ -175,20 +175,19 @@ public class CreateDomain extends HttpServlet {
 			if (null != getIndexField() && !("").equals(getIndexField().trim())
 					&& !("null").equalsIgnoreCase(getIndexField())) {
 				DefineIndex(configService, getIndexField());
+				DefineIndex(configService, "full_path");
+				DefineIndex(configService, "content");
 			}
-			DefineIndex(configService, "full_path");
-			DefineIndex(configService, "content");
+			
 
-			DescribeIndexFieldsRequest descindexfieldreq = new DescribeIndexFieldsRequest();
-			descindexfieldreq.setDomainName(getDomainName());
-			List list = descindexfieldreq.getFieldNames();
-			IndexFieldCache.put(list);
 
+			
 			// Create Properties File
 			Properties prop = new Properties();
 			prop.setProperty("SearchDocument", getSearchEndpoint()
 					.getEndpoint());
 			prop.setProperty("DocUpload", getDocEndpoint().getEndpoint());
+			prop.setProperty("DomainName", getDomainName());
 			prop.store(new FileWriter(SearchDocMessages.FILE_NAME),
 					"Search/Upload Document path");
 
@@ -271,5 +270,6 @@ public class CreateDomain extends HttpServlet {
 		DefineIndexFieldResult defineIndexFieldResult = configService
 				.defineIndexField(defineIndexFieldRequest);
 		logger.info(defineIndexFieldResult.toString());
-	}
+	}	
+	
 }
