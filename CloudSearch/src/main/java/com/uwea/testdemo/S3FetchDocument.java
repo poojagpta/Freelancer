@@ -22,8 +22,8 @@ public class S3FetchDocument {
 		S3FetchDocument t = new S3FetchDocument();
       
 		try {		
-			t.setKeyId("AKIAIZUT5PW6K6NZLXOA");
-			t.setKey("PZ7AM4nrFfNJjZ1TfTimVgP3gahsr9jJkddAEJ/C");
+			t.setKeyId("XXXXXXXX");
+			t.setKey("XXXXXX");
 			t.fetchDocument();
 		} catch (Exception e) {
 			e.printStackTrace();
