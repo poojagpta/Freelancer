@@ -1,0 +1,82 @@
+Posting Json data with nodes.js
+----------------------------------
+http://tech.pro/tutorial/1091/posting-json-data-with-nodejs
+
+Google dataStore
+----------------------------
+All the entity Key can be viewed as below:
+http://ostermiller.org/calc/encode.html
+
+
+Objectify APIs
+--------------------
+https://code.google.com/p/objectify-appengine/wiki/IntroductionToObjectify#Single-Value_Relationship
+
+
+Maven project:
+----------------------
+http://www.mkyong.com/tutorials/maven-tutorials/
+http://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+http://blog.gunawan.me/2010/09/maven-gae-integration-step-by-step.html
+http://blog.infinitechaos.com/2009/07/26/sample-multi-module-maven-project/
+http://skillshared.blogspot.in/2012/11/how-to-create-multi-module-project-with.html
+
+Configure Maven gae project in Eclipse --debug
+------------------------------------------
+http://googlewebtoolkit.blogspot.in/2010/08/how-to-use-google-plugin-for-eclipse.html
+
+Analyse the data model
+-------------------------------------
+http://www.ebaytechblog.com/2012/07/16/cassandra-data-modeling-best-practices-part-1/
+http://itsallabtamil.blogspot.in/2012/10/cassandra-compositetype-overview-cql.html
+http://horicky.blogspot.in/2009/11/query-processing-for-nosql-db.html
+
+Vaadin project:
+--------------------
+http://www.streamhead.com/wpcontent/uploads/2011/02/Vaadin_and_App_Engine_in_5_Minutes.pdf
+http://www.mastertheboss.com/vaadin/vaadin-tutorial
+https://vaadin.com/book
+
+Add security to gae project
+------------------------------
+https://developers.google.com/appengine/docs/java/tools/devserver
+http://peekandpoke.wordpress.com/2011/03/27/changing-the-listening-address-of-the-google-app-engine-jetty-server/
+https://developers.google.com/appengine/docs/ssl
+
+
+JQuery:
+--------------
+http://www.jquery-tutorial.net
+
+CORS
+---------------
+http://www.html5rocks.com/en/tutorials/cors/
+
+
+Similar to google:
+---------------------
+http://alvinabad.wordpress.com/2009/02/13/feb13/
+
+http://www.ibm.com/developerworks/java/library/j-gaestorage/?ca=drs-
+
+
+SSL
+-----------
+http://coder36.blogspot.in/2012/09/apache-ssl-reverse-proxy-tutorial.html
+http://blog1.vorburger.ch/2006/08/setting-up-two-way-mutual-ssl-with.html
+
+
+Encryption using http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js and decrypting in java
+----------------------------------------------------------------------------------------------------------
+https://code.google.com/p/crypto-js/#The_Cipher_Algorithms
+http://stackoverflow.com/questions/7787773/encrypt-with-node-js-crypto-module-and-decrypt-with-java-in-android-app
+http://stackoverflow.com/questions/11737390/encrypting-string-in-javascript-and-decryption-in-java
+
+
+
+
+mvn archetype:generate -DarchetypeGroupId=net.kindleit -DarchetypeArtifactId=gae-archetype-objectify-jsp -DarchetypeVersion=0.7.3 -DgroupId=com.stern.fraudshields -DartifactId=FraudShields
+
+mvn archetype:generate -DarchetypeGroupId=com.vaadin  -DarchetypeArtifactId=vaadin-archetype-application -DarchetypeVersion=7.0.1 -DgroupId=com.stern.demo -DartifactId=DemoVaddin -Dpackaging=war
+
+mvn archetype:generate -DgroupId=com.stern -DartifactId=TestHardness -DarchetypeArtifactId=maven-archetype-webapp

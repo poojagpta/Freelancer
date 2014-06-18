@@ -1,0 +1,37 @@
+1. Generate Certificate for testing otherwise need to download from certificate authroity:
+keytool -keystore server -alias jetty -genkey -keyalg RSA
+keytool -genkey -keyalg RSA -alias selfsigned -keystore keystore.jks -storepass password -validity 360 -keysize 2048 
+
+keytool -genkey -keyalg RSA -alias selfsigned -keystore keystore.jks -storepass password -validity 360 -keysize 2048
+
+keytool -genkey -dname "cn=Mark Jones, ou=JavaSoft, o=Sun, c=US" -alias business -keypass kpi135 -keystore C:\working\mykeystore -storepass ab987c -validity 180
+
+
+2. COnfiguration on maven (pom.xml)
+<configuration>
+        <webAppConfig>
+            <contextPath>/</contextPath>
+        </webAppConfig>
+        <connectors>
+            <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                <port>8080</port>
+            </connector>
+            <connector implementation="org.eclipse.jetty.server.ssl.SslSocketConnector">
+                <port>8443</port>
+                <keystore>src/resources/server.keystore</keystore>
+                <keyPassword>password</keyPassword>
+                <password>password</password>
+            </connector>
+        </connectors>
+    </configuration>
+
+-------------------------------------
+Set up SSL over Tomcat:	
+
+<-- Define a SSL Coyote HTTP/1.1 Connector on port 8443 -->
+<!--
+<Connector 
+           port="8443" maxThreads="200"
+           scheme="https" secure="true" SSLEnabled="true"
+           keystoreFile="${user.home}/.keystore" keystorePass="changeit"
+           clientAuth="false" sslProtocol="TLS"/>

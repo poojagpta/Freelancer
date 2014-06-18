@@ -1,0 +1,10 @@
+svn --version
+
+svn list --version
+
+Undo the change 
+-------------------
+1. svn merge --dry-run -r 73:68 http://my.repository.com/my/project/trunk
+2. svn diff -r 73:68 http://my.repository.com/my/project/trunk
+3. svn merge -r 15:12 https://bespoke.sourcerepo.com/bespoke/FraudShields/fraudshield-web/src/main/java/com/stern/fraudshields/model
+4. svn commit -m "Reverted back"

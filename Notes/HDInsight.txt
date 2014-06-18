@@ -1,0 +1,209 @@
+Azure Account:
+Install Azure cmdlets
+http://www.windowsazure.com/en-us/downloads/#cmd-line-tools
+install WindowsAzureXPlatCLI.3f.3f.3fnew.exe
+
+Then from WindowsStart key, type power, choose "Windows powershell ise"
+
+_____________________________________________________________________________________________________________________
+
+PS C:\Users\ashok> azure account download
+info:    Executing command account download
+info:    Launching browser to http://go.microsoft.com/fwlink/?LinkId=254432
+help:    Save the downloaded file, then execute the command
+help:      account import <file>
+info:    account download command OK
+
+it will open browser and ask to login to azure account, after login it will download publishsettings file
+
+_______________________________________________________________________________________________________________________
+
+PS C:\Users\ashok> azure account import "C:\Users\ashok\Downloads\Registered Users-1-31-2014-credentials.publishsettings" 
+info:    Executing command account import
+info:    Found subscription: Registered Users
+info:    Setting default subscription to: Registered Users
+info:    Use "azure account set" to change to a different one
+info:    Setting service endpoint to: https://management.core.windows.net/
+warn:    The "C:\Users\ashok\Downloads\Registered Users-1-31-2014-credentials.publishsettings" file contains sensitive information
+warn:    Remember to delete it now that it has been imported
+info:    Account publish settings imported successfully
+info:    account import command OK
+
+_________________________________________________________________________________________________________________________
+
+PS C:\Users\ashok> azure hdinsight cluster list
+info:    Executing command hdinsight cluster list
+info:    Getting HDInsight servers
+data:    Name         Location  State  
+data:    -----------  --------  -------
+data:    cadIMXBIh01  East US   Running
+info:    hdinsight cluster list command OK
+-------------------------------------------------------------------------------------------------
+
+PS C:\Users\ashok> azure account storage list
+info:    Executing command account storage list
+info:    Getting storage accounts
+data:    Name                     Label  Location
+data:    -----------------------  -----  --------
+data:    cadimxbis01                     East US 
+data:    portalvhdsk9kfkw4pyx1g1         West US 
+info:    account storage list command OK
+
+Azure Powershell set up commands:
+
+1. Get the .publishsetting files of Azure Management portal using below command:
+
+PS> Get-AzurePublishSettingsFile
+Will open with login screen enter the username/password. Download the file.
+
+2. This file will contain all certificate information also.
+3. Now, import the file in powershell using 
+ 
+ Import-AzurePublishSettingsFile "C:\Users\ashok\Downloads\Registered Users-2-5-2014-credentials (1).publishsettings"
+4. Verify the certificate included in local machine using window+run type: certmgr.msc
+
+Also verify the certificate using thumprint: double click the certificate name in 4 point window and look for thumbprint.
+$thumbprint = "408bf5ab29f5ee717afa3b182dd6b8050fbdee4e"  //if you open the certificate by double clicking it.
+$myCert = Get-Item cert:\\CurrentUser\My\$thumbprint
+
+------------
+PS C:\> Get-AzureStorageAccount
+VERBOSE: 12:28:23 PM - Begin Operation: Get-AzureStorageAccount
+VERBOSE: 12:28:25 PM - Completed Operation: Get-AzureStorageAccount
+
+
+StorageAccountDescription : Implicitly created storage service
+AffinityGroup             :
+Location                  : West US
+GeoReplicationEnabled     : True
+GeoPrimaryLocation        : West US
+GeoSecondaryLocation      : East US
+Label                     : portalvhdsk9kfkw4pyx1g1
+StorageAccountStatus      : Created
+StatusOfPrimary           :
+StatusOfSecondary         :
+Endpoints                 : {http://portalvhdsk9kfkw4pyx1g1.blob.core.windows.net/,
+                            http://portalvhdsk9kfkw4pyx1g1.queue.core.windows.net/,
+                            http://portalvhdsk9kfkw4pyx1g1.table.core.windows.net/}
+StorageAccountName        : portalvhdsk9kfkw4pyx1g1
+OperationDescription      : Get-AzureStorageAccount
+OperationId               : f324fbeb-37b1-6850-b40f-62db73bb6d1e
+OperationStatus           : Succeeded
+
+Steps to create the Azure storage account:
+-----------------------------------------
+$tempStorageAccountName="cadimxbis01"
+$tempDescription="Storage for hdinsight"
+$tempLabel="cadimxbis01"
+$tempLocation="East US"
+
+New-AzureStorageAccount -StorageAccountName $tempStorageAccountName -Description $tempDescription -Label $tempLabel -Location $tempLocation
+=================================================================================
+
+Steps to create a container inside Azure storage account:
+--------------------------------------------------------
+
+$storageAccountName = "cadimxbis01"
+$storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+$storageContext=New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+
+ New-AzureStorageContainer -Name "hdinsightest" -Permission "Container"  -Context $storageContext
+=============================================================================
+Steps to upload data to container:
+----------------------------------
+$storageAccountName = "cadimxbis01"
+$storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+$storageContext=New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+Set-AzureStorageBlobContent -File "C:\Users\ashok\Desktop\Aviation\hadoopSample.jar" -Container "hdinsightest" -Context $storageContext
+
+=============================================================================
+Steps to create the hdinsight cluster:
+-------------------------------------
+$subscriptionName = "Registered Users"       
+$subscriptionId = "64e3a617-7375-4d96-b3a3-09035895cd83"
+$storageAccountName = "cadimxbis01"   
+$containerName = "hdinsightest"              
+$clusterName = "cadIMXBIh01"        
+$location = "East US"          
+$clusterNodes = 1          
+
+
+Select-AzureSubscription $subscriptionName
+$storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+
+
+New-AzureHDInsightCluster -Name $clusterName -Location $location -DefaultStorageAccountName "$storageAccountName.blob.core.windows.net" -DefaultStorageAccountKey $storageAccountKey -DefaultStorageContainerName $containerName  -ClusterSizeInNodes $clusterNodes
+=========================================================================
+Steps to add steps/jobs to hdinsight:
+------------------------------------
+
+$wordCountJobDefinition = New-AzureHDInsightMapReduceJobDefinition -JarFile "wasb:///example/jars/hadoop-examples.jar" -ClassName "wordcount" -Arguments "wasb:///example/data/gutenberg/davinci.txt", "wasb:///example/data/WordCountOutput"
+$wordCountJob = Start-AzureHDInsightJob -Cluster $clusterName -JobDefinition $wordCountJobDefinition | Wait-AzureHDInsightJob -WaitTimeoutInSeconds 3600
+Get-AzureHDInsightJobOutput -Cluster $clusterName -JobId $wordCountJob.JobId -StandardError
+
+Fetch output result to local machine:
+------------------------------------
+$ContainerName="demo"
+$storageAccountName = "cadimxbis01"
+$storageAccountKey = Get-AzureStorageKey $storageAccountName | %{ $_.Primary }
+$storageContext=New-AzureStorageContext -StorageAccountName $storageAccountName -StorageAccountKey $storageAccountKey
+
+Get-AzureStorageBlobContent -Container $ContainerName -Blob example/data/WordCountOutput/part-r-00000 -Context $storageContext -Force
+
+==========================================================================
+Delete the hdinsight cluster after complete execution:
+-----------------------------------------------------
+$clusterName = "cadIMXBIh01"  
+Remove-AzureHDInsightCluster -Name  $clusterName
+
+============================================================================
+
+Create and run powershell script:
+By default the access of powershell is restricted.
+Get-ExecutionPolicy  -- to get execution policy
+Set-ExecutionPolicy RemoteSigned
+
+Get-Help About_Signing
+
+http://stackoverflow.com/questions/2035193/how-to-run-a-powershell-script
+http://technet.microsoft.com/en-us/library/ee176949.aspx
+
+http://poshoholic.com/2007/09/27/invoking-a-powershell-script-from-cmdexe-or-start-run/
+
+powershell.exe -noexit -noprofile -executionpolicy bypass -file  C:\Users\ashok\Desktop\Aviation\Script\test.ps1
+
+Of course, this function will last only as long as your current Windows PowerShell session. If you’d like multiplynumbers to be a permanent addition to Windows PowerShell then add the function to your Windows PowerShell profile. To do that, type notepad $profile to bring up your default profile, add the function call, and then save the profile.
+
+select * from table where table.product not equals "carrot1" gorup by products;
+
+Registy,Start,Customer Number,Customer Name,Status,User,Valid,Billed,Product,Test Client,Test Start,System,,
+=============================================================================================================
+
+Create Table bunny (
+Registy VARCHAR(10),
+Start VARCHAR(15),
+Customer_Number INT,
+Customer_Name VARCHAR(50),
+Status VARCHAR(1),
+User VARCHAR(50),
+Valid VARCHAR(1),
+Billed VARCHAR(1),
+Product VARCHAR(50),
+Test_Client VARCHAR(25),
+Test_Start VARCHAR(25),
+System VARCHAR(1)
+)
+
+
+load data local infile 'C:\Users\ashok\Desktop\Aviation\Data\BugsBunnyFPDashboardTemplateDataSet.csv' into table bunny
+fields terminated by ','
+enclosed by '"'
+lines terminated by '\n'
+
+-------------------------------------------------------------------------------------------------------------
+Working with excelo objects:
+
+Workbooks->Workbook->sheet->WorkSheets->WorkSheet->Column,row
+
+---------------------------------------------------------------------------------------------------------------
+Working with CloudSearch:

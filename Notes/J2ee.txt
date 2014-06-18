@@ -1,0 +1,14 @@
+
+
+J2EE - java 2 enterprise edition
+--------------------------------
+a) Specifications for coding
+
+ (interfaces for group of core functinality -Multi threading-servlet,JSP,JTA(Transaction API),JavaMail , JDBC , JAXP- xml parsing, JAAS(auth &authorisation service))+j2se API (JDBC core,JNDI API,RMI-IIOP API)
+
+b) Run time enviornment (Web Container /Application server)- Provide implementation or support to above APIs,either can use the implemented code or look for lib that support eg. JTA support Atomikos,Jotm. 
+These will run inside jre enviornment (jvm enviornment).
+
+-------------------------
+ 
+

@@ -1,0 +1,5 @@
+USE BIS
+
+CREATE TABLE EXT_FAA(name nvarchar(2000),count int)
+
+select * from ext_faa

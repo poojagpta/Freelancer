@@ -1,0 +1,28 @@
+gzip -dc /home/admin/jav*.gz  | tar -xvf -
+http://download.oracle.com/otn-pub/java/jdk/7u21-b11/jdk-7u21-solaris-x64.tar.gz?AuthParam=1370662108_4d9f739da792686abbe7bfecb18f2569
+
+sudo update-alternatives --install /usr/bin/javac javac /usr/local/jdk/jdk1.7.0/bin/javac 1
+sudo update-alternatives --install /usr/bin/java java /usr/local/jdk/jdk1.7.0/bin/java 1
+sudo update-alternatives --install /usr/bin/javaws javaws /usr/local/jdk/jdk1.7.0/bin/javaws 1
+
+export PATH=$PATH:
+JAVA_HOME=/usr/local/jdk/jdk1.7.0
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+shutdown -y -g0 -i5
+
+zlogin my-zone shutdown -y -g0 -i 0
+
+To see user group for username: id -a username
+
+sudo -s
+listusers
+useradd -G hadoop -d /data/home/pooja -m pooja
+userdel -r rockyjr
+
+
+Executing script use before script execution
+set -x verbose
+ps -eaf
+$HADOOP_NN_HOST

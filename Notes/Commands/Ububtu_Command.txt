@@ -1,0 +1,51 @@
+Find the version of ubuntu:
+cat /etc/lsb-release
+
+Hostname check: hostname
+--------------
+uname -a
+Host file location:/etc/hosts
+
+Installation new software:
+-------------------------
+
+sudo apt-get install maven
+
+sudo update-alternatives --config java   : to determine the version of java (in this case) to use.
+
+
+Alternation to file:
+-------------------
+1. Find occurance of word in file
+   grep "apple" test.txt
+
+2.Find and replace occurance of words in file.sed comman to subsitute the occurance of word with another words. 
+    sed -s "pooja/lakshya/" 
+
+
+http://www.sethpurcell.com/2012/12/how-to-add-nat-to-existing-ec2-instance.html
+
+find disk space:
+----------------
+df -Th
+
+Remove lock:
+-----------
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+
+Find occurance of work in all files in directories/subdirectory:
+---------------------------------------------------------------
+grep -rnw 'directory' -e "pattern"
+-r is recursive, -n is line number and -w stands match the whole word.
+
+
+Find list of process opening debug port on tomcat/ jvm application:
+-------------------------------------------------------------------
+sudo lsof -n -i4TCP:5008
+
+Shell script:
+------------
+ls -ltr --ignore=*.gz  if want to see file except .gz files
+
+  

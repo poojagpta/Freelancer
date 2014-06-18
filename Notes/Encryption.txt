@@ -1,0 +1,6 @@
+Algorithm like DES (64bit ie. 8 byte),Browfish,AES (16byte) have following mode:
+
+Mode
+1. ECB (Electronic Code Book)
+2. CBC (Cipher Block Chaining)
+

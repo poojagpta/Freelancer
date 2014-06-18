@@ -1,0 +1,62 @@
+IP (Routable protocol):Routing information
+---
+1. IP Address
+2. Sub net masking: To create small network of computer using it..
+3. DNS: Domain Name server (DNS name mapping with ip address)
+4. Dafault Gateway : If ip address not in local network then go to it for the address which create link to internet also if req....
+
+
+TCP: Windowing..
+-----
+Transfer information on small packets...in order for fast transmission called windowing.
+
+Sub network of computer in a boundary called router and talk to other sub network using router.
+
+DHCP(Dynamic host control protocol server): Need to tell the scope (range of ip address can assign)
+-----
+When computer connect to network it tell abt all ip address to computers..
+Automatic distribution of ip address, Sub net masking,Default gateway to all computers...
+Set ip address on lease time for which ip address for cmputer remain same...each 50 % time ur computer will ask DHCP server asking to keep same ip.
+
+NAT (Network Address Translation)
+----
+If there is no NAT then every device need to communicate to internet need its dedicated ip address.
+Router has NAT build into it...as internal ip Address is converted to external address for internet...so send and receive information using router.
+
+How to configure NAT server:
+---------------------------
+Require 2 NIC 1 connected to internet 2 connected to LAN system, server machine
+
+Subnet Masking:
+--------------
+Ip Address: 4 octet..each octet of 8 bit.
+subnet mask tell u in Ip Address which part is network identifier and which part is device identifier.
+
+Now if u don't have router then device in different sub net cannot talk to each other even if they are connected to same physical switch.
+
+Class C (Subnet masking) 255.255.255.0
+
+If i address is 192.168.120.1
+Then 192.168.120 is network portion so say 192.168.120.x network and 1 is device identifier in network
+
+No. of host can be connected using sub mask above: 2^8-2 (from left bit of last octet to right portion)
+No. of subnet can be connected: 2^8.2^8.2^8
+
+internet->modem (analog to digital signal)->router (with firewall)->switch/hub->subnet computers
+
+Router: For home act as "proxy" (Proxy is an agent or substitute authorized to act for another person) 
+------   So give different ip to home computer.
+
+1. Act as default gateway (link to internet for reqested page/remote computer address and uses routing decison to forward to diff interface near to remote computer)
+2. Best route to get packet reached network destination (Have route table to map request page->home computer so that received packet can be routed to requested computer).
+3. restrict broadcast : break large LAN to small subnet to reduce traffic on network.
+4. Move data between network:can also perform 'protocol conversion'
+
+Router configure through NIC (Network interface card) of laptop else can plug in from Outside. 1 NIC-> 1 Network Adapter
+
+SSH tunnelling:
+--------------
+
+http://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/
+
+

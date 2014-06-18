@@ -1,0 +1,86 @@
+Machine Learning can be:
+1) Supervised
+ Use Classification and prediction
+ 2) Unsupervised
+Find hidden structure in unlabel data.
+
+Use clustering
+
+Overfitting data problem: From entire date we should suplly 60-80% for training model and 20% to test the accuracy of model in order to predict unknown values.
+-------------------------
+If we train model with all values then model will fit for overfit for all known value.
+
+Data Prunning: Removing some data information.
+-------------
+
+False Postive & False Negative: When model predict it is positive but actual it is false then false positive. Check algorithm applied.
+------------------------------
+
+Linear Regression:
+-----------------
+
+It allows you to predict a numerical value for a given set of input values. 
+Useful for questions like "How much should we charge for the new BMW M5?" , "What could be price of house with given dimensions?"
+eg. sellingPrice =
+
+    -26.6882 * houseSize +
+      7.0551 * lotSize +
+  43166.0767 * bedrooms +
+  42292.0901 * bathroom +
+ -21661.1208
+ 
+ Classification:
+ ---------------
+ Question: "How likely is person X to buy the newest BMW M5?" Source data for analysis:monthly income,no. of cars,martial status,kids, house or rent etc.
+ 
+ Few attributes are used in it.
+ 
+ Clustering:
+ ----------
+ Question: "What age groups like the silver BMW M5?"  Source data for analysis: no. of people buy silver color of same age group in past.
+ All attribute are used in this.
+
+ Nearest neighbor:
+ -----------------
+ Question l  :When people purchase the BMW M5, what other options do they tend to buy at the same time?
+  When people buy BMW, they buy matching luggage etc so can place item near to it or move the promotions for the matching luggage to the front of the dealership, or even offer a newspaper ad for free/discounted matching luggage when they buy the M5, in an effort to increase sales.This is also known as basket analysis
+ 
+ Further reading: If you're interested in pursuing this further, you should read up on the following terms: Euclidean distance, Lloyd's algorithm, Manhattan Distance, Chebyshev Distance, sum of squared errors, cluster centroids.
+ 
+ Mahout: Analysis algorithm that can be designed for Distributed/Stand Alone mode.
+ ------
+ 3 Type of alogrithm: 1)Collaborative filtering or N neighbour 2) Classification 3) Clustering 4) Frequent ItemSet mining (Market Basket Analysis).
+ 
+ 
+ Run Mahout using hadoop:
+ -----------------------
+ hadoop jar /home/hduser/dev/mahout-distribution-0.7/core/target/mahout-core-0.7-job.jar org.apache.mahout.cf.taste.hadoop.item.RecommenderJob -s SIMILARITY_EUCLIDEAN_DISTANCE -n 2  --input /user/hduser/input/intro.csv --output /user/hduser/output
+ 
+ Recommendation/Collaborative Filtering Engine:
+ ---------------------------------------------
+ 
+ 1)Algoithm in collaborative filtering:
+  
+  Pearson Correlation 	Measures the tendency for two users or items to move proportionally together.
+  Euclidean Distance 	Measures the distance between two users or items
+  Spearman Correlation 	Variant of the Pearson Correlation that uses the relative rank of the preference value.
+  Cosine 	Also measures the distance between two users or items
+  Tanimoto Coefficient 	Ignores preference values and looks at the intersection of item ratings between two users.
+  Log-Likelihood 	Similar to Tanimoto in that preference values are ignored. It measures the how unlikely it is for two uses to overlap.
+ 
+ Taste consists of five primary components that work with Users, Items and Preferences:
+ 
+     1) Recommender: Interface for providing recommendations
+     2) DataModel: Storage for Users, Items, and Preferences
+     3) UserSimilarity: Interface defining the similarity between two users (CachineUserSimilarity,CityBlockSimilarity,GenericUserSimilarity,Spearman,LogLikelyhood etc)
+     4) ItemSimilarity: Interface defining the similarity between two items (GenericItemSimilarity,CachingItemSimilarity)
+     5) UserNeighborhood: Interface for computing a neighborhood of similar users that can then be used by the Recommenders
+     
+     
+     http://www.ibm.com/developerworks/java/library/j-mahout/
+     
+     Need to understand clustering in data, formating of text etc in vector form..
+     Sparse Vector, Dense Vector 
+     
+     1. From text data create vector data using Lucene ->Class EnWikiDocMaker 
+     2.  org.apache.mahout.utils.vectors.lucene.Drive option of creating vector.

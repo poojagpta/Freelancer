@@ -1,0 +1,333 @@
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
+Amazon EC2:
+------------
+Things required
+1. Key-pair
+2. Security group
+3. Add volume
+4. 
+
+AMI (Amazon Machine Images): 
+
+2 type root device type/instances:
+a. EBS: Root Device Volume (to boot the instance allocate ebs) 
+b. Instance storage: Root Device Volume used instance storage
+
+2 type of image
+a. HVM
+b. Paravirtualised (PV)
+
+Storage type:
+1. EBS:remote storage device
+2. Instance Storage  
+3. Amazon s3
+4. Block Device Mapping: add new ebs or instance storage to new instance
+
+
+Setting up remote desktop on EC2 Ubuntu machine:
+1. Install the below software vn4server--For remote desktop access
+                              ubuntu-desktop--For Ubuntu UI access
+                              gnome-panel --For better alignment  
+
+sudo apt-get update
+sudo apt-get install ubuntu-desktop
+sudo apt-get install vnc4server
+sudo apt-get install gnome-panel
+
+2. After installation of software, start the vncserver by typing:
+
+vncserver :1  
+
+It will be started first time so will ask for username/password for remote machine access. And it will create folder ~/.vnc folder.
+
+3. Now kill the vncserver instance process by following command as need to make change to xstartup file:
+vnc -kill :1
+ 
+After installation as admin, open ~/.vnc/xstartup file and make changes as shown below:
+
+#!/bin/sh
+
+# Uncomment the following two lines for normal desktop:
+unset SESSION_MANAGER
+# exec /etc/X11/xinit/xinitrc
+gnome-session –session=gnome-classic &
+gnome-panel&
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+x-window-manager &
+
+4. Now, Save the file by esc :wq
+5. Start the vncserver again vncserver:1
+6. Change the security access for Ubuntu EC2 server (Open Inbound port of 5901 or 5900-5910) 
+Now will be remote access the Ubuntu Ec2 instance 5901.
+ 
+------------------------------------------------------------------------------------------------------ 
+ 
+ Installing EMR CLI Tools:
+ 1> Install Ruby 1.8.7
+ Set ruby path as: path= C:\Ruby187\bin; Check version using ruby -v and gem -v
+ 2> mkdir elastic-mapreduce-cli
+ 3> Downloaded elastic-mapreduce-ruby.zip
+ 4> extract from it.
+ 5> create credentials.csv
+ 6> create key pair as required for credentials.csv
+ 7> test the CLI installations.
+  go in elastic-mapreduce-ruby installation directory and use command: ruby elastic-mapreduce --version
+ 
+ http://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide
+ 
+ EMR:
+ Uses EC2 server for master and slave nodes, S3 storage for input/output data,
+ CloudWatch to monitor cluster performance and raise alarm.
+ Hive, Pig,Hbase, DistCp already integrated.
+ 
+ Provide 3 type of cluster:
+ Custom Jar:Run custom jar file written in Java (Need to define mapper/reducer). Access to low level API.
+ Cascading: Spitting and joining data stream (input stream). Also have access to low level API.
+ Streaming: Run single map/reduce job script you store in S3 storage. Script can be written in Perl,Python.
+ 
+ Data Analysis:Can use Hive, Pig
+ Data can be analysed using HQL query language or pig language.
+ 
+ Data Storage: EMR integrated with Hbase and HDFS file system to protect against data loss.
+ Move Data: Custom lib to move data in -out of S3.
+ 
+ EMR define 3 roles for server in cluster:
+ Master node:Manages the cluster: coordinating the distribution of the MapReduce executable and subsets of the raw data, to the core and task instance groups. It also tracks the status of each task performed, and monitors the health of the instance groups. There is only one master node in a cluster. This maps to the Hadoop master node.
+ Core node: Run Task  and store data (like datanode/job tracker) or hold data to process in HDFS. In running cluster cannot decrease the number .
+ Slave node:Run tasks (like task tracker) Can increase or decrease number.
+ 
+ Set the mapred-conf.xml (same as mapred-site.xml)
+ mapred.map.tasksperslot: No. of map task slot in a cluster 
+ mapred.reduce.tasksperslot:No. of reduce task slot in a cluster 
+ 
+ 
+ Launch the EMR instance through CLI:
+ -----------------------------------
+ ruby elastic-mapreduce --create  --alive --name "Demo Instance" --ami-version 2.4.2 --num-instances 1 --instance-type m1.small
+ 
+ elastic-mapreduce --create --name "Demo Instance" --alive --num-instances 1 --instance-type m1.small --hadoop-version 1.0.3 --ami-version 2.4.2 --log-uri s3://universalweatherbigdata/logs
+ 
+ ruby elastic-mapreduce --create --name "Demo Instance" --alive --num-instances 1 --instance-type m1.small --ami-version latest --log-uri s3://universalweatherbigdata/logs --bootstrap-action s3://elasticmapreduce/bootstrap-actions/configure-hadoop --args "-h,dfs.webhdfs.enabled=true"
+ 
+ ruby elastic-mapreduce --create --name "Demo Instance" --alive --num-instances 1 --instance-type m1.small --ami-version 2.4.2 --log-uri s3://universalweatherbigdata/logs --bootstrap-action s3://elasticmapreduce/bootstrap-actions/configure-hadoop --args "-H,s3://universalweatherbigdata/config.xml" --subnet subnet-75546701
+ 
+ ruby elastic-mapreduce --create -c credentials1.json --name "East Demo Instance" --alive --num-instances 1 --instance-type m1.small --ami-version 2.4.2 --log-uri s3://universalweatherbigdata/logs --bootstrap-action s3://elasticmapreduce/bootstrap-actions/configure-hadoop --args "-h,dfs.webhdfs.enabled=true"
+ 
+ ruby elastic-mapreduce -c credentials1.json --list
+ 
+ ruby elastic-mapreduce --jobflow j-25KMYSVA728CT --jar s3://us-east-1.elasticmapreduce/libs/s3distcp/1.latest/s3distcp.jar --args '--src,s3://universalweatherbigdata/Taf.csv, --dest,hdfs:///user/hadoop/input'
+ 
+ Hadoop Version	Configuration Parameters
+ 2.2.0	 --ami-version 3.0.1
+ 1.0.3	 --ami-version 2.4.2
+ 0.20.205 --ami-version 2.1.4
+ 0.20	 --ami-version 1.0
+ 
+ Access ssh user: hadoop
+ 
+ For UI access we need to provide port(9100-9110) security access for Master node
+ http://ec2-54-201-210-100.us-west-2.compute.amazonaws.com:9100/jobtracker.jsp
+ http://ec2-54-201-210-100.us-west-2.compute.amazonaws.com:9101/dfshealth.jsp
+ 
+ 
+ C:\Users\ashok>cd EC2
+ The system cannot find the path specified.
+ 
+ C:\Users\ashok>cd ..\..
+ 
+ C:\>cd EC2
+ 
+ C:\EC2>dir
+  Volume in drive C is OS
+  Volume Serial Number is 7C4E-86D4
+ 
+  Directory of C:\EC2
+ 
+ 12/26/2013  06:35 PM    <DIR>          .
+ 12/26/2013  06:35 PM    <DIR>          ..
+ 02/14/2012  08:18 AM    <DIR>          ec2-api-tools-1.5.2.4
+ 02/14/2012  08:17 AM        11,961,027 ec2-api-tools.zip
+ 12/26/2013  06:34 PM    <DIR>          elastic-mapreduce-cli
+ 12/26/2013  11:28 PM    <DIR>          elastic-mapreduce-ruby
+ 12/26/2013  06:34 PM           269,539 elastic-mapreduce-ruby.zip
+ 02/14/2012  07:53 AM    <DIR>          New Folder
+ 02/14/2012  07:39 AM             6,694 New Folder.zip
+                3 File(s)     12,237,260 bytes
+                6 Dir(s)  350,169,006,080 bytes free
+ 
+ C:\EC2>cd elastic-mapreduce-ruby
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --create  --alive --name "D
+ emo Instance" --ami-version 2.4.2 --num-instances 1 --instance-type m1.small
+ Created job flow j-3S2LZ9DDRIWMZ
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     STARTING
+      Demo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     STARTING
+      Demo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     STARTING
+      Demo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     STARTING       ec2-54-201-123-102.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     WAITING        ec2-54-201-123-102.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --describe j-3S2LZ9DDRIWMZ
+ {
+   "JobFlows": [
+     {
+       "Steps": [],
+       "AmiVersion": "2.4.2",
+       "Instances": {
+         "Placement": {
+           "AvailabilityZone": "us-west-2b"
+         },
+         "MasterInstanceType": "m1.small",
+         "InstanceGroups": [
+           {
+             "BidPrice": null,
+             "StartDateTime": 1388187969.0,
+             "EndDateTime": null,
+             "ReadyDateTime": 1388188090.0,
+             "Name": "Master Instance Group",
+             "InstanceRole": "MASTER",
+             "State": "RUNNING",
+             "InstanceType": "m1.small",
+             "InstanceRequestCount": 1,
+             "LastStateChangeReason": "",
+             "InstanceRunningCount": 1,
+             "InstanceGroupId": "ig-2WKNH1VPM4U24",
+             "CreationDateTime": 1388187859.0,
+             "Market": "ON_DEMAND"
+           }
+         ],
+         "MasterInstanceId": "i-6f79e059",
+         "Ec2SubnetId": null,
+         "Ec2KeyName": "mykeypair",
+         "KeepJobFlowAliveWhenNoSteps": true,
+         "HadoopVersion": "1.0.3",
+         "TerminationProtected": false,
+         "NormalizedInstanceHours": 1,
+         "SlaveInstanceType": null,
+         "InstanceCount": 1,
+         "MasterPublicDnsName": "ec2-54-201-123-102.us-west-2.compute.amazonaws.c
+ om"
+       },
+       "VisibleToAllUsers": false,
+       "Name": "Demo Instance",
+       "BootstrapActions": [],
+       "LogUri": "s3n:\/\/universalweatherbigdata\/",
+       "JobFlowId": "j-3S2LZ9DDRIWMZ",
+       "ExecutionStatusDetail": {
+         "StartDateTime": 1388188092.0,
+         "EndDateTime": null,
+         "ReadyDateTime": 1388188092.0,
+         "State": "WAITING",
+         "LastStateChangeReason": "Waiting for steps to run",
+         "CreationDateTime": 1388187859.0
+       },
+       "SupportedProducts": [],
+       "JobFlowRole": null
+     }
+   ]
+ }
+ 
+ C:\EC2\elastic-mapreduce-ruby>
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3S2LZ9DDRIWMZ     WAITING        ec2-54-201-123-102.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --create --name "Demo Insta
+ nce" --alive --num-instances 1 --instance-type m1.small --hadoop-version 1.0.3 -
+ -ami-version 2.4.2 --log-uri s3n://universalweatherbigdata/logs --bootstrap-acti
+ on --args --dfs.webhdfs.enabled=true
+ Error: invalid option: --dfs.webhdfs.enabled=true
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --create --name "Demo Insta
+ nce" --alive --num-instances 1 --instance-type m1.small --hadoop-version 1.0.3 -
+ -ami-version 2.4.2 --log-uri s3n://universalweatherbigdata/logs --bootstrap-acti
+ on --args "-h,dfs.webhdfs.enabled=true"
+ Error: invalid option: -,dfs.webhdfs.enabled=true
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --create --name "Demo Insta
+ nce" --alive --num-instances 1 --instance-type m1.small --hadoop-version 1.0.3 -
+ -ami-version 2.4.2 --log-uri s3://universalweatherbigdata/logs --bootstrap-actio
+ n s3://elasticmapreduce/bootstrap-actions/configure-daemons --args "-h,dfs.webhd
+ fs.enabled=true"
+ Created job flow j-3E0ICO3R46TIC
+ 
+ C:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce --list
+ j-3E0ICO3R46TIC     STARTING
+      Demo Instance
+ j-3S2LZ9DDRIWMZ     TERMINATED     ec2-54-201-123-102.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ j-1IIVMRBPD5OK3     TERMINATED     ec2-54-201-210-100.us-west-2.compute.amazonaw
+ s.comDemo Instance
+ 
+
+Adding steps to EMR:
+---------------------
+
+1. Ways to copy data from Amazon S3 to HDFS for processing:
+Discp --Slow process
+s3distcp --fast process
+
+1. Copy data from S3 to HDFS:
+ruby elastic-mapreduce -c credentials1.json --jobflow j-21PXOK0SK7EV0 --jar /home/hadoop/lib/emr-s3distcp-1.0.jar --args 
+
+'--src,'s3://universalweatherbigdata/,--dest,hdfs:///input,--srcPattern,Bugs*.csv'
+
+c:\EC2\elastic-mapreduce-ruby>ruby elastic-mapreduce -c credentials1.json --jobf
+low j-21PXOK0SK7EV0 --jar /home/hadoop/lib/emr-s3distcp-1.0.jar --args '--src,s3
+://universalweatherbigdata/' --args '--dest,hdfs:///user/hadoop/input' --args '-
+-srcPattern,.*Set.csv'
+
+
+CloudSearch using CLI:
+-----------------------
+
+
+C:\EC2\cloud-search-tools-1.0.2.3-2013.08.02>cs-create-domain --domain-name uwea
+-meta
+Connecting to CloudSearch in region [us-east-1]
+===========================================
+Creating domain [uwea-meta]
+Domain endpoints are currently being created. Use cs-describe-domain to check for endpoints.
+
+C:\EC2\cloud-search-tools-1.0.2.3-2013.08.02>cs-describe-domain
+Connecting to CloudSearch in region [us-east-1]
+
+=== Domain Summary ===
+Domain Name: uwea-meta (currently being activated).
+======================
+
+http://aws.amazon.com/articles/8871401284621700
+
+cs-post-sdf -d uwea-meta --source sdf_format.txt

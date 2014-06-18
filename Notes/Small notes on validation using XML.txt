@@ -1,0 +1,52 @@
+XML schema can be defined either using DTD or XSD (used for validation and proper syntax check of xml):
+a) DTD: old and simpler
+ 1. Should learn new language SGML syntax
+ 2. cannot define own datatypes (only 2 data PCData and Cdata)
+ 3. Doesn't support namespace
+
+eg.
+<!DOCTYPE stuff [
+<!ELEMENT stuff (a, b)>
+<!ELEMENT a (#PCDATA)>
+<!ELEMENT b (#PCDATA)>
+<!ATTLIST a thetype CDATA "x|y|z">
+]>
+     
+b) XSD: New and more powerful.
+
+An XML Schema:
+
+defines elements that can appear in a document
+defines attributes that can appear in a document
+defines which elements are child elements
+defines the order of child elements
+defines the number of child elements
+defines whether an element is empty or can include text
+defines data types for elements and attributes
+defines default and fixed values for elements and attributes
+
+Advantage ove dtd:
+1. Support data type.
+2. Use Xml Syntax
+3. Secure data communication
+
+eg.
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSche…
+<xs:simpleType name="xyztype">
+<xs:restriction base="xs:string">
+<xs:pattern value="[xyz]"/>
+</xs:restriction>
+</xs:simpleType>
+<xs:element name="stuff">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="a" type="xs:string">
+<xs:attribute name="thetype" type="xyztype"/>
+</xs:element>
+<xs:element name="b" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+ 
+XSLT is stylesheet to transform from one xml to another or for convert to email content.

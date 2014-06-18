@@ -1,0 +1,60 @@
+Conceptual understanding of SSL:
+
+Client                        				                         Server
+1. Request https            			     ----------------------> Receive request
+2. Verify server certificate with CA in truststore<----------------------  Send X.509 certificate along with public key \
+2a Send certificate along with client public key     <----------------------  Ask for client certificate (in our case merchantid) 								
+
+
+3. Client generate the symmetric key and encrypt it using 
+   public key send by server and then using symmetric key ---------------------> Decrypt symmetric key with its own private key  
+   encrypt the http data                                                         Decrypt URL & data using symmetric key
+4. Decrypt data using symmetric key                      <-----------------------Sends data after decrypting using symmetric key
+
+
+Negotiation for SSL
+1. Discuss on Cyper suit: Hashing algorithms/crypothographic algorithm/key size for encrypting/decrypting data.
+2. Verify server authentication : using certificate
+3. Generate symmetric key for data exchange and distributing symmetric key using server public key.
+4. Using symmetric key for encryption of exchange data.
+
+
+KeyStore vs Truststore
+----------------------
+Keystore: for storing its server owner public/private certificates
+Trustore: for authenticating others site certificate
+
+
+Verifying if connect to SSL server: 2-way certification
+-----------------------------------------------------------
+openssl s_client -CAfile "C:\Users\ashok\Desktop\cert\ca.pem" -verify 1 -connect risk.test.kount.net:443
+openssl s_client -cert "C:\Users\ashok\Desktop\cert\file_cert.pem"  -key "C:\Users\ashok\Desktop\cert\file_cert.pem" -CAfile "C:\Users\ashok\Desktop\cert\ca.pem" -verify 1 -connect risk.test.kount.net:443 
+openssl s_client -CAfile C:\Users\ashok\Desktop\ca.pem -connect risk.test.kount.net:443
+
+openssl pkcs12 -in C:/Users/ashok/Desktop/FirstContract/KountCertificate1/test_cert_2.p12 -out bla.pem -nodes
+
+openssl pkcs12 -in C:/Users/ashok/Desktop/FirstContract/KountCertificate/test_cert_2.p12 -out bla.pem -nodes
+
+
+openssl s_client -CAfile "C:\Apache24\conf\cert\ca.pem" -cert "C:\Apache24\conf\cert\file_cert.pem" -key "C:\Apache24\conf\cert\file_key.pem" -host risk.test.kount.net -port 443
+
+openssl s_server -cert "C:\Apache24\conf\cert\ca.pem" -www
+
+openssl verify "C:\Apache24\conf\cert\ca.pem"
+
+c:\Apache24\bin>keytool -genkeypair -alias my_certificate -keystore my_keystore.pfx -storepass my_password -validity 365 -keyalg RSA - keysize 2048 -storetype pkcs12
+
+ keytool -genkey -keystore  johnkeystore -alias johnkey02 -storepass johnstorepass -keypass johnstorepass -dname "CN=John Smith, OU=Development, O=Standard Supplies Inc., L=Anytown, S=North Carolina, C=US"
+ 
+ keytool -list -keystore "C:\Apache24\conf\cert\johnkeystore" -alias johnkey02 -storepass johnpass -v
+
+Check a PKCS#12 file (.pfx or .p12)
+openssl pkcs12 -info -in keyStore.p12
+
+openssl pkcs12 -info -in "C:/Users/ashok/Desktop/FirstContract/KountCertificate/test_cert_2.p12"
+
+openssl pkcs12 -info -in "C:\Apache24\conf\cert\my_keystore.pfx"
+
+openssl pkcs12 -in "C:/Users/ashok/Desktop/FirstContract/KountCertificate/test_cert_2.p12" -noout -subject -issuer
+
+cat "C:\Apache24\conf\cert\file_cert.pem" "C:\Apache24\conf\cert\file_key.pem" > ca1.pem

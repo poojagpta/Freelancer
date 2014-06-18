@@ -1,0 +1,92 @@
+It is web application development framework for web based user interface.Each request will create a session.
+Consists of 7 packages:
+1) vaadin-server-7.x.x.jar
+2) vaadin-shared-7.x.x.jar--Shared libraray for server-side and client side. Always needed
+3) vaadin-client-7.x.x.jar--Include basic GWT API...not needed when use Server side programming.
+4) vaadin-client-compiled-7.x.x.jar--Java to Javascript compiler 
+5) vaadin-themes-7.x.x.jar--For precompiled CSS file/SCSS.Theme control the apperance.
+6) vaadin-theme-compiler7.x.x.jar--Compile SCSS theme to CSS
+7)????
+
+Architecture:
+--------------
+Client Side:
+Devlop widget/application in Java and then compiled to JavaScript to execute it on browser.
+
+Server Side: It is more powerful...
+Allowing to develop UI component in Java and then using Ajax based client side engine to render it on browser. 
+
+Main Components:
+---------------------
+1) User Interface: class extending  com.vaadin.ui.UI.
+   Handle user input,set up event listner
+   
+2) User Interface Component:
+ Information get displayed to browser with widgets...now user interface component are nothing but widget (client side).
+ Server side relay these widget event to application logic.
+ 
+3) Client side Engine: This is used to render the widget to UI, communicate to server side for user interactions, 
+   and again render UI component if required change.
+   
+4) VaadinServlet:It is a servlet that receive all user request(from browser) and also create user session (in form of cookie)
+ and delegate request to particular user session.
+ 
+5) Theme: It handle the page apperance on browser.
+
+6) Event: Interaction with user componets produce event that is passes through https->Vaddinservlet-->UI-->Event Listner
+
+7)Data Binding: Widgets/components can directly be binded to database.
+
+8)Client-Side Applications: It uses the same widgets/componet. Useful when need highly responsive UI or stateless server side code.
+
+9) Back end: JPA or JDOs.
+
+Server Side Web Application:
+-----------------------------
+1 page can have 2 or 3 (class UI components) --same as 1 portal can have 2-3 portlets.
+Creating a UI class should follow below structure:
+
+UI
+`-- VerticalLayout
+|-- Label
+`-- HorizontalLayout
+|-- Tree
+`-- Table
+
+
+Embedding UI's in web pages"
+
+1. Use div tag
+One is to have a <div> placeholder for the UI and load the Vaadin Client-Side Engine with some
+simple JavaScript code. 
+
+Advantage
+No size  
+
+Disadvantage
+But we can load only 1 dive tag per page
+
+
+2. Use iframe
+Another method is even easier, which is to simply use the <iframe>
+element.
+
+Advantage:
+Many iframe in page
+
+Disadvantage
+size--must be specific size specified.
+
+
+Embedding an UI requires the following basic tasks:
+
+Set up the page header:
+
+1. Include a GWT history frame in the page
+2. Call the vaadinBootstrap.js file
+3. Define the <div> element for the UI
+4. Configure and initialize the UI
+
+
+
+

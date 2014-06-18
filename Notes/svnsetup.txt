@@ -1,0 +1,79 @@
+C:\>cd dev\tools\svn\bin
+
+C:\dev\tools\svn\bin>svnadmin.exe create "C:\dev\tools\svn\repository"
+
+C:\dev\tools\svn\bin>svn mkdir svn://localhost/myproject
+svn: E205007: Could not use external editor to fetch log message; consider setti
+ng the $SVN_EDITOR environment variable or using the --message (-m) or --file (-
+F) options
+svn: E205007: None of the environment variables SVN_EDITOR, VISUAL or EDITOR are
+ set, and no 'editor-cmd' run-time configuration option was found
+
+C:\dev\tools\svn\bin>set SVN_EDITOR=c:\windows\system32\notepad.exe
+
+C:\dev\tools\svn\bin>svn mkdir svn://localhost/myproject
+svn: E730061: Unable to connect to a repository at URL 'svn://localhost'
+svn: E730061: Can't connect to host 'localhost': No connection could be made bec
+ause the target machine actively refused it.
+svn: E730061: Your commit message was left in a temporary file:
+svn: E730061:    'svn-commit.tmp'
+
+C:\dev\tools\svn\bin>svnserve -d
+^C
+C:\dev\tools\svn\bin>svnserve -d -r \repos
+svnserve: Root path '\repos' does not exist or is not a directory.
+
+C:\dev\tools\svn\bin>cd ..
+
+C:\dev\tools\svn>cd repository
+
+C:\dev\tools\svn\repository>svnserve -d -r \repos
+svnserve: Root path '\repos' does not exist or is not a directory.
+
+C:\dev\tools\svn\repository>cd ..
+
+C:\dev\tools\svn>svnserve -d -r repository
+
+
+C:\Users\ashok>cd\
+
+C:\>cd dev
+
+C:\dev>mkdir svntest
+
+C:\dev>cd svntest
+
+C:\dev\svntest>set SVN_EDITOR=c:\windows\system32\notepad.exe
+
+C:\dev\svntest>svn mkdir svn://localhost/myproject
+svn: E210005: Unable to connect to a repository at URL 'svn://localhost'
+svn: E210005: No repository found in 'svn://localhost'
+svn: E210005: Your commit message was left in a temporary file:
+svn: E210005:    'svn-commit.tmp'
+
+C:\dev\svntest>svn mkdir svn://localhost/myproject
+svn: E200002: Unable to connect to a repository at URL 'svn://localhost'
+svn: E200002: C:\dev\tools\svn\repository\conf\svnserve.conf:19: Option expected
+
+svn: E200002: Your commit message was left in a temporary file:
+svn: E200002:    'svn-commit.2.tmp'
+
+C:\dev\svntest>svn mkdir svn://localhost/myproject
+Authentication realm: <svn://localhost:3690> f98b96bb-d103-f04f-8d03-0656e56c533
+1
+Password for 'ashok': *****
+svn: E210002: Network connection closed unexpectedly
+svn: E210002: Your commit message was left in a temporary file:
+svn: E210002:    'svn-commit.3.tmp'
+
+C:\dev\svntest>svn mkdir svn://localhost/myproject
+Authentication realm: <svn://localhost:3690> f98b96bb-d103-f04f-8d03-0656e56c533
+1
+Password for 'ashok': *****
+
+Committed revision 1.
+
+C:\dev\svntest>svn status
+svn: warning: W155007: 'C:\dev\svntest' is not a working copy
+
+C:\dev\svntest>svn

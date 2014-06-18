@@ -1,0 +1,20 @@
+
+
+
+Using S3n as Input / Output for Hadoop MapReduce job
+----------------------------------------------------
+$ vi HADOOP_INSTALL_DIR/conf/hdfs-site.xml
+<property>
+<name>fs.s3n.awsAccessKeyId</name>
+<value>AWS-ID</value>
+</property>
+<property>
+<name>fs.s3n.awsSecretAccessKey</name>
+<value>AWS-SECRET-KEY</value>
+</property>
+
+then use command
+$ HADOOP_INSTALL_DIR/bin/hadoop jar hadoop-*-examples.jar wordcount  s3n://BUCKET-NAME/ s3n://BUCKET-NAME/DIRECTORY-NAME
+
+Else if not set any configuration on hdfs-site.xml file then below command
+HADOOP_INSTALL_DIR/bin/hadoop jar hadoop-*-examples.jar wordcount  s3n://AWS-ID: AWS-SECRET-KEY@BUCKET-NAME/ s3n:// AWS-ID: AWS-SECRET-KEY@BUCKET-NAME/DIRECTORY-NAME

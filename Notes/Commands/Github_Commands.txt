@@ -1,0 +1,30 @@
+Add new project to Github: 
+--------------------------
+1. Manually create remote repository using "Add Repository" option on GUI. It will also show steps to add it.
+ 
+2. Now go to project directory on local machine and follow steps as below:
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/poojagpta/HadoopPurchaseTrend.git
+git push -u origin master 
+Will ask for username/password (poojagpta/....)
+
+Add new project with remote repository created to Github using command Line:
+----------------------------------------------------------------------------
+curl -u 'poojagpta' https://api.github.com/user/repos -d "{\"name\":\"HbaseDemo\"}"
+
+git remote add origin https://github.com/poojagpta/HbaseDemo.git
+
+
+Create branch:
+--------------
+git checkout -b branch1 
+git branch -a  
+git push origin branch1
+
+Remove file:
+-----------
+git rm -r src/
+
+

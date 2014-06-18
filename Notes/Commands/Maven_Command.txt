@@ -1,0 +1,41 @@
+Create maven project:
+-------------------
+It is a build tool.
+src
+|
+| -main/java/com.stern
+|
+| -test/java/com.stern
+| -main/resources
+|-lib 
+
+Simple web project>mvn archetype:generate -DgroupId=com.stern -DartifactId=CloudSearchProj -DarchetypeArtifactId=maven-archetype-webapp
+GAE project>mvn archetype:generate -DarchetypeGroupId=net.kindleit -DarchetypeArtifactId=gae-archetype-objectify-jsp -DarchetypeVersion=0.7.3 -DgroupId=com.stern.fraudshields -DartifactId=FraudShields
+Vaddin project>mvn archetype:generate -DarchetypeGroupId=com.vaadin  -DarchetypeArtifactId=vaadin-archetype-application -DarchetypeVersion=7.0.1 -DgroupId=com.stern.demo -DartifactId=DemoVaddin -Dpackaging=war
+Hbase project>
+
+For making simple web application project:
+-----------------------------------------
+mvn archetype:generate -DgroupId=com.uwea -DartifactId=CloudSearch -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+For making simple project:
+-------------------------
+mvn archetype:generate -DgroupId=com.uwea -DartifactId=CloudSearchProj -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+If need to know the version of maven plugin used to compile the project can use below command:
+mvn help:describe -DartifactId=maven-compiler-plugin -DgroupId=org.apache.maven.plugins
+
+Add a local jar to maven local repository:
+-----------------------------------------
+mvn install:install-file -Dfile=C:\dev\freelancer\CloudSearch\src\main\webapp\WEB-INF\lib\cloudsearch-api-0.1.jar -DgroupId=com.searchtechnologies.cloudsearch.api -DartifactId=cloudsearch -Dversion=0.1 -Dpackaging=jar
+Now can add dependency like this:
+	<dependency>
+			<groupId>com.searchtechnologies.cloudsearch.api</groupId>
+			<artifactId>cloudsearch</artifactId>
+			<version>0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+Convert web maven project to dynamci web project:
+--------------------------------------------------
+mvn eclipse:eclipse -Dwtpversion=2.0

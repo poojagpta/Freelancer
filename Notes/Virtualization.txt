@@ -1,0 +1,21 @@
+Virtualisation is seperation of resource or instruction from underline physical delivery of service.For storage, we can get more RAM storage allocate then installed by swapping of data with disk storage. 
+Now,With virtaulisation infrastructure provide abstract layer between compute, storage,network hardware,Operating system.
+
+Hosted/Native virtualisation: Like Oracle VM VirtualBox, we can run the Linux machine on Windows operating system. Window machine is host OS and Linux machine is guest OS.
+Now, the machine instruction from Linux machine are emulated by VirtualBox and translated to host OS i.e. Windows OS. Since the host OS is not changes it is called native virtualisation.
+
+Hypervisor/HVM/Bare metal approach:On the hardware, a virtualisation layer software installed and then create virtual machine on top of it. Now all machine are guest of VM software insralled and can but directly communicate with hardware resources. Virtual layer software act as emulator or translating the instruction.
+
+Para-virtualisation:In this the operating system need to be modified i.e. guest os need to be modified for its increase performance and no need of emulation. It required specifical kernel (software part in os),so guest aware it is hypervisor and run efficiently.
+
+  Hosted Architecture:             Hardware Virtual Machine:       Para-virtualization
+  
+   Guest OS
+  ----------------------
+   Emulator                         Guest OS                        Guest OS(modified)
+  ----------------------           -----------------                  ---------------
+  Host operating system             Qemu (Emulator)                    VM software 
+   ---------                       ----------                          -----------
+   Hardware                         Hardware                            Hardware
+
+

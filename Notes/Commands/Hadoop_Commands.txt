@@ -1,0 +1,316 @@
+ Hive Understanding
+ 1. Solve problem in hive mentioned at site http://www.orzota.com/hive-for-beginners/ 
+    1a) Clean data using sed command sed 's/&amp;/&/g' BX-Books.csv | sed -e '1d' |sed 's/;/$$$/g' | sed 's/"$$$"/";"/g' > BX-BooksCorrected.csv
+    1b)  hadoop fs -put /Users/Work/Data/BX-CSV-Dump/BX-BooksCorrected.csv /user/hduser/data
+  1c) CREATE TABLE IF NOT EXISTS BXDataSet 
+    >   (ISBN STRING, 
+    >   BookTitle STRING, 
+    >   BookAuthor STRING, 
+    >   YearOfPublication STRING, 
+    >   Publisher STRING, 
+    >   ImageURLS STRING, 
+    >   ImageURLM STRING, 
+    >   ImageURLL STRING) 
+    > COMMENT 'BX-Books Table'
+    > ROW FORMAT DELIMITED  
+    > FIELDS TERMINATED BY '\073' 
+    > STORED AS TEXTFILE;
+  1d) LOAD DATA INPATH '/user/work/input/BX-BooksCorrected.csv' OVERWRITE INTO TABLE BXDataSet;
+ 1e)select yearofpublication, count(booktitle) from bxdataset group by yearofpublication;
+
+Hive commands: 
+--------------
+
+2 important jar : 1. hive-metadata*.jar 2. hive-exe*.jar
+Hive store the schema meta data inside the derby database using hive-metadata*.jar. We can change the db to mysql by changing setting in 
+hive-site.xml. 
+
+We can create table: 
+1. Default/Managed: store the table content in hdfs file system by below property 'set hive.metastore.warehouse.dir;'.
+Delete and drop will delete the content by itself as managed by hive.
+2. External: store the table content in external file location outside the warehouse.dir. So, deleting the table would not delete
+content of the file just the meta data will be deleted.
+
+Table Column complex Data type: Array,map,struct  Data type: tinyint,smallint,int,bigint,long,double,String 
+------------------------------                    ----------  
+Data:
+-----
+John Doe,100000.0,Mary Smith$Todd Jones,Federal Taxes#.2$StateTaxes#.05$Insurance#.1,1 Michigan Ave.$Chicago$IL$60600
+Mary Smith,80000.0,Bill King,Federal Taxes#.2$State Taxes#.05$Insurance#.1,100 Ontario St.$Chicago$IL$60601
+Todd Jones,70000.0,,Federal Taxes#.15$State Taxes#.03$Insurance#.1,200 Chicago Ave.$Oak Park$IL$60700
+Bill King,60000.0,,Federal Taxes#.15$State Taxes#.03$Insurance#.1,300 Obscure Dr.$Obscuria$IL$60100
+
+
+Default Storage:
+----------------
+create database financials;
+use financials;
+
+CREATE TABLE financials.employees (
+name STRING,
+salary FLOAT,
+subordinates ARRAY<STRING>,
+deductions MAP<STRING, FLOAT>,
+address STRUCT<street:STRING, city:STRING, state:STRING, zip:INT>
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+COLLECTION ITEMS TERMINATED BY '$'
+MAP KEYS TERMINATED BY '#'
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE;
+
+#Load from local ubuntu path
+LOAD DATA LOCAL INPATH '/home/hduser/dev/data/hiveData.txt' OVERWRITE INTO TABLE financials.employees;
+
+#Load from hdfs path path
+LOAD DATA INPATH '/user/hduser/data/hiveData.txt' OVERWRITE INTO TABLE financials.employees;
+
+#create copy of the table schema
+create table employee like employees;
+
+#show all tables in default.         #show tables in a db
+show tables;                         show tables in financials;
+
+#describe extended 
+DESCRIBE EXTENDED financials.employees;
+DESCRIBE Formatted financials.employees;
+
+#create partitioned table
+CREATE TABLE financials.employees_part(
+name STRING,
+salary FLOAT,
+subordinates ARRAY<STRING>,
+deductions MAP<STRING, FLOAT>,
+address STRUCT<street:STRING, city:STRING, state:STRING, zip:INT>
+)
+PARTITIONED BY (country STRING, state STRING);
+
+#load data to partitioned table
+INSERT OVERWRITE TABLE financials.employees_part PARTITION(country='US', state='CA')
+select * from financials.employees where address.state='CA';
+
+Alter table command commands:
+
+#Adding new columns:
+ALTER TABLE log_messages ADD COLUMNS (
+app_name STRING COMMENT 'Application name',
+session_id LONG COMMENT 'The current session id');
+
+#Change column name and move it after columnName severity
+ALTER TABLE log_messages
+CHANGE COLUMN hms hours_minutes_seconds INT
+COMMENT 'The hours, minutes, and seconds part of the timestamp'
+--AFTER severity; or --first
+
+#Alter table property:
+ALTER TABLE log_messages SET TBLPROPERTIES (
+'notes' = 'The process id is no longer captured; this column is always NULL');
+
+#Alter storage type:
+ALTER TABLE log_messages
+PARTITION(year = 2012, month = 1, day = 1)
+SET FILEFORMAT SEQUENCEFILE;
+
+#select statement:
+------------------
+SELECT upper(name), salary, deductions["Federal Taxes"], round(salary * (1 - deductions["Federal Taxes"])) FROM financials.employees;
+SELECT count(DISTINCT name), count(DISTINCT salary) FROM financials.employees;
+
+#Table generation function from single row:
+SELECT explode(subordinates) AS sub FROM financials.employees;
+
+#nested query:
+FROM (SELECT upper(name) as name, salary, deductions["Federal Taxes"] as fed_taxes,round(salary * (1 - deductions["Federal Taxes"])) as salary_minus_fed_taxes FROM financials.employees) e SELECT e.name, e.salary_minus_fed_taxes WHERE e.salary_minus_fed_taxes > 70000;
+
+SELECT name, address.street FROM financials.employees WHERE address.street LIKE '%Ave.';
+
+#Regular Expression
+ SELECT name, address.street FROM financials.employees WHERE address.street RLIKE '.*(Chicago|Ontario).*';
+
+#Joins:
+Distributed by/Order by-For ordering the output
+   |
+Paritioner to distribute data to reducer
+use this clause
+
+SELECT s.ymd, s.symbol, s.price_close FROM stocks s DISTRIBUTE BY s.symbol SORT BY s.symbol ASC, s.ymd ASC;
+
+If both distribute by and order by use same column=Cluster by
+
+SELECT s.ymd, s.symbol, s.price_close FROM stocks s DISTRIBUTE BY s.symbol SORT BY s.symbol ASC=SELECT s.ymd, s.symbol, s.price_close FROM stocks s CLUSTER BY s.symbol
+
+EXTERNAL TABLES:
+----------------
+create database  external_db;
+use external_db;
+
+CREATE EXTERNAL TABLE IF NOT EXISTS external_db.stocks (
+exchange STRING,
+symbol STRING,
+ymd STRING,
+price_open FLOAT,
+price_high FLOAT,
+price_low FLOAT,
+price_close FLOAT,
+volume INT,
+price_adj_close FLOAT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LOCATION '/user/hduser/stocks';
+
+
+# Partitioned
+CREATE EXTERNAL TABLE IF NOT EXISTS log_messages (
+hms INT,
+severity STRING,
+server STRING,
+process_id INT,
+message STRING)
+PARTITIONED BY (year INT, month INT, day INT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+LOCATION '/user/hduser/employees_ext_part';
+
+or add location afterward:
+
+ALTER TABLE log_messages ADD PARTITION(year = 2012, month = 1, day = 2)
+LOCATION 'hdfs://master_server/data/log_messages/2012/01/02';
+
+Write from hive to hdfs/local:
+------------------------------
+INSERT OVERWRITE LOCAL DIRECTORY '/tmp/ca_employees' SELECT name, salary, address FROM employees WHERE se.state = 'CA';
+
+Views:
+------
+create view financials.fin_employees as  select address.street,deductions["Federal Taxes"] from financials.employees where address.state='IL';
+
+
+Custom storage format:
+---------------------
+While creating the hive table:
+STORED AS TEXTFILE -- Use TextInputFormat (with each line as a record). SerDe to parse records to column and vice-versa when writting.
+
+Create index:
+-------------
+
+
+
+
+
+12-21-2013
+----------
+a. Hive Understanding 
+ 1. Load data from mysql to hive
+   1a. Understadning of Apache Sqoop:
+ It is a export/import tool from relational database to hadoop ecosystem. Its written in java and use JDBC API.       
+
+Import
+======
+To HDFS:
+--------
+First Sqoop get meta data information (columns in tables, data types )from database store and internally create Java (convert db data types to java data types and name of file is same as table name) classes.Then compile the java class generate .class file and then create java archive file (jar). Then it will find the split column from database table which generally is primary key. On bases of split column it will internally run sql command to fetch the record from table. by applying min-max on primary column and generate mapper for each no. range between min and max (range).   
+
+sqoop import --connect jdbc:mysql://<ip-address>:<port>/sqoop --username tt --password pp --table xx target-dir <hadoop-hdfs-path> 
+
+Can specify genric argument:
+--options-file: specify argument in external file 
+--m :<no. of map task to be executed by scoop> by default it is 4.
+--warehouse-dir: if we need to use same hadoop directory. No error as dir already exists. consider the parent dirctory. so data will be create like parent-dir/table_name/files.
+incremental import: --check-column <emp_id>
+                    --incremental append |<last_modified> 
+                    --last_value 9  
+
+To Hive:
+--------
+ create-hive-table: just create the schema same as rdbs and then can import data from hdfs file system. 
+   sqoop create-hive-table --connect jdbc:mysql://<ip address>:<port>/sqoop --username tt --password pp --table xx --hive-table <name of hive table> 
+
+hive-import: import just data
+sqoop import --connect jdbc:mysql://<ip address of mysql machine>:<port/sqoop --username tt --password pp --table xx --hive-table <name of hive table>  --hive-import
+
+Export of data from HDFS to Mysql(RDBMS)
+-----------------------
+  Inserting data into table
+
+sqoop export--connect jdbc:mysql://<ip address of mysql machine>:<port>/sqoop --username tt --password pp --table xx --export-dir <hdfs file system>  
+
+Update data to a table in RDBMS
+ ------------------------------
+
+--update-key <primary key of table on whose basis update can be performed>
+
+
+12/22/2013
+
+a Eclipse program
+  1. Different combination use of GenericOptionsParser (NumReduce , no of map task)
+  command line option to running job. 
+ -Dmapred.reduce.tasks=0
+ -Dmapred.map.tasks = 1
+
+b. Hbase understanding
+  
+1. Installation of hbase
+Changes in $HADOOP_HOME/conf/hdfs-site.xml:
+------------------------------------------
+1a.dfs.name.dir: Where name node will store the name table (if it is comma seperated) then in all location data copied
+1b.dfs.nama.data: where name node will store its block
+Changes in HBASE_HOME/conf
+--------------------------
+hbase-env.sh: Change JAVA_HOME path and set memory useage by default 1 GB.
+
+1a.hbase.rootdir: Tell where to find distributed file system hdfs://localhost:54310/user/hadoop/hbase
+1b.hbase.cluster.distributed: true
+1c. hbase.zookeeper.quorum: specify for fully distributed system eg. hmaster,hslave 
+
+1d. hbase.zookeeper.property.datadir: path of zookeeper where snapshot will be stored.eg /user/hduser/hbase/zookeeper
+1e. hbase.zookeeper.prperty.clientPort:Specify port where client will connect.eg. 2222
+
+Change regionservers file:
+------------------------- 
+Add region server names. eg hmaster
+                            hslave
+
+Start hbase :$HBASE_HOME/bin/start-hbase.sh 
+Verify: http://hmaster:60010/
+
+2. Load data on hbase 
+Start hbase shell: $HBASE_HOME/bin/hbase shell
+Create table: create 'test', 'cf'
+
+hbase(main):036:0> create 'stations', {NAME => 'info', VERSIONS => 1}
+0 row(s) in 0.1304 seconds
+hbase(main):037:0> create 'observations', {NAME => 'data', VERSIONS => 1}
+0 row(s) in 0.1332 seconds
+
+
+
+Insert data:put 'test', 'row1', 'cf:a', 'value1' 
+Select column: scan 'test'
+               get 'test','row1'
+delete all row: disable 'test'
+drop table: drop 'test'
+List all table : list
+
+12/24/2013
+
+a. Hbase database:
+  Understanding Hbase database
+   
+
+
+b. Pig Understanding 
+c. Understand Mysql dump file using CSV to S3 data load   
+
+
+Commands Hadoop:
+----------------
+1. start-all.sh --start ubuntu processes
+2. stop-all.sh  --stop ubuntu processes
+3. hadoop fs -ls --find all HDFS 
+4. hadoop dfsadmin -safemode leave -- if hdfs in save mode due to less memory or machine terminate 
+
+
+-----------------------------
+
+
+Define user agent and crawl many site (spending little time on each).Limit depth or dead recursion.

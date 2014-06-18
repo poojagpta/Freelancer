@@ -1,0 +1,54 @@
+JDK Tool Kit:
+-------------
+javac (compiler to byte code) + (jre) [jvm (java class execution enviornment)+jit (just in time interpreter byte code to machine instruction)]
+
+Memory usage:
+1. Heap -- Store objects, have String pool in here. -Xms -Xmx. Can take space from memory managment of required.
+2. Stack - all function call reside in it and local data type variable reside in it else everything in heap.-Xss at start time.
+No extra space throw StackOverfolowError. 
+
+Each thread will create in new stack but share data as reside in heap.
+
+--------------------
+Garbage collector:
+
+It work on heap space.
+
+If no reference to the object exist or even if only circular reference then eligible for collected. Garbage collector call finalize 
+method of Object for cleaning code if any before releasing space. Programmer can also request for garbage collection by System.gc(). 
+
+Working of GC:
+1. Marking.
+2. Deletion or Deletion with compactness.
+
+Now these process take lot of time and inefficient. By analysis it is figure out the object are short lived therefore for better performance,
+heap space is divided into parts of GC.
+
+It has divided the heap space into part or generations: 
+
+1. Eden space : First object reside in this space, when it fills then minor collection triggered it will clean eden space by deleting unreferenced object and living
+objects moved to surviovor 0.  
+2. Survivor 0: Again when eden space filled, minor collector was triggered it will clean eden and S0 and move also living object to S1.
+3. Survivor 1
+1,2,3-Young generation
+4. Old Gen: After minor collection, the living object get aged reached certain threshold, and moved from young to old. After some time GC perform 
+major collection which clean up and compact old gen space.
+
+Looking Visual GC:
+cmd>jvisualvm
+
+5. Perm Gen: Used for java.lang packages and all classloader classes object
+-----------------------------------
+Marking in GC has 2 method:
+1. Referencial count: Keep track of object references and if 0 then mark for deletion.
+But problem of circular references.
+
+2. Tracing: Find the object references from stack, GC root, references from classes from permanent location.
+
+
+Strong Reference and Weak Reference:
+
+Weak Reference entry will automatically removed by the garbage collector when its key is set to null. This will reduce the memory usage.
+If a WeakHashMap key becomes garbage, its entry is removed automatically. This avoids the pitfalls that manually have to delete from hashMap and requires no changes other than the switch from HashMap to a WeakHashMap.
+
+
