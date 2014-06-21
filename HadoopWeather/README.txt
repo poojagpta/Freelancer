@@ -5,6 +5,7 @@ Install the project using command:
 This project contain basic understanding on: 
 
 a. Secondary Sorting
+
 b. ElasticSearch Map Reduce Integration
 
 Main Class: ElasticSinkHadoopSourceJob.java
