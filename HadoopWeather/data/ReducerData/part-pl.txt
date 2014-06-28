@@ -1,0 +1,921 @@
+CXy1MbaeAZUhwxI.w	12578015	35.66	109.509	Shaanxi, CN, China	8	/China/CN/Shaanxi
+N2Z02BGcB5zqf0_Lpw	56013309	-8.262	115.353	Batur Utara, Bali, Indonesia	7	/Indonesia/Bali/Batur+Utara
+cbt2m.eeCZ5Fd_E	782053	46.509	6.647	Chamblandes, Pully, VD, CH, Switzerland	22	/Switzerland/VD/Pully/Chamblandes
+biA1DmicBJUtZYCkOw	55926442	17.117	53.988	Al Nabi Ayoob, Zufar, Oman	7	/Oman/Zufar/Al+Nabi+Ayoob
+xPOpvDeYBJkdlw	15596	51.504	-0.609	Chalvey, Slough, England, GB, United Kingdom	22	/United+Kingdom/England/Slough/Chalvey
+C7wXRRGYA54u1bqM	1225830	11.941	102.794	Ban Mai Rut, Trat, Thailand	7	/Thailand/Trat/Ban+Mai+Rut
+lO9pnpOcBJVYZeGGYQ	55958163	29.938	78.153	Mayapur, Hardwar, UL, IN, India	22	/India/UL/Hardwar/Mayapur
+qfYVq1aYA5nEMcSaEA	12587576	61.479	-144.991	Valdez-Cordova Census Area County, Alaska, United States	9	/United+States/Alaska/Valdez-Cordova+Census+Area+County
+s1xKmeacB5x5m_u7kQ	56023026	-36.83	174.428	Muriwai, Auckland, New Zealand	7	/New+Zealand/Auckland/Muriwai
+k.N1uBGbCZTIUzrt9Q	28835573	60.491	-1.575	Eshaness, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Eshaness
+RTVSkkWRBZW1BkA	849901	44.865	13.849	Pluj, Istarska, Croatia	7	/Croatia/Istarska/Pluj
+vZhjY8GYA5kZ5Y92gQ	12579271	-2.667	-43.389	Primeira Cruz, Maranhao, Brazil	9	/Brazil/Maranhao/Primeira+Cruz
+YDSBtGKYA5oJeGguFw	12682925	46.446	6.252	Begnins, Switzerland	7	/Switzerland/Begnins
+RJBxRs6eAp968HY	733254	51.918	4.398	Schiedam, South Holland, Netherlands	7	/Netherlands/South+Holland/Schiedam
+7Ne5zCSbAJpC2ugD	2164755	22.385	114.186	Pai Tau, New Territories, Hong Kong	7	/Hong+Kong/New+Territories/Pai+Tau
+KURGE6GeCZ4GrwQ	980244	66.047	-17.343	Husayik, Husavik, Iceland	7	/Iceland/Husavik/Husayik
+k0WvwA.bApjZissm	2346015	34.413	36.058	Ash Shamal, LB, Lebanon	8	/Lebanon/LB/Ash+Shamal
+ATfCUaOQBJi934M	954757	35.157	25.646	Kritsa, Kriti, Greece	7	/Greece/Kriti/Kritsa
+dIXg8Y.eAJs9vWo	717987	40.704	17.34	Martina Franca, Puglia, Italy	7	/Italy/Puglia/Martina+Franca
+cLTilcabAZ5Zi3N_	2021175	53.193	107.339	Khuzhir, Irkutskaya Oblast, Russia	7	/Russia/Irkutskaya+Oblast/Khuzhir
+n4JiXzOcBJVpbfuUzQ	55921213	-20.594	14.21	Khorixas, Kunene, Namibia	9	/Namibia/Kunene/Khorixas
+tGstlq2bAp_QAzfYZg	23396886	47.307	-70.568	Petite-Rivi?re-St.-Fran?ois, Quebec, Canada	7	/Canada/Quebec/Petite-Rivi?re-St.-Fran?ois
+I9PI4wabA5SUxojN	2281609	28.524	77.179	Mehrauli, New Delhi, NCT, IN, India	22	/India/NCT/New+Delhi/Mehrauli
+JZ6LqEeRBJxpy.I	850986	44.962	13.856	Dignano, Istarska, Croatia	7	/Croatia/Istarska/Dignano
+kyPaKOyeApxY9Bg	730014	51.772	5.642	Herpen, North Brabant, Netherlands	7	/Netherlands/North+Brabant/Herpen
+ahB9s7.cBJVUlg4lAg	55965438	52.516	13.466	Friedrichshain-Kreuzberg, Berlin, BE, DE, Germany	22	/Germany/BE/Berlin/Friedrichshain-Kreuzberg
+V5.N1FWbApi4ehx7	56012971	-8.705	115.169	Kerobokan Kelod, Bali, Indonesia	7	/Indonesia/Bali/Kerobokan+Kelod
+A2L_D4WbAph3mhsx	2347076	33.375	37.109	Rif Dimashq, SY, Syria	8	/Syria/SY/Rif+Dimashq
+KAZOoqOQCJ0gYA	99119	14.846	-89.155	Cop?n, Cop?n, Honduras	7	/Honduras/Cop?n/Cop?n
+ZfdFzwKbApjQrS3A	2346592	-5.017	145.532	Madang, PG, Papua New Guinea	8	/Papua+New+Guinea/PG/Madang
+_cwXIpOYA5ozUHYe0w	12635658	47.637	13.036	Gemeinde Berchtesgaden, Germany	7	/Germany/Gemeinde+Berchtesgaden
+IhEPG1GbCZv5oTWwfg	28743663	-16.504	-151.743	Bora-Bora, Leeward Islands, French Polynesia	9	/French+Polynesia/Leeward+Islands/Bora-Bora
+cO1R_N2bCZ_cIAmQiw	28349550	42.365	-71.087	Kendall Square, Cambridge, MA, US, United States	22	/United+States/MA/Cambridge/Kendall+Square
+JTJvW6ycBJWko8BY1A	55921394	-34.176	18.382	South Peninsula, Western Cape, South Africa	9	/South+Africa/Western+Cape/South+Peninsula
+raQXq3GbApiqK9Lz	2346595	-3.706	152.433	New Ireland, PG, Papua New Guinea	8	/Papua+New+Guinea/PG/New+Ireland
+xzQxvNqdAZhX	2402819	30.001	-90.773	Feitel, Louisiana, United States	7	/United+States/Louisiana/Feitel
+k4ev4w6YBJRicupz	1587846	-25.333	27.1	Sun City, North-west, South Africa	7	/South+Africa/North-west/Sun+City
+oRwI.MSbApj94qCM	2347293	38.523	35.933	Kayseri, TR, Turkey	8	/Turkey/TR/Kayseri
+XI.80b.YA5ksazBWNQ	12578695	-2.884	-40.303	Cruz, Ceara, Brazil	9	/Brazil/Ceara/Cruz
+jHuQ7J2RB5xiWAM	860773	69.678	20.265	Koppangen, Troms Fylke, Norway	7	/Norway/Troms+Fylke/Koppangen
+LZmwEOqYA5kKp4.OQw	12586631	30.655	76.354	Fatehgarh Sahib, Punjab, India	9	/India/Punjab/Fatehgarh+Sahib
+UtF22TqbCJ_lk_mSGA	23396596	46.935	-70.968	L'?le-D'orl?ans, Quebec, Canada	9	/Canada/Quebec/L'?le-D'orl?ans
+8nC3sxqRBZs8Gtw	847506	45.366	14.316	Donji Rukavac, Matulgi, Primorsko-Goranska, HR, Croatia	22	/Croatia/Primorsko-Goranska/Matulgi/Donji+Rukavac
+OQmlg5GcBJXelcQOTw	12587162	-33.352	19.319	Ceres, Western Cape, South Africa	9	/South+Africa/Western+Cape/Ceres
+JwRLBSeeA5lUUJs	725003	45.069	7.705	Turin, Piedmont, Italy	7	/Italy/Piedmont/Turin
+QH0vo2WQAJraq4g	916229	44.515	33.605	Balaklava, Crimea, Ukraine	7	/Ukraine/Crimea/Balaklava
+gplJlrufAJn30aI	615813	45.199	-0.748	Pauillac, Aquitaine, France	7	/France/Aquitaine/Pauillac
+oEYbykyRBJsNaA	85786	14.721	-91.259	San Marcos la Laguna, Solola, Guatemala	7	/Guatemala/Solola/San+Marcos+la+Laguna
+X5X5cCebA5u5Qdb78g	22763092	47.594	12.118	Thiersee, Tyrol, Austria	7	/Austria/Tyrol/Thiersee
+4WVPxK2bApgJGqSB	2344941	13.41	104.089	Siem Reap Province, KH, Cambodia	8	/Cambodia/KH/Siem+Reap+Province
+xmBKtGebApUcIqb8	2391569	30.392	-86.495	Destin, Florida, United States	7	/United+States/Florida/Destin
+rohspw6YBJz9NzaSkw	15021763	-39.127	174.371	Taranaki, NZ, New Zealand	8	/New+Zealand/NZ/Taranaki
+.2P4je.dBZgMyQ	44418	51.506	-0.127	London, England, United Kingdom	7	/United+Kingdom/England/London
+NlYH3UqcBJQTaKcrIA	55875818	1.361	103.84	Thomson, Central Singapore, Singapore	7	/Singapore/Central+Singapore/Thomson
+G3NlaCiYA563LkMb	1226155	12.684	100.904	Sattahip, Chon Buri, Thailand	7	/Thailand/Chon+Buri/Sattahip
+IAt7hACYAJgFmRH7	1140899	4.5	101.4	Berincang, Pahang, Malaysia	7	/Malaysia/Pahang/Berincang
+._wbP2GeAJ3O2C8	711270	46.466	10.379	Bormio, Lombardy, Italy	7	/Italy/Lombardy/Bormio
+wzvy1nCbAphoptuJ	2347163	13.964	100.416	Nonthaburi, TH, Thailand	8	/Thailand/TH/Nonthaburi
+OM6B6pGbCJ7zrLp2Ww	29229159	23.025	72.598	Panchkuva Darwaja, Ahmadabad, GUJ, IN, India	22	/India/GUJ/Ahmadabad/Panchkuva+Darwaja
+21iBnXubBJ9UIA	25390	54.983	-3.775	Kirkgunzeon, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Kirkgunzeon
+E.A3hhWbAZ6r7gHf5Q	20224262	36.778	-5.256	Los Arenosos, Andalusia, Spain	7	/Spain/Andalusia/Los+Arenosos
+kk6x.YmbBJwk7vxN	2507022	31.714	-110.068	Tombstone, Arizona, United States	7	/United+States/Arizona/Tombstone
+iNcggj.YBJ_FPLhK	1535452	34.083	-4.966	Fes al Bali, Fes, Morocco	7	/Morocco/Fes/Fes+al+Bali
+vVocRuObA5ynw3TJ	2209397	34.233	73.366	Thandiani, North-West Frontier, Pakistan	7	/Pakistan/North-West+Frontier/Thandiani
+WdQHOcubApgG0MSI	2345204	-1.673	-79.116	Bolivar, EC, Ecuador	8	/Ecuador/EC/Bolivar
+mK54STmYA5lkv_nUAw	12593872	47.504	18.978	Budapest XII., Budapest, Hungary	9	/Hungary/Budapest/Budapest+XII.
+ZrYNtpmbB51NH6IQTg	26198303	29.393	95.413	nyingchi, Tibet, China	9	/China/Tibet/nyingchi
+Rscg5rScBJQTf.k.tg	55858373	42.366	-71.096	Neighborhood Four, Cambridge, MA, US, United States	22	/United+States/MA/Cambridge/Neighborhood+Four
+TWylK7OcB5yOa6iipw	1465229	-26.683	15.234	Kolmanskop, Karas, Namibia	7	/Namibia/Karas/Kolmanskop
+V_UM9yubAp_SzSdeMQ	23394508	45.786	-73.159	St.-Denis-sur-Richelieu, Quebec, Canada	7	/Canada/Quebec/St.-Denis-sur-Richelieu
+yE35tWOYAJV0yPL6	1199535	9.944	123.396	Moalboal, Central Visayas, Philippines	7	/Philippines/Central+Visayas/Moalboal
+vsALc1WcApSEI_w	538081	37.771	-25.311	Furnas, Azores, Portugal	7	/Portugal/Azores/Furnas
+yZ1TFI.QAZpTfYc	906057	59.332	18.062	Stockholm, Stockholm, Sweden	7	/Sweden/Stockholm/Stockholm
+23HB1.GbAJ6HK02k	2123074	59.741	30.097	Pushkin, St. Peterburg, Russia	7	/Russia/St.+Peterburg/Pushkin
+DKCe25ubAph.RhNDdA	23424801	-1.789	-78.095	Ecuador	12	/Ecuador
+yC0QEDOYBZlh	1451	46.974	-70.96	Ste.-Famille, Quebec, Canada	7	/Canada/Quebec/Ste.-Famille
+m0zUEzibApjvu6ll	2346399	62.951	10.504	Sor-Trondelag, NO, Norway	8	/Norway/NO/Sor-Trondelag
+4KtDTDKeBpndhQs	775284	29.059	-13.56	Teguise, Canary Islands, Spain	7	/Spain/Canary+Islands/Teguise
+wKb9RH6bCZkZvdxz4w	28527211	35.684	139.743	Kojimachi 1 Chome, Tokyo, Tokyo Prefecture, JP, Japan	22	/Japan/Tokyo+Prefecture/Tokyo/Kojimachi+1+Chome
+9VbVjhubBZjSE0TY	2442885	36.05	-121.588	Lucia, California, United States	7	/United+States/California/Lucia
+iB2hyhybApjQNRV2	2344840	-8.045	159.161	Isabel, SB, Solomon Islands	8	/Solomon+Islands/SB/Isabel
+dJ7usNyeA5zNlxI	720326	44.228	10.516	Piandelagotti, Emilia Romagna, Italy	7	/Italy/Emilia+Romagna/Piandelagotti
+FGYkSgCbBZ_EpMe1	2430394	22.219	-159.585	Ka Ulu A Paoa Heiau, Hawaii, United States	7	/United+States/Hawaii/Ka+Ulu+A+Paoa+Heiau
+NVfJO4mYA5lZyMrElA	12582575	49.655	17.263	Olomouc, Olomouck?, Czech Republic	9	/Czech+Republic/Olomouck?/Olomouc
+P7cbS5SbA5X3T1.U	2295362	9.18	76.482	Kayamkulam, Kerala, India	7	/India/Kerala/Kayamkulam
+K.rVn7ybAZ42xURuHA	20219810	36.723	-4.407	Gibralfaro, Malaga, Andalusia, ES, Spain	22	/Spain/Andalusia/Malaga/Gibralfaro
+PuNqZHSQCZwJ5O8	980266	66.073	-23.141	Isafjordur, Isafjordur, Iceland	7	/Iceland/Isafjordur/Isafjordur
+TFwa4jqeB50UUdw	761884	36.183	-5.413	Guadarranque, Andalusia, Spain	7	/Spain/Andalusia/Guadarranque
+0emE4MebBZW26IYT	2496571	26.118	-97.169	South Padre Island, Texas, United States	7	/United+States/Texas/South+Padre+Island
+ZEdmxs2RApjbMzw	834803	41.847	23.492	Bansko, Blagoevgrad, Bulgaria	7	/Bulgaria/Blagoevgrad/Bansko
+VLc7vlydA5y1h7A	420033	-0.467	-76.985	Coca, Orellano, Ecuador	7	/Ecuador/Orellano/Coca
+_l1GT_yfA5Ugww	62982	20.89	-76.262	Holgu?n, Holguin, Cuba	7	/Cuba/Holguin/Holgu?n
+V9UIajKbApmn08ozaA	23512135	29.957	-90.064	French Quarter, New Orleans, LA, US, United States	22	/United+States/LA/New+Orleans/French+Quarter
+00K7rIOYA5n66SAgtw	12591762	50.838	4.362	Brussel Hoofdstad, Capital Region of Brussels, Belgium	9	/Belgium/Capital+Region+of+Brussels/Brussel+Hoofdstad
+evTmP6qcBJTOwVwCqw	55866407	42.412	-7.569	A Somoza, Galicia, Spain	7	/Spain/Galicia/A+Somoza
+M6F9RPabApgL_Oe9	2346303	6.488	100.245	Perlis, MY, Malaysia	8	/Malaysia/MY/Perlis
+dpALJ.WbBZjF2h7c	2443083	29.215	-103.534	Lunas, Texas, United States	7	/United+States/Texas/Lunas
+kf2ZPAybBZq88mxT	2461544	36.216	-112.06	North Rim, Arizona, United States	7	/United+States/Arizona/North+Rim
+sUjZTqKbAJ6XvFUI	2121468	55.093	38.77	Kolomna, Moskovskaya Oblast, Russia	7	/Russia/Moskovskaya+Oblast/Kolomna
+.XO2ShiYBJtB6g	15784	51.49	-0.162	Chelsea, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Chelsea
+wpFqVL.YBZS8	1488	47.001	-70.813	St.-Fran?ois, Quebec, Canada	7	/Canada/Quebec/St.-Fran?ois
+buzjd9uRBptR	8775	51.045	-114.063	Calgary, Alberta, Canada	7	/Canada/Alberta/Calgary
+P0n1Qc2bA5o0qBDz	2267953	17.038	54.39	Taqah, Zufar, Oman	7	/Oman/Zufar/Taqah
+GPkrpsebAZ7FlAlzPA	20219886	40.415	-3.683	Jeronimos, Madrid, Madrid, ES, Spain	22	/Spain/Madrid/Madrid/Jeronimos
+RGGKxfabAZ0Bh5egTQ	20125378	44.58	9.585	Frassineto, Emilia Romagna, Italy	7	/Italy/Emilia+Romagna/Frassineto
+AqVLzMmbCJqMeA	29659	53.142	-4.039	Nant Ffrancon, Wales, United Kingdom	7	/United+Kingdom/Wales/Nant+Ffrancon
+cBbrkXeYBJ_tGB2g	1539139	30.395	-9.215	Oulad Teima, Taroudannt, Morocco	7	/Morocco/Taroudannt/Oulad+Teima
+lK6MztGcBJWSeDV3yA	55985468	22.185	-159.631	P?hauao Ahupua`a, Princeville, HI, US, United States	22	/United+States/HI/Princeville/P?hauao+Ahupua`a
+_eMQJ0mbCZSAIQp7Gg	28835047	37.522	126.972	????, Seoul, Seoul, KR, South Korea	22	/South+Korea/Seoul/Seoul/????
+iurwPBybB5uoQlL7YA	26797645	-3.706	-70.097	Leticia, Amazonas, Colombia	9	/Colombia/Amazonas/Leticia
+l50gorybApti.K8w	2376496	35.448	-120.902	Cayucos, California, United States	7	/United+States/California/Cayucos
+OccDcNacBJTMwNjNIQ	55855829	43.645	-79.392	Spadina, Toronto, ON, CA, Canada	22	/Canada/ON/Toronto/Spadina
+DfCIjC2YA5ptzosoqg	12665304	43.748	4.805	Baux-de-provence, France	7	/France/Baux-de-provence
+hK_U8fiYBJ4KBYKd	1522695	24.443	32.877	Bimban, Aswan, Egypt	7	/Egypt/Aswan/Bimban
+56oNT_GbBZk1PVUF	2451166	37.907	-122.548	Mill Valley, California, United States	7	/United+States/California/Mill+Valley
+Gdf5DMGQAJn5xes	915701	44.416	34.049	Alupka, Crimea, Ukraine	7	/Ukraine/Crimea/Alupka
+_aFkOLuRB5uEAJA	867125	46.216	24.799	Bendorf, Sighi?oara, Mures, RO, Romania	22	/Romania/Mures/Sighi?oara/Bendorf
+HPO5LGibCZvcXJeXEw	28743667	-17.532	-149.838	Moorea-Maiao, Windward Islands, French Polynesia	9	/French+Polynesia/Windward+Islands/Moorea-Maiao
+A6zrP2ObApiZNMPp	2344804	-14.958	-68.202	La Paz, BO, Bolivia	8	/Bolivia/BO/La+Paz
+e7LbOVSYA5oSl1_jLg	12651774	48.775	2.296	Sceaux, France	7	/France/Sceaux
+yAq1qHybAZ6C_8UkgA	20225307	27.759	-15.575	Playa del Ingl?s, Canary Islands, Spain	7	/Spain/Canary+Islands/Playa+del+Ingl?s
+HRy6bS.fB5h1ajQ	664584	49.162	11.961	Kallm?nz, Bavaria, Germany	7	/Germany/Bavaria/Kallm?nz
+COwUvEKYA5p5IKbOPg	12685336	30.251	118.077	Huangshan, China	7	/China/Huangshan
+QGZfIRqcB5wnPE4	560422	53.542	-9.287	Cong, Mayo, Ireland	7	/Ireland/Mayo/Cong
+pn4MsiGbBZlXeplyXg	24554868	52.883	-1.974	England, GB, United Kingdom	8	/United+Kingdom/GB/England
+Dccm3UqfCZi3ZG0	684294	48.573	13.458	Passau, Bavaria, Germany	7	/Germany/Bavaria/Passau
+mNEnyC2QAJwrRk4	910218	57.572	11.782	Vr?ng?, Vastra Gotaland, Sweden	7	/Sweden/Vastra+Gotaland/Vr?ng?
+HL.r7jKaCZpvUA	38679	51.564	-0.13	Upper Holloway, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Upper+Holloway
+4ATNYHKcB5yIAhyCgw	56035737	5.4	100.276	Kampung Rambutan, Penang, Pulau Pinang, MY, Malaysia	22	/Malaysia/Pulau+Pinang/Penang/Kampung+Rambutan
+Ztl5GMaeBpz8zJo	770966	28.414	-16.547	Puerto de la Cruz, Canary Islands, Spain	7	/Spain/Canary+Islands/Puerto+de+la+Cruz
+t8fdF2ubApjboedv	2346910	55.759	37.621	Moskva, RU, Russia	8	/Russia/RU/Moskva
+L4PXNeKYA5lS919wkw	12598631	53.115	50.146	Volzhsky, Samarskaya Oblast, Russia	9	/Russia/Samarskaya+Oblast/Volzhsky
+pAnGwmmbBJyYcq4f	2503822	26.214	-80.271	Tamarac, Florida, United States	7	/United+States/Florida/Tamarac
+5.SPIH6cBJXfuDtvCQ	55985465	22.151	-159.467	Hanalei Ahupua`a, Princeville, HI, US, United States	22	/United+States/HI/Princeville/Hanalei+Ahupua`a
+f1N9r3CbBZS0R.N6	2488089	33.495	-117.665	San Juan Capistrano, California, United States	7	/United+States/California/San+Juan+Capistrano
+rJ0rhXiYA5pochTLYQ	12689512	42.314	-0.645	Loarre, Spain	7	/Spain/Loarre
+k12cAMmbB5.atGP4KQ	26342768	51.046	-114.066	Stephen Avenue Walk, Calgary, AB, CA, Canada	22	/Canada/AB/Calgary/Stephen+Avenue+Walk
+w_OiytWbAZ4bJmdvNA	20225356	40.007	4.193	Port d'Addaia, Balearic Islands, Spain	7	/Spain/Balearic+Islands/Port+d'Addaia
+6eImrEyeA54YeoU	722664	45.466	12.28	San Giuliano, Veneto, Italy	7	/Italy/Veneto/San+Giuliano
+kKOW93ibApgOo6sjnw	23417383	27.591	-80.344	South Beach, Florida, United States	7	/United+States/Florida/South+Beach
+VnEzLhCbApTKacOY	2384683	42.7	-74.924	Cooperstown, New York, United States	7	/United+States/New+York/Cooperstown
+LnBwk5ibA5twqf4Q8g	22721855	-37.841	144.91	Garden City, Melbourne, VIC, AU, Australia	22	/Australia/VIC/Melbourne/Garden+City
+DWFHqjmYApXbYg	13911	50.828	-0.134	Brighton, England, United Kingdom	7	/United+Kingdom/England/Brighton
+Try4eQ.YBJ7FxQjd	1528579	-1.364	36.645	Ngong, Rift Valley, Kenya	7	/Kenya/Rift+Valley/Ngong
+D_dJgOabB5v5VSZuNg	26797650	-3.535	-70.47	Puerto Nari?o, Amazonas, Colombia	9	/Colombia/Amazonas/Puerto+Nari?o
+wX8nb6ScBJR.Igppqg	55862514	36.956	-122.031	Lighthouse, Santa Cruz, CA, US, United States	22	/United+States/CA/Santa+Cruz/Lighthouse
+03aSFxuYBJQpm_mA	1588044	-34.197	18.449	The Boulders, Western Cape, South Africa	7	/South+Africa/Western+Cape/The+Boulders
+kjDchFSbApgIv.LW	2349234	-45.002	169.212	Lowburn, Otago, New Zealand	7	/New+Zealand/Otago/Lowburn
+UHTV5KubAplqB.fp	2350308	-37.801	174.873	Raglan, Waikato, New Zealand	7	/New+Zealand/Waikato/Raglan
+wrVgke2bAZ7JvnGWtQ	20220217	39.463	-0.353	Camins Al Grao, Valenza, Valencia, ES, Spain	22	/Spain/Valencia/Valenza/Camins+Al+Grao
+cTAtpMqYAJ1En_aW	1117022	33.289	131.449	Beppu-shi, Oita Prefecture, Japan	7	/Japan/Oita+Prefecture/Beppu-shi
+mUb35CGbBZjw7otM	2444461	34.033	-118.688	Malibu Beach, Malibu, CA, US, United States	22	/United+States/CA/Malibu/Malibu+Beach
+o4SzlQybApgWdwib	2346388	69.843	26.128	Finnmark Fylke, NO, Norway	8	/Norway/NO/Finnmark+Fylke
+qmHrUqafA5yUxEI	620002	48.725	-3.982	Roscoff, Brittany, France	7	/France/Brittany/Roscoff
+Q1.GD7OcCJtMqOY	597601	45.099	6.433	La Charmette, Rhone-Alpes, France	7	/France/Rhone-Alpes/La+Charmette
+B1R4DduYA5pOex49qg	12690153	29.053	-13.722	Tinajo, Spain	7	/Spain/Tinajo
+8VXZax2bCZ.Eaufb8g	28341434	13.577	100.67	Mueang Samut Prakan, Samut Prakan, Thailand	9	/Thailand/Samut+Prakan/Mueang+Samut+Prakan
+nrEXA12dCJSgBvM	498976	50.049	19.95	Kazimierz, Krakow, Lesser Poland, PL, Poland	22	/Poland/Lesser+Poland/Krakow/Kazimierz
+15dj6iWcBJVJp1xxjQ	55959283	26.923	75.822	Tripolia, Jaipur, RAJ, IN, India	22	/India/RAJ/Jaipur/Tripolia
+iKz_cnebB5s15SSHaA	26793105	9.224	-79.823	Col?n, Col?n, Panama	9	/Panama/Col?n/Col?n
+SfbF8FScApzHc_w	530634	46.051	14.503	Ljubljana, Ljubljana, Slovenia	7	/Slovenia/Ljubljana/Ljubljana
+ZHPoE9GbCJ4NPVIEIg	29216122	28.552	77.256	Nehru Place, New Delhi, NCT, IN, India	22	/India/NCT/New+Delhi/Nehru+Place
+bgaReImdA51GKsM	421782	-20.807	-40.645	Anchieta, Espirito Santo, Brazil	7	/Brazil/Espirito+Santo/Anchieta
+KBRPBoyYAJyoPcde	1105565	-20.292	148.786	Shute Harbour, Queensland, Australia	7	/Australia/Queensland/Shute+Harbour
+F.PsMYKbAZ2HOLoZXw	20149049	42.882	12.043	Volpara, Umbria, Italy	7	/Italy/Umbria/Volpara
+qfPBG4mcBJUemwHlCg	55985830	22.215	-159.413	Namahana Ahupua`a, Kilauea, HI, US, United States	22	/United+States/HI/Kilauea/Namahana+Ahupua`a
+IUYraBWbCZRCbfxwaQ	28808856	34.972	127.85	Geumnam-Myeon, South Korea	7	/South+Korea/Geumnam-Myeon
+TwVBSlKcBJQt8tcDpg	55864428	-43.245	146.553	Huon Valley, Tasmania, Australia	9	/Australia/Tasmania/Huon+Valley
+3aIf4BubAZx3VyrbGg	20090760	56.562	-5.358	Appin, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Appin
+QxYdPeabAZzFU4.cHg	20090348	57.232	-3.035	Belnacraig, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Belnacraig
+URVcI5KcBJWnScAvZg	55921382	-25.601	28.728	Gauteng Rural, Gauteng, South Africa	9	/South+Africa/Gauteng/Gauteng+Rural
+i8CJqqubAZ73bopbtA	20219914	40.402	-3.691	Palos de Moguer, Madrid, Madrid, ES, Spain	22	/Spain/Madrid/Madrid/Palos+de+Moguer
+chBZVw6YAZWgsp91	1095190	-33.92	151.256	Coogee, Sydney, NSW, AU, Australia	22	/Australia/NSW/Sydney/Coogee
+bgcgGFyYA5oRG9kezw	12673591	46.601	14.572	St. Kanzian am Klopeiner See, Austria	7	/Austria/St.+Kanzian+am+Klopeiner+See
+bs8ka_mYA5mWJD6gdw	12589684	36.748	-101.488	Texas County, Oklahoma, United States	9	/United+States/Oklahoma/Texas+County
+tsXsjoyfCZsx7Yg	687337	49.014	12.101	Ratisbon, Bavaria, Germany	7	/Germany/Bavaria/Ratisbon
+37FafE.bCZvqrJEShw	28747729	36.011	-114.794	Lake Mead, Nevada, United States	7	/United+States/Nevada/Lake+Mead
+ZGdwwYmcBJR8t3tHzQ	55855881	45.547	-73.544	District d'Hochelaga, Montreal, QC, CA, Canada	22	/Canada/QC/Montreal/District+d'Hochelaga
+3JYMgFibAJp6i975	2165242	22.278	114.174	Hong Kong, Hong Kong Island, Hong Kong	7	/Hong+Kong/Hong+Kong+Island/Hong+Kong
+O2KBybWYBJsUDOA	157173	9.388	-82.27	Isla Colon, Bocas del Toro, Panama	7	/Panama/Bocas+del+Toro/Isla+Colon
+7YTpEBmcCZ4nd0I	582899	48.67	-1.855	Cancale, Brittany, France	7	/France/Brittany/Cancale
+yX465OGdB5u2Yz8	467026	-46.686	-70.877	Lago Buenos Aires, Santa Cruz, Argentina	7	/Argentina/Santa+Cruz/Lago+Buenos+Aires
+Zw8UBbWYBJ7ECcWJ	1528957	-4.289	39.567	Ukunda, Coast, Kenya	7	/Kenya/Coast/Ukunda
+96lG5qOaAJhVyQ	31489	50.863	-0.151	Patcham, Brighton, England, GB, United Kingdom	22	/United+Kingdom/England/Brighton/Patcham
+R1Igm1ScBJR2uBUUew	55872085	66.65	13.563	Reppasj?en, Nordland Fylke, Norway	7	/Norway/Nordland+Fylke/Reppasj?en
+A0lbwl2bCJ.QaEpQBw	29390618	37.865	29.096	Merkez, Denizli, Turkey	9	/Turkey/Denizli/Merkez
+utJYVsKbAZUQOYZc	2096827	57.037	34.967	Torzhok, Tverskaya Oblast, Russia	7	/Russia/Tverskaya+Oblast/Torzhok
+knCLyfubAphMd1uI	2345269	54.194	-8.654	Sligo, IE, Ireland	8	/Ireland/IE/Sligo
+NZIfBXGcBJXte.kHbA	55959422	26.919	75.826	Pink City, Jaipur, RAJ, IN, India	22	/India/RAJ/Jaipur/Pink+City
+ExaCfzaYAJ01G6rG	1118529	33.141	130.414	Yanagawa-shi, Fukuoka Prefecture, Japan	7	/Japan/Fukuoka+Prefecture/Yanagawa-shi
+Z7F43ROdBJuh0eM	457244	-20.65	-40.507	Guarapari, Espirito Santo, Brazil	7	/Brazil/Espirito+Santo/Guarapari
+AWRKF8SYCJiDdc6O	1940567	29.31	47.97	Yarmouk, Al Farwaniyah, Kuwait	7	/Kuwait/Al+Farwaniyah/Yarmouk
+JeWO_K6bApj5E0fM	2346281	21.843	-104.744	Nayarit, MX, Mexico	8	/Mexico/MX/Nayarit
+ur25o8GfAJ7uG6Y	612977	43.61	3.876	Montpellier, Languedoc-Roussillon, France	7	/France/Languedoc-Roussillon/Montpellier
+znKjfXyYA5mxfo09Bg	12588715	46.424	-86.49	Alger County, Michigan, United States	9	/United+States/Michigan/Alger+County
+aZ14i06YAZisVWdg	1047838	-3.111	119.852	Makale, South Sulawesi, Indonesia	7	/Indonesia/South+Sulawesi/Makale
+AYoBw..bApjAni6b	2349755	-39.044	177.742	Nuhaka, Hawke's Bay, New Zealand	7	/New+Zealand/Hawke's+Bay/Nuhaka
+qw5V94uaBJiAXQ	35465	56.893	-4.916	Spean Bridge, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Spean+Bridge
+iw1.m.WbCZnrUgwXeA	28539833	36.24	137.981	Motomachi 1 Chome, Matsumoto-shi, Nagano Prefecture, JP, Japan	22	/Japan/Nagano+Prefecture/Matsumoto-shi/Motomachi+1+Chome
+2VJeoZWYBZ7KbRA	142169	16.731	-92.642	S. Cristobal de Las Casas, Chiapas, Mexico	7	/Mexico/Chiapas/S.+Cristobal+de+Las+Casas
+12y31KGYA5piSK4rRA	12692193	40.381	-5.764	B?jar, Spain	7	/Spain/B?jar
+9lqVCDicBJTTVpRX8w	55862978	35.407	25.012	Aghia Pelagia, Kriti, Greece	7	/Greece/Kriti/Aghia+Pelagia
+M5sObleRBZSsA3Q	848266	43.46	16.603	Jesenice, Splitsko-Dalmatinska, Croatia	7	/Croatia/Splitsko-Dalmatinska/Jesenice
+bERVU_CbCJ8kaspmRA	29374123	46.921	-70.889	St-Jean, Quebec, Canada	7	/Canada/Quebec/St-Jean
+5g2.5RWYAJnZPsi4	1154796	5.33	103.138	Kuala Terengganu, Terengganu, Malaysia	7	/Malaysia/Terengganu/Kuala+Terengganu
+Ka_fOxibB5sTjyETPA	26793155	9.179	-82.118	Punta Laurel, Panama	7	/Panama/Punta+Laurel
+mRGFsUefA5UL8J0	629159	48.826	-3.511	Tr?gastel, Brittany, France	7	/France/Brittany/Tr?gastel
+nL.kVHmcBJWNzwyaMA	55926244	23.029	59.073	Qattar, Masqat, Oman	7	/Oman/Masqat/Qattar
+VOj9g1WYBZh5PzhO	1442927	-5.066	39.116	Bombo, Tanga, Tanzania	7	/Tanzania/Tanga/Bombo
+kXtcLlKbA5sIShlNMw	22721712	-35.035	138.536	Seaview Downs, Adelaide, SA, AU, Australia	22	/Australia/SA/Adelaide/Seaview+Downs
+r9mduh.YA5kkKGIHRQ	12591846	37.882	13.611	Palermo, Sicily, Italy	9	/Italy/Sicily/Palermo
+7ndSLwObAphvDF2h	2344803	-13.457	-64.561	El Beni, BO, Bolivia	8	/Bolivia/BO/El+Beni
+9EFhwj6cBJQi_Zoc5w	55843789	48.88	2.346	Trudaine-Maubeuge, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Trudaine-Maubeuge
+Baqj1nKbAphcG2KK	2343620	41.115	29.023	Maslak, Istanbul, Turkey	7	/Turkey/Istanbul/Maslak
+Eg86_QmdAJUHd2Q	419142	-13.438	-71.916	Pisac, Cusco, Peru	7	/Peru/Cusco/Pisac
+OVcuyKCbApha4_tZ	2343757	39.328	26.699	Aivali, Bal?kesir, Turkey	7	/Turkey/Bal?kesir/Aivali
+eXxyMJmcBJSnTrPhWw	55855837	43.628	-79.359	Algonquin Island, Toronto, ON, CA, Canada	22	/Canada/ON/Toronto/Algonquin+Island
+E9EIXDicBJXJ274V5Q	55959443	26.933	75.839	Ganrapal Gate, Jaipur, RAJ, IN, India	22	/India/RAJ/Jaipur/Ganrapal+Gate
+VRlpRPOYA5oFHvdb.A	12600236	20.675	-103.336	Guadalajara, Jalisco, Mexico	9	/Mexico/Jalisco/Guadalajara
+WscoA4WYA5oa2ljKtg	12695047	42.537	-2.63	Navaridas, Spain	7	/Spain/Navaridas
+fEuD3dWQB50QURA	961265	36.447	28.225	Rodhos, Notio Aigaio, Greece	7	/Greece/Notio+Aigaio/Rodhos
+JA5PjQSQCZzWzWg	980551	63.427	-19	V?k, Vestur-Skaftafellssysla, Iceland	7	/Iceland/Vestur-Skaftafellssysla/V?k
+Xss6sMmYBZj8lvci	1446361	-6.408	39.565	Makunduchi, Zanzibar South and Central, Tanzania	7	/Tanzania/Zanzibar+South+and+Central/Makunduchi
+s6KvefibA5ra_xTu	2268251	17.016	54.098	Salalah, Zufar, Oman	7	/Oman/Zufar/Salalah
+eilUeFKYA5n8pBFsvQ	12588734	45.854	-86.913	Delta County, Michigan, United States	9	/United+States/Michigan/Delta+County
+pTyBMCmYAJmFqms	115903	21.016	-101.4	Chichimequillas, Guanajuato, Mexico	7	/Mexico/Guanajuato/Chichimequillas
+pg.n2ZmcB5wToKHnxQ	56065277	28.082	-14.298	Esquinzo, Canary Islands, Spain	7	/Spain/Canary+Islands/Esquinzo
+7Pf7XJCeBZtJgM0	747323	32.738	-16.887	Ribeiro Frio, Madeira, Portugal	7	/Portugal/Madeira/Ribeiro+Frio
+uAoi2MubBZRGr8.b	2487365	37.293	-80.053	Salem, Virginia, United States	7	/United+States/Virginia/Salem
+K05JmaubBZgK9K7C	2442830	39.057	-98.538	Lucas, Kansas, United States	7	/United+States/Kansas/Lucas
+FxOrGdGbB5sKKZzK6g	26793091	8.738	-82.41	Boquete, Chiriqu?, Panama	9	/Panama/Chiriqu?/Boquete
+yuOgMKabAZ3b2ZWJ4g	20101024	46.023	7.747	Brantschenhaus, Canton of Valais, Switzerland	7	/Switzerland/Canton+of+Valais/Brantschenhaus
+HTk5xEybApjTNVOy5g	23424926	-6.656	145.859	Papua New Guinea	12	/Papua New Guinea
+o2UOzdWYA54dDf2r	1225063	13.721	100.516	Bang Rak, Bang Rak, Bangkok, TH, Thailand	22	/Thailand/Bangkok/Bang+Rak/Bang+Rak
+rzk42_meAJk_nVM	715437	37.882	13.377	Ficuzza, Sicily, Italy	7	/Italy/Sicily/Ficuzza
+0_8XMzCeBp_EiN4	773358	41.727	2.152	Sant Quirze Safaja, Catalonia, Spain	7	/Spain/Catalonia/Sant+Quirze+Safaja
+juLLLbCbApQLIbd7	2386264	32.178	-97.258	Covington, Texas, United States	7	/United+States/Texas/Covington
+D4DTrHeeBZpJ_E8	746479	37.434	-8.785	Praia de Odeceixe, Faro, Portugal	7	/Portugal/Faro/Praia+de+Odeceixe
+HAtnJWWYA5rAkKGq4Q	12602010	20.895	-88.06	Temozon, Yucatan, Mexico	9	/Mexico/Yucatan/Temozon
+3FBr.lSbBZuRmHbc	2479351	40.675	-74.009	Red Hook, New York, NY, US, United States	22	/United+States/NY/New+York/Red+Hook
+3EaVuNOcBJRmMzFyAw	55864372	-17.422	124.89	Derby-west Kimberley, Western Australia, Australia	9	/Australia/Western+Australia/Derby-west+Kimberley
+qw4a53CbApjPj2AX	2344691	-24.197	-63.251	Salta, AR, Argentina	8	/Argentina/AR/Salta
+CAS_jAqbCJ.WMPr1XA	29390873	37.456	27.326	Yenihisar, Ayd?n, Turkey	9	/Turkey/Ayd?n/Yenihisar
+WDkZi1ebApgDKF1i	2345715	-6.867	107.607	West Java, ID, Indonesia	8	/Indonesia/ID/West+Java
+FXYnuKKbCZpEGBo4cw	28643025	-38.782	177.129	Kaitawa, Hawke's Bay, New Zealand	7	/New+Zealand/Hawke's+Bay/Kaitawa
+0ZVgkMKbAphwWpA.DQ	23417418	24.778	-80.914	Duck Key, Florida, United States	7	/United+States/Florida/Duck+Key
+Nt.UNAucBJVcc_p_Pw	55985390	20.787	-156.207	Ha`ik? Uka Ahupua`a, Haiku, HI, US, United States	22	/United+States/HI/Haiku/Ha`ik?+Uka+Ahupua`a
+1S6AhJScB5yHgcYYlw	56037098	2.991	101.7	Universiti Putra Malaysia, Putrajaya, Selangor, MY, Malaysia	22	/Malaysia/Selangor/Putrajaya/Universiti+Putra+Malaysia
+03sAX4WeA5UiBSw	729438	51.505	3.892	Goes, Zeeland, Netherlands	7	/Netherlands/Zeeland/Goes
+AXg8IV2dAJRqw2A	418448	-8.106	-79.045	Trujillo, La Libertad, Peru	7	/Peru/La+Libertad/Trujillo
+AMr8tlSbAZ3.ikqVBw	20150266	43.769	11.242	San Frediano, Florence, TC, IT, Italy	22	/Italy/TC/Florence/San+Frediano
+hcgIQqOeA5uD6zs	727971	51.591	4.771	Breda, North Brabant, Netherlands	7	/Netherlands/North+Brabant/Breda
+c_zcCyafCZQSUvQ	688115	47.575	10.291	Rettenberg, Bavaria, Germany	7	/Germany/Bavaria/Rettenberg
+H2BoMUWbBZucBq79	2479207	35.644	-83.76	Red Bank, Tennessee, United States	7	/United+States/Tennessee/Red+Bank
+0.3Olk.bA5s8bkNnMQ	22724451	33.878	35.502	Mazraa, Beirut, Bayrut, LB, Lebanon	22	/Lebanon/Bayrut/Beirut/Mazraa
+1PCC89WbApgVCydb	2345215	-0.76	-80.154	Manabi, EC, Ecuador	8	/Ecuador/EC/Manabi
+Sm1yb52bCJ_QCnbpKg	29389123	36.16	-86.779	Downtown, Nashville, TN, US, United States	22	/United+States/TN/Nashville/Downtown
+ybgtpqWeAJrGjDM	716998	35.503	12.61	Lampedusa, Sicily, Italy	7	/Italy/Sicily/Lampedusa
+613ktD6bAph0J7_3	2344845	-9.655	-36.693	Alagoas, BR, Brazil	8	/Brazil/BR/Alagoas
+1d4Sb1SeA5UQ4Xg	729954	52.318	6.385	Helhuizen, Overyssel, Netherlands	7	/Netherlands/Overyssel/Helhuizen
+RC5x602cBJULuOa3MQ	55970919	32.717	-117.17	The Grande at Santa Fe Place, San Diego, CA, US, United States	22	/United+States/CA/San+Diego/The+Grande+at+Santa+Fe+Place
+DvAblBCYAJlMCPvE	1154879	1.674	109.845	Lundu, Sarawak, Malaysia	7	/Malaysia/Sarawak/Lundu
+EuoXHa6YA5oRXnZlkA	12659995	45.386	6.645	St.-Bon-Tarentaise, France	7	/France/St.-Bon-Tarentaise
+W50j6P2YA5ra_HKuLA	12689552	42.775	-0.349	Sallent de G?llego, Spain	7	/Spain/Sallent+de+G?llego
+xAFAcOSbApiaPdbe	2347355	-8.698	35.634	Iringa, TZ, Tanzania	8	/Tanzania/TZ/Iringa
+K20n3vubCJxrZV47hw	29057641	31.613	74.576	Dhanoia Khurd, Punjab, India	7	/India/Punjab/Dhanoia+Khurd
+J9.Yk1CYAp0YI1pD	1315530	9.589	41.87	Dire Dawa, Dire Dawa, Ethiopia	7	/Ethiopia/Dire+Dawa/Dire+Dawa
+IsTyR9KbAp0TUZ2k	2316252	36.833	28.649	Dalyan, Mu?la, Turkey	7	/Turkey/Mu?la/Dalyan
+PghCRombAZwXE6HeWQ	20070077	14.975	108.66	Quang Ngai, VN, Vietnam	8	/Vietnam/VN/Quang+Ngai
+fGp_IF2bA5SC2fSW	2287200	18.969	72.812	Tardeo, Mumbai, MAH, IN, India	22	/India/MAH/Mumbai/Tardeo
+3U9G_l.bCZ1Afw	28192	57.005	-5.829	Mallaig, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Mallaig
+4b0TUm6bBZoj7dWB	2468129	46.785	-121.737	Paradise, Washington, United States	7	/United+States/Washington/Paradise
+9gsdLA.aBZ69FA	34296	50.711	-3.074	Seaton, England, United Kingdom	7	/United+Kingdom/England/Seaton
+J38jcg.eAphl6hY	734151	51.548	3.667	Vere, Zeeland, Netherlands	7	/Netherlands/Zeeland/Vere
+MvTpRNKbApV.7dmO	2395538	38.895	-77.011	East End, Washington, DC, US, United States	22	/United+States/DC/Washington/East+End
+TUGtUK.fCZjaMA	68426	21.804	-79.984	Trinidad, Sancti Spiritus, Cuba	7	/Cuba/Sancti+Spiritus/Trinidad
+vKMU5AeeCZlp1ko	785133	47.584	7.593	Kleinh?ningen, Basel-City, BS, CH, Switzerland	22	/Switzerland/BS/Basel-City/Kleinh?ningen
+1CASYFSbBZ7UQE8D	2428951	42.365	-71.033	Jeffries Point, Boston, MA, US, United States	22	/United+States/MA/Boston/Jeffries+Point
+E32vodOdAJ5j	4125	43.26	-79.888	Hamilton, Ontario, Canada	7	/Canada/Ontario/Hamilton
+Xs5dsO2YBJT2DvtI	1581931	-33.912	18.409	Green Point, Cape Town, Western Cape, ZA, South Africa	22	/South+Africa/Western+Cape/Cape+Town/Green+Point
+udN4q3iYA5ld_donXw	12591840	45.779	10.338	Brescia, Lombardy, Italy	9	/Italy/Lombardy/Brescia
+rPm.dimeA5ksaNo	725676	46.01	9.283	Varenna, Lombardy, Italy	7	/Italy/Lombardy/Varenna
+fBPa9ambAZ2hWrKPPQ	20149590	43.768	12.88	Cartoceto, Marche, Italy	7	/Italy/Marche/Cartoceto
+hKQezsGeA52iHmA	721130	40.629	14.482	Positano, Campania, Italy	7	/Italy/Campania/Positano
+3Ll6d82bAZl2LinE	2056386	44.723	37.772	Novorossiysk, Krasnodarskiy Kray, Russia	7	/Russia/Krasnodarskiy+Kray/Novorossiysk
+XTmPti2YA5r3o1YBvg	12678629	46.646	11.484	Villandro, Italy	7	/Italy/Villandro
+tqGqi8CYB563epg	162013	14.05	-60.966	Corinthe, Gros Islet, St. Lucia	7	/St.+Lucia/Gros+Islet/Corinthe
+inko4jCbAphmdl.m	2346199	31.311	-4.431	Er Rachidia, MA, Morocco	8	/Morocco/MA/Er+Rachidia
+kucEmUuYAJyq74fp	1105408	-42.031	147.479	Ross, Tasmania, Australia	7	/Australia/Tasmania/Ross
+aPnhvB6YA5oB_ypctQ	12688451	43.271	-4.83	Cabrales, Spain	7	/Spain/Cabrales
+A9zcXeSbBZqJ3g	24628	55.477	-2.554	Jedburgh, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Jedburgh
+r6c7bv6bApiJgMdj	2346294	20.573	-88.881	Yucatan, MX, Mexico	8	/Mexico/MX/Yucatan
+k9LQCNmaApldZzg	335350	-20.299	-66.933	Colchani, Potos?, Bolivia	7	/Bolivia/Potos?/Colchani
+Idh78cObCZu0OgHI2g	28747565	36.062	-112.209	Hermits Rest, Arizona, United States	7	/United+States/Arizona/Hermits+Rest
+aWtgSI2bCJxTmo9yfg	29077185	11.908	79.429	Kappur, Tamil Nadu, India	7	/India/Tamil+Nadu/Kappur
+Q0QZA6GbBZ0Hjngn	2411903	38.251	-75.168	Golf Club Shores, Maryland, United States	7	/United+States/Maryland/Golf+Club+Shores
+21ArojObA5UegrBs	2290633	32.11	76.535	Palampur, Himachal Pradesh, India	7	/India/Himachal+Pradesh/Palampur
+nHyGb9ObAplD3.Eg	2358905	47.388	-121.517	Bandera, Washington, United States	7	/United+States/Washington/Bandera
+f9Fa4bKYAZ5Z7KYH	1029520	-6.116	106.806	Bandan, Jakarta, DKI Jakarta, ID, Indonesia	22	/Indonesia/DKI+Jakarta/Jakarta/Bandan
+UEZ0A3GYA5wbTg	12056	51.385	-2.361	Bath, England, United Kingdom	7	/United+Kingdom/England/Bath
+idyTQUycBJT9hT_GYA	55875831	1.256	103.823	Sentosa, South West, Singapore	7	/Singapore/South+West/Sentosa
+0o.1ktOYAZhGI_.7	1043302	-8.48	115.446	Sidemen, Bali, Indonesia	7	/Indonesia/Bali/Sidemen
+EARJcO.bApWO2xjZ	2399338	34.677	-76.952	Emerald Isle, North Carolina, United States	7	/United+States/North+Carolina/Emerald+Isle
+TFgVdhibApi3ChVf	2345563	16.829	-90.291	Peten, GT, Guatemala	8	/Guatemala/GT/Peten
+logWcxWYBJzi8rWnvQ	15022056	45.25	13.918	Pazin, Istarska, Croatia	9	/Croatia/Istarska/Pazin
+GTNvPuuRAZ4FHw	80212	12.454	-61.474	Argyle, Saint Patrick, Grenada	7	/Grenada/Saint+Patrick/Argyle
+8tT.9q.QAJpCwTg	916201	44.75	33.866	Bakhchysaray, Crimea, Ukraine	7	/Ukraine/Crimea/Bakhchysaray
+cZJBdfeYBJxplqKexQ	15022644	45.261	9.605	Lodi, Lombardy, Italy	9	/Italy/Lombardy/Lodi
+70L1w9SbA5uWVoTdbw	22720989	-37.825	144.96	Southbank, Melbourne, VIC, AU, Australia	22	/Australia/VIC/Melbourne/Southbank
+PGhE_dmbAZyYSl1BDg	20070417	0.543	33.204	Jinja, UG, Uganda	8	/
+Uganda/UG/Jinja
+uK7KtWabCZrdFMBxxA	28643709	-38.268	176.186	Waireka, New Zealand	7	/New+Zealand/Waireka
+tRpZlsucBJRjLwo_UQ	55860148	25.819	-80.134	Nautilus, Miami Beach, FL, US, United States	22	/United+States/FL/Miami+Beach/Nautilus
+XsXwg_eYBJ_6jGKi	1539479	31.294	-4.256	Rissani, Er Rachidia, Morocco	7	/Morocco/Er+Rachidia/Rissani
+PV3UCVKdAJwQlA	41011	53.34	-1.476	Norton Woodseats, Sheffield, England, GB, United Kingdom	22	/United+Kingdom/England/Sheffield/Norton+Woodseats
+bCVxQZybAJ4nq9XZ	2120370	56.356	44.077	Bor, Nizhegorodskaya Oblast, Russia	7	/Russia/Nizhegorodskaya+Oblast/Bor
+OmWhTkWaAZ.2uw	30381	50.826	0.389	Normans Bay, England, United Kingdom	7	/United+Kingdom/England/Normans+Bay
+gNX2BA6bCJ.ve6Xihw	29375237	51.45	-117.977	Columbia-Shuswap, British Columbia, Canada	9	/Canada/British+Columbia/Columbia-Shuswap
+warTMlCcBp0RYw	57172	17.261	-88.778	Belmopan, Cayo, Belize	7	/Belize/Cayo/Belmopan
+Di0eaMmcBJUFGSXqnQ	55966612	36.802	28.228	Cumhuriyet, Mu?la, Turkey	7	/Turkey/Mu?la/Cumhuriyet
+ipxyDf2YBJQFoNFn	1582504	-26.204	28.04	Johannesburg, Gauteng, South Africa	7	/South+Africa/Gauteng/Johannesburg
+bMKv9m.YBZqKQPGa	1464998	-19.007	16.442	Halali, Oshikoto, Namibia	7	/Namibia/Oshikoto/Halali
+faytKyaYBp3XGQ	17178	56.26	-2.624	Crail, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Crail
+sLselRSbAZxmMaa5Xg	20094326	51.499	-0.167	Knightsbridge, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Knightsbridge
+6mFctpqbBZqV53oP	2466771	38.608	-95.268	Ottawa, Kansas, United States	7	/United+States/Kansas/Ottawa
+KQOUNmKbApgBnYy5KQ	23424987	-22.965	18.486	Namibia	12	/Namibia
+lFZpuQ.cBp4ZOSc	572927	61.868	28.867	Savonlinna, Eastern Finland, Finland	7	/Finland/Eastern+Finland/Savonlinna
+Z1Mw2syYAJx2ahFH	1101020	-18.256	146.017	Cardwell, Queensland, Australia	7	/Australia/Queensland/Cardwell
+RpcRS56bCZm167cu3Q	28527338	35.671	139.73	Akasaka 7 Chome, Tokyo, Tokyo Prefecture, JP, Japan	22	/Japan/Tokyo+Prefecture/Tokyo/Akasaka+7+Chome
+sSLcMRuQAJWGnr4	919665	45.033	35.383	Feodosiya, Crimea, Ukraine	7	/Ukraine/Crimea/Feodosiya
+JiCC5SqYBJy0FWpsRg	1111593	35.686	139.756	Tokyo, Tokyo Prefecture, Japan	9	/Japan/Tokyo+Prefecture/Tokyo
+4WI.Jd6bApgKjncD	2345758	10.826	78.297	Tamil Nadu, IN, India	8	/India/IN/Tamil+Nadu
+F2oSpdGbBZtu1ATd	2471348	44.54	-123.368	Philomath, Oregon, United States	7	/United+States/Oregon/Philomath
+cnzEw3iaBZTnVA	34893	57.928	-4.044	Skelbo, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Skelbo
+zSOAMW.bCJ.E1Dt4VA	29375236	50.164	-115.423	East Kootenay, British Columbia, Canada	9	/Canada/British+Columbia/East+Kootenay
+Fig5a.CYA5mghvaksA	12591819	44.539	10.919	Modena, Emilia Romagna, Italy	9	/Italy/Emilia+Romagna/Modena
+cSj2CiifAJjPG38	614050	48.567	7.763	Neudorf, Strasbourg, Alsace, FR, France	22	/France/Alsace/Strasbourg/Neudorf
+JNIVOYyYAJ.g4Vo_	1132482	35.856	129.245	Gyeongju-Si, Gyeongsangbuk-Do, South Korea	7	/South+Korea/Gyeongsangbuk-Do/Gyeongju-Si
+rvjevvuQAZw90Zuf5g	90010411	34.96	137.159	??????, Okazaki-shi, Aichi Prefecture, JP, Japan	22	/Japan/Aichi+Prefecture/Okazaki-shi/??????
+EWIxpbWbAphBdDbwyA	23415580	53.062	-1.565	Ashleyhay, England, United Kingdom	7	/United+Kingdom/England/Ashleyhay
+KqkW.dKbBZVLsR8D	2490220	29.233	-81.011	Seabreeze, Daytona Beach, FL, US, United States	22	/United+States/FL/Daytona+Beach/Seabreeze
+0zodV52eApoLJH0	736933	38.731	-9.278	Barcarena, Lisbon, Portugal	7	/Portugal/Lisbon/Barcarena
+fM18Rj2aA5VK2NI	329617	18.48	-64.392	South Sound, British Virgin Islands	7	/British+Virgin+Islands/South+Sound
+sLvGd5.YAJkvWXA	115271	20.864	-90.384	Celest?n, Yucatan, Mexico	7	/Mexico/Yucatan/Celest?n
+1TvwRN2bA5uiX12g6g	22726588	-33.81	151.237	Beauty Point, Sydney, NSW, AU, Australia	22	/Australia/NSW/Sydney/Beauty+Point
+DqwtbniYA5qf5a6_gg	12684084	46.72	7.929	Niederried bei Interlaken, Switzerland	7	/Switzerland/Niederried+bei+Interlaken
+9cDd6DmbApSvkQ	23851	53.348	-1.747	Hope, England, United Kingdom	7	/United+Kingdom/England/Hope
+bkqy4labB510hOJ7ZA	26198093	31.008	121.722	Shanghai Shi, Shanghai, China	9	/China/Shanghai/Shanghai+Shi
+V0uMPWacBJUOFUvjHA	55957710	24.578	73.68	Amet Ki Haveli, Udaipur, RAJ, IN, India	22	/India/RAJ/Udaipur/Amet+Ki+Haveli
+6Rx4NhCbBZlS9apk	2458833	29.953	-90.077	New Orleans, Louisiana, United States	7	/United+States/Louisiana/New+Orleans
+yOAFHV6YAJz5JNrx	1106119	-27.561	151.953	Toowoomba, Queensland, Australia	7	/Australia/Queensland/Toowoomba
+YjGdAHWYA5q6Apvsqw	12635775	47.928	12.719	Gemeinde Waging am See, Germany	7	/Germany/Gemeinde+Waging+am+See
+ExMubjebBZmyNNBQ	2451206	37.602	-122.395	Millbrae, California, United States	7	/United+States/California/Millbrae
+kM_WIXKRBZkj_r4	845743	59.436	24.752	Tallinn, Harju County, Estonia	7	/Estonia/Harju+County/Tallinn
+pzhe7UybApildYjpQQ	23424958	10.438	-61.417	Trinidad and Tobago	12	/Trinidad and Tobago
+MFTnMdebApgLuv3c	2346589	-6.519	145.548	Eastern Highlands, PG, Papua New Guinea	8	/Papua+New+Guinea/PG/Eastern+Highlands
+RMq22QqdAJQovLM	418628	-15.672	-69.708	Amanta?i, Puno, Peru	7	/Peru/Puno/Amanta?i
+OxYYnMufBJ002b0	651193	48.715	13.329	F?rstenstein, Bavaria, Germany	7	/Germany/Bavaria/F?rstenstein
+zCyGA5qaB5RXhe4	368169	2.441	-76.605	Popay?n, Cauca, Colombia	7	/Colombia/Cauca/Popay?n
+q32sak2bAZyWpifP	2006654	44.573	38.074	Gelendzhik, Krasnodarskiy Kray, Russia	7	/Russia/Krasnodarskiy+Kray/Gelendzhik
+tjuU2.GbAphP0neg	2345746	34.679	76.424	Jammu and Kashmir, IN, India	8	/India/IN/Jammu+and+Kashmir
+4frz5_uYA5lGplYbdw	12592040	52.376	4.898	Amsterdam, North Holland, Netherlands	9	/Netherlands/North+Holland/Amsterdam
+E.1ZGjWYCZgG0w	18482	56.006	-2.786	Drem, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Drem
+JXKyvc.YAJwNZUJ9	1108710	24.346	123.801	Taketomi-cho, Okinawa Prefecture, Japan	7	/Japan/Okinawa+Prefecture/Taketomi-cho
+apnYvhicB5yKO1lHbQ	56025114	-5.846	39.306	Kaskazini 'A', Zanzibar North, Tanzania	9	/Tanzania/Zanzibar+North/Kaskazini+'A'
+FWPy7eGYA5XyGQ	12938	52.995	-3.94	Blaenau Ffestiniog, Wales, United Kingdom	7	/United+Kingdom/Wales/Blaenau+Ffestiniog
+3oqcNb6YAJWYym0M	1199933	17.287	121.153	Tinglayan, Cordillera Administrative Region, Philippines	7	/Philippines/Cordillera+Administrative+Region/Tinglayan
+BFxHIKOcB5wS1jyU5g	56015668	5.331	103.124	Pulau Duyong, Terengganu, Malaysia	7	/Malaysia/Terengganu/Pulau+Duyong
+1og9lJGbBZVjqG_j	2495745	44.369	-68.33	Somesville, Mount Desert, ME, US, United States	22	/United+States/ME/Mount+Desert/Somesville
+Er_PuSGYA5rvli2Emw	12696101	52.161	-1.597	Stratford-on-Avon District, United Kingdom	7	/United+Kingdom/Stratford-on-Avon+District
+84i1Fp6cBJUmDgoz2A	55999665	45.693	-73.631	Vieux Terrebonne, Terrebonne, QC, CA, Canada	22	/Canada/QC/Terrebonne/Vieux+Terrebonne
+dmM4nbyRBp9hDh8	873763	45.15	24.016	Horezu, Valcea, Romania	7	/Romania/Valcea/Horezu
+5c42yC6eAJooTc8	716727	36.781	14.909	Ispica, Sicily, Italy	7	/Italy/Sicily/Ispica
+bp6cpA.bApkgGBiz	2354200	34.556	-115.751	Amboy, California, United States	7	/United+States/California/Amboy
+JkkQ.kGcB5xM5BA	560481	53.871	-9.926	Corraun, Mayo, Ireland	7	/Ireland/Mayo/Corraun
+8HXhrOCcBJWAXOGACQ	55960393	32.678	-117.175	Tent City, Coronado, CA, US, United States	22	/United+States/CA/Coronado/Tent+City
+AdElxQKcBJSf3QiZnQ	55862415	34.084	-118.386	Norma Triangle, West Hollywood, CA, US, United States	22	/United+States/CA/West+Hollywood/Norma+Triangle
+6A5ryqufA5Q25s8	628886	43.605	1.448	Toulouse, Midi-Pyrenees, France	7	/France/Midi-Pyrenees/Toulouse
+N_cOT6.YAJ2kvNZT	1117817	35.149	136.926	Nagoya-shi, Aichi Prefecture, Japan	7	/Japan/Aichi+Prefecture/Nagoya-shi
+kH8dLOubBZRvX_YZ	2487956	37.779	-122.42	San Francisco, California, United States	7	/United+States/California/San+Francisco
+aZOzVGKcB5xtRyU9Sg	56022925	45.446	-73.852	Kirkland South, Pierrefonds, QC, CA, Canada	22	/Canada/QC/Pierrefonds/Kirkland+South
+sxMQ4f.aBpnoSlY	375734	-2.898	-79.014	Cuenca, Azuay, Ecuador	7	/Ecuador/Azuay/Cuenca
+r2OZ4JuRApSYDWs	838642	42.116	23.216	Pastra, Kyustendil, Bulgaria	7	/Bulgaria/Kyustendil/Pastra
+4hLQygSaBJ92	3534	45.512	-73.554	Montreal, Quebec, Canada	7	/Canada/Quebec/Montreal
+X3bKyjqbApomdqLF	2366711	39.057	-94.882	Bonner Springs, Kansas, United States	7	/United+States/Kansas/Bonner+Springs
+YUyxdc2bBZ5GLqVf	2425886	33.72	-118.066	Huntington Harbor, Huntington Beach, CA, US, United States	22	/United+States/CA/Huntington+Beach/Huntington+Harbor
+q9dS8vuYAJ_qA8w	113730	25.983	-97.983	Buenavista, Tamaulipas, Mexico	7	/Mexico/Tamaulipas/Buenavista
+dYUr61OfBZ97uYQ	643136	47.891	12.539	Chieming, Bavaria, Germany	7	/Germany/Bavaria/Chieming
+.JRO.GqbAplfasx4wA	23512038	37.776	-122.433	Alamo Square, San Francisco, CA, US, United States	22	/United+States/CA/San+Francisco/Alamo+Square
+.seeneGbAZ25_P3J1A	20102155	46.02	7.747	Hinter Dorf, Canton of Valais, Switzerland	7	/Switzerland/Canton+of+Valais/Hinter+Dorf
+KWwYH26cBJXyM2BbqA	55951690	27.167	78.039	Purani Mandi, Agra, UP, IN, India	22	/India/UP/Agra/Purani+Mandi
+mp_R1xqeA5iu2KM	724823	42.562	12.642	Terni, Umbria, Italy	7	/Italy/Umbria/Terni
+qukP2y2RBJ1dt.c	851068	45.156	13.611	Orsera, Istarska, Croatia	7	/Croatia/Istarska/Orsera
+ExY5oDGYA5oCTDjThA	12695986	51.279	1.093	Canterbury City, United Kingdom	7	/United+Kingdom/Canterbury+City
+qkg5hX.YA5pcLhF_ww	12634237	49.417	11.879	Gemeinde K?mmersbruck, Germany	7	/Germany/Gemeinde+K?mmersbruck
+hu6jP2ycBJXtctSn4Q	55951385	25.323	83.021	Kayasth Tola, Varanasi, UP, IN, India	22	/India/UP/Varanasi/Kayasth+Tola
+p46j9wGcB514m_s	561937	53.352	-6.377	Palmerston, Dublin, DUB, IE, Ireland	22	/Ireland/DUB/Dublin/Palmerston
+ND6MICSbA5uaVFAT9w	22724362	13.747	100.492	Sanam Luang, Bangkok, Bangkok, TH, Thailand	22	/Thailand/Bangkok/Bangkok/Sanam+Luang
+dgXCLfabApuNTDZoSA	23706421	24.39	88.637	Rajshahi, Rajshahi, Bangladesh	9	/Bangladesh/Rajshahi/Rajshahi
+7C4ygfqYA5llb67HVQ	12577879	37.994	23.596	Attiki, GR, Greece	8	/Greece/GR/Attiki
+rx63TlqYA57ZDQ	12260	53.128	-2.694	Beeston Castle, England, United Kingdom	7	/United+Kingdom/England/Beeston+Castle
+AUtKVnObAZ3S2GL4Gw	20131353	38.03	13.973	Mazzaforno, Sicily, Italy	7	/Italy/Sicily/Mazzaforno
+95vHYJGeBp5tGWQ	772019	42.083	-6.591	Robleda, Castille and Leon, Spain	7	/Spain/Castille+and+Leon/Robleda
+2lLIjlSYAZ33JXfG	1015662	16.803	96.154	Yangon, Yangon, Myanmar	7	/Myanmar/Yangon/Yangon
+7rz7ZxabAZ3919n2iA	20100238	63.425	10.395	Marinen, Trondheim, Sor-Trondelag, NO, Norway	22	/Norway/Sor-Trondelag/Trondheim/Marinen
+h1opgFycBJQWmJ7wtA	55898232	20.675	-103.348	Fracc Guadalajara, Guadalajara, JA, MX, Mexico	22	/Mexico/JA/Guadalajara/Fracc+Guadalajara
+K1ZESGGcBJR7qvDErg	55856825	45.445	-73.825	Cedar Park Heights, Pointe-Claire, QC, CA, Canada	22	/Canada/QC/Pointe-Claire/Cedar+Park+Heights
+7e0ztOKbA5vvPryU	2272594	41.38	60.359	Khiva, Qoraqalpoghiston, Uzbekistan	7	/Uzbekistan/Qoraqalpoghiston/Khiva
+vzGxZseYAZibKVNy	1045407	-7.983	112.616	Temenggoengan, Malang, East Java, ID, Indonesia	22	/Indonesia/East+Java/Malang/Temenggoengan
+0cvM.LabCZ9pULTCFw	28340819	18.669	98.675	Mae Wang, Chiang Mai, Thailand	9	/Thailand/Chiang+Mai/Mae+Wang
+5tjWMNmfCJriRvU	696031	50.156	7.712	St. Goarshausen, Rhineland-Palatinate, Germany	7	/Germany/Rhineland-Palatinate/St.+Goarshausen
+0XqMUj6bCJ8cXqNCjw	29370882	36.348	-5.236	Urbanizaci?n Los Hidalgos, Andalusia, Spain	7	/Spain/Andalusia/Urbanizaci?n+Los+Hidalgos
+9P0d1rebAZ1_6UgArA	20100290	60.398	5.308	Nordnes, Bergen, Hordaland Fylke, NO, Norway	22	/Norway/Hordaland+Fylke/Bergen/Nordnes
+3UTEXUmbAJ04Tw	21119	53.253	-3.507	Glascoed, Wales, United Kingdom	7	/United+Kingdom/Wales/Glascoed
+CiMedqCaAZtssQ	30720	52.949	-1.143	Nottingham, England, United Kingdom	7	/United+Kingdom/England/Nottingham
+OJxN.kibApgI_1hc	2349887	-35.315	174.117	Opua, Northland, New Zealand	7	/New+Zealand/Northland/Opua
+gaEoRVKfAJtMnH0	617199	47.007	4.796	Pommard, Burgundy, France	7	/France/Burgundy/Pommard
+CRkCs_2cBJTowlk3Fw	55862559	25.794	-80.133	City Center, Miami Beach, FL, US, United States	22	/United+States/FL/Miami+Beach/City+Center
+nUXWohWbB50jQGjn.A	26198181	21.867	100.897	Xishuangbanna Daizu, Yunnan, China	9	/China/Yunnan/Xishuangbanna+Daizu
+sCuXezGbAZ7mR4hcUg	20220078	41.407	2.14	Sant Gervasi de Cassoles, Barcelona, Catalonia, ES, Spain	22	/Spain/Catalonia/Barcelona/Sant+Gervasi+de+Cassoles
+KMsZBj2bA5UEiBed	2290624	30.957	78.982	Gangotri, Uttarakhand, India	7	/India/Uttarakhand/Gangotri
+xJvU55OYA5lvFQ6yRg	12522956	10.819	106.658	Tan Son Nhut Airport, Vietnam	7	/Vietnam/Tan+Son+Nhut+Airport
+33.pLCybBZmdNmgUJg	24549682	15.336	38.908	Maekel, ER, Eritrea	8	/Eritrea/ER/Maekel
+UcfBsUGYA5q.VbcPKw	12696183	57.224	-2.783	Aberdeenshire, United Kingdom	7	/United+Kingdom/Aberdeenshire
+9Bqiix2QBpUWB3I	979373	49.596	6.14	Bonnevoie, Luxembourg City, Luxemburg, LU, Luxembourg	22	/Luxembourg/Luxemburg/Luxembourg+City/Bonnevoie
+EYG0KaKYA5kdwDb.eQ	12591843	44.847	9.64	Piacenza, Emilia Romagna, Italy	9	/Italy/Emilia+Romagna/Piacenza
+llnDS.CfAp7g4ZU	632958	50.883	1.663	Wissant, Nord-Pas-de-Calais, France	7	/France/Nord-Pas-de-Calais/Wissant
+yirCauGYA5pk.7KRWA	12602090	40.524	-3.816	Madrid, Madrid, Spain	9	/Spain/Madrid/Madrid
+c6sm0QqYA5lksKyz5A	12592682	62.535	9.508	Oppdal Kommune, Sor-Trondelag, Norway	9	/Norway/Sor-Trondelag/Oppdal+Kommune
+kssTLWKcA5._6nE	523920	52.235	21.009	Warsaw, Masovian, Poland	7	/Poland/Masovian/Warsaw
+BotOA6.bCZ5ZbZJMog	28297367	41.889	-87.618	Cityfront Place, Chicago, IL, US, United States	22	/United+States/IL/Chicago/Cityfront+Place
+I_7TQFacBJU1sIePvQ	55966609	36.542	31.994	?arsi, Alanya, Antalya, TR, Turkey	22	/Turkey/Antalya/Alanya/?arsi
+N.NhlnecBJX.24Jhlw	55926237	17.112	54.708	Jabal Samhan, Zufar, Oman	7	/Oman/Zufar/Jabal+Samhan
+SeqHzT.bB537wa_Vjw	26198320	29.522	86.206	Rikaze, Tibet, China	9	/China/Tibet/Rikaze
+NbM07WiRB50e_7M	861143	59.051	10.022	Larvik, Vestfold Fylke, Norway	7	/Norway/Vestfold+Fylke/Larvik
+ODoKJMKYBJ.WLAY	153533	11.973	-86.094	Masaya, Masaya, Nicaragua	7	/Nicaragua/Masaya/Masaya
+XOfy4.qaBpo4JqU	376067	-2.548	-78.871	Ingapirca, Canar, Ecuador	7	/Ecuador/Canar/Ingapirca
+TlG8rveeB5ohc_I	766451	36.378	-5.251	Manilva, Andalusia, Spain	7	/Spain/Andalusia/Manilva
+vYDqiMSeA51uuPo	721770	40.076	15.757	Rivello, Basilicata, Italy	7	/Italy/Basilicata/Rivello
+83tf32SbAJnsjwIe	2151342	40.309	116.627	Huairou, Beijing, China	7	/China/Beijing/Huairou
+Z57HzF.YA5lhQ8QHpQ	12578013	37.694	112.392	Shanxi, CN, China	8	/China/CN/Shanxi
+l0sXCpubApukWD6J	2372682	41.779	-74.135	Butterville, New Paltz, NY, US, United States	22	/United+States/NY/New+Paltz/Butterville
+uc3TnXqYA5p9qNDedg	20218855	48.877	2.337	Paris 9e Arrondissement, France	7	/France/Paris+9e+Arrondissement
+X7TnwIqeB5voWuo	767174	36.597	-4.636	Mijas, Andalusia, Spain	7	/Spain/Andalusia/Mijas
+zbDhHcibBZ.mujSE	2431969	43.682	-114.363	Ketchum, Idaho, United States	7	/United+States/Idaho/Ketchum
+0POpqHqYBJvI6izc	1572945	-12.973	28.64	Ndola, Copperbelt, Zambia	7	/Zambia/Copperbelt/Ndola
+fTAvo0CbA5VEX7fn	2290642	32.03	75.387	Gurdaspur, Punjab, India	7	/India/Punjab/Gurdaspur
+EM.hEKabAphOh1fQ	2346234	-20.173	57.507	Port Louis, MU, Mauritius	8	/Mauritius/MU/Port+Louis
+iPKRXvObApg3wAHd	2345157	11.421	42.336	Dikhil, DJ, Djibouti	8	/Djibouti/DJ/Dikhil
+RwvpPLqeCJVqp9g	799807	50.598	14.203	T?ebu??n, ?steck?, Czech Republic	7	/Czech+Republic/?steck?/T?ebu??n
+FSI0E_uYAps9ujjO	1374216	14.493	-4.194	Mopti, Mopti, Mali	7	/Mali/Mopti/Mopti
+SvXFb9acBJQRYk.nJw	55806238	37.816	-122.249	Grand Lake, Oakland, CA, US, United States	22	/United+States/CA/Oakland/Grand+Lake
+ISJwJYWYCJrO6aSK	1968164	32.505	35.507	Bet She'an, Hazafon, Israel	7	/Israel/Hazafon/Bet+She'an
+YzghavmcBJTMulD0Ag	55871865	62.475	9.553	St?lgardan, Sor-Trondelag, Norway	7	/Norway/Sor-Trondelag/St?lgardan
+f8A0W36cApnkeyw	535907	42.491	18.703	Perasto, Kotor, Montenegro	7	/Montenegro/Kotor/Perasto
+FWQEmwGcBJTgixm4OQ	55895386	20.508	-86.948	Centro, San Miguel de Cozumel, QR, MX, Mexico	22	/Mexico/QR/San+Miguel+de+Cozumel/Centro
+ZUrvpWSeBp4gfOg	772855	36.465	-6.196	San Fernando, Andalusia, Spain	7	/Spain/Andalusia/San+Fernando
+zwxqdyqcBJQDaPCANw	55843766	48.849	2.345	Sorbonne, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Sorbonne
+tM4UDOWcB5y740RInw	56007813	-6.928	106.236	Bayah Barat, Banten, Indonesia	7	/Indonesia/Banten/Bayah+Barat
+AmpDlB6bAZyg1_n4fg	20073984	52.522	-7.889	Cashel Urban, Ireland	7	/Ireland/Cashel+Urban
+Ts1E3WGaBpm8odQ	375798	-0.923	-80.204	Jun?n, Manabi, Ecuador	7	/Ecuador/Manabi/Jun?n
+6yF0GVOeA5XzfK4	729051	52.447	5.835	Elburg, Gelderland, Netherlands	7	/Netherlands/Gelderland/Elburg
+bAhI5caYAZo9MvCl	1062638	1.311	103.826	Tanglin Halt, Central Singapore, Singapore	7	/Singapore/Central+Singapore/Tanglin+Halt
+.VDNdqKbAZzEXTTmGg	20069885	-15.737	168.192	Penama, VU, Vanuatu	8	/Vanuatu/VU/Penama
+IQi8AmybCJ7IvlQXfQ	29216782	28.644	77.359	Indirapuram, Noida, UP, IN, India	22	/India/UP/Noida/Indirapuram
+4SiGyIyYA5m9fxKP8Q	12589233	35.927	-114.97	Clark County, Nevada, United States	9	/United+States/Nevada/Clark+County
+Kv5.n9KbA5uPBgWCbA	22724358	13.744	100.555	Sukhumwit, Watthana, Bangkok, TH, Thailand	22	/Thailand/Bangkok/Watthana/Sukhumwit
+eJZqF06YAJlzzuyS	1155114	2.305	111.829	Sibu, Sarawak, Malaysia	7	/Malaysia/Sarawak/Sibu
+Y99AtsubAphowSyx	2347801	-12.645	24.774	North-Western, ZM, Zambia	8	/Zambia/ZM/North-Western
+vkjoKgSbCZne..2bfQ	28527946	35.613	139.782	Aomi 2 Chome, Tokyo, Tokyo Prefecture, JP, Japan	22	/Japan/Tokyo+Prefecture/Tokyo/Aomi+2+Chome
+14ZjLcubA5UHAnp3	2294817	27.055	88.48	Kalimpong, West Bengal, India	7	/India/West+Bengal/Kalimpong
+.le5dmWYAps5L8AW	1377413	-20.183	57.466	Pailles, Port Louis, Mauritius	7	/Mauritius/Port+Louis/Pailles
+tFwyTFafB5U9tq0	669994	48.536	12.151	Landshut, Bavaria, Germany	7	/Germany/Bavaria/Landshut
+qWRK736dB50q_LM	461411	-24.518	-50.417	Tibaji, Parana, Brazil	7	/Brazil/Parana/Tibaji
+LoLX392eA58x7N8	723254	43.568	12.145	Sansepolcro, Tuscany, Italy	7	/Italy/Tuscany/Sansepolcro
+6DunMa2cBJTq045U0g	55843761	48.852	2.353	Les Iles, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Les+Iles
+xLJEQu.YAJ1_QBm.	1117681	35.467	133.1	Matsue-shi, Shimane Prefecture, Japan	7	/Japan/Shimane+Prefecture/Matsue-shi
+uFvWyL2bBZgP9Km5	2445459	36.816	-111.637	Marble Canyon, Arizona, United States	7	/United+States/Arizona/Marble+Canyon
+6D.k7kebBZlBwO3z	2456104	59.162	-135.38	Mud Bay, Alaska, United States	7	/United+States/Alaska/Mud+Bay
+dhZ3lLafAJWrXxY	619617	44.801	1.62	Rocamadour, Midi-Pyrenees, France	7	/France/Midi-Pyrenees/Rocamadour
+cMhgAAmbA5Wrrhk0	2295055	28.203	76.628	Rewari, Haryana, India	7	/India/Haryana/Rewari
+qOFIBB.bA5qydFri	2264962	51.189	71.432	Astana, Astana, Kazakhstan	7	/Kazakhstan/Astana/Astana
+nTPXSXmfAZ5Pjuc	602423	43.282	3.496	Le Cap d'Agde, Languedoc-Roussillon, France	7	/France/Languedoc-Roussillon/Le+Cap+d'Agde
+cCyB4B2eBZrhkx0	746194	37.139	-8.532	Portim?o, Faro, Portugal	7	/Portugal/Faro/Portim?o
+eZoeWA2bB5SnifseBw	26805864	-13.627	-75.109	Huaytara, Huancavelica, Peru	9	/Peru/Huancavelica/Huaytara
+LtY1A.SYA5rGeFUf4w	12663508	45.843	6.398	Manigod, France	7	/France/Manigod
+twZp3miaBpq.660	376307	-0.799	-75.51	Tiputini, Orellano, Ecuador	7	/Ecuador/Orellano/Tiputini
+1SYEzTieApgbQ0c	734693	51.527	3.439	Westkapelle, Zeeland, Netherlands	7	/Netherlands/Zeeland/Westkapelle
+1ylZsIWRBJ1fVcY	851384	56.965	24.096	Andrejsala, Riga, Riga, LV, Latvia	22	/Latvia/Riga/Riga/Andrejsala
+85N7maGcBJV1IDXeog	55927046	24.271	55.899	Buraymi, OM, Oman	8	/Oman/OM/Buraymi
+N.rCVlWbAphes80Y	2346230	-20.409	57.634	Grand Port, MU, Mauritius	8	/Mauritius/MU/Grand+Port
+OB806syQBJy_GMk	950699	39.697	21.628	Kalabaka, Thessalia, Greece	7	/Greece/Thessalia/Kalabaka
+Jqc7cm.bApg2VNj8	2344684	-23.195	-65.689	Jujuy, AR, Argentina	8	/Argentina/AR/Jujuy
+kiQ4.FmbCZ6GkSCLjw	28288708	37.808	-122.415	Fisherman's Wharf, San Francisco, CA, US, United States	22	/United+States/CA/San+Francisco/Fisherman's+Wharf
+q29S.TubCJ2XW2bzJw	29132897	9.594	77.171	Periyar, Kerala, India	7	/India/Kerala/Periyar
+BbQHc42YBZiUJXg	144625	20.498	-86.95	San Miguel de Cozumel, Quintana Roo, Mexico	7	/Mexico/Quintana+Roo/San+Miguel+de+Cozumel
+6JBy5w2dBJmOgR8	455873	-26.305	-48.845	Joinville, Santa Catarina, Brazil	7	/Brazil/Santa+Catarina/Joinville
+ZF1gZ22bAJrcC9_o	2161882	23.552	113.575	Jiekou, Guangdong, China	7	/China/Guangdong/Jiekou
+BkuXOzuaApR3Rg	33893	51.069	-1.8	Salisbury, England, United Kingdom	7	/United+Kingdom/England/Salisbury
+PJ4bA1iYA5lf0HHyEg	12586813	27.271	88.697	East Sikkim, Sikkim, India	9	/India/Sikkim/East+Sikkim
+iVKLvwCbApiL_oqG	2345033	3.884	14.324	Est, CM, Cameroon	8	/Cameroon/CM/Est
+oDyRdvacBJQQ6ViYDw	55843752	48.86	2.338	Saint-Germain-L'auxerrois, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Saint-Germain-L'auxerrois
+MbMBjUmbCZS5Ii06Kw	28808069	34.938	127.699	???, South Korea	7	/South+Korea/???
+jF4l0E.aApz1hSM	330760	-34.616	-58.349	Isla Demarchi, Buenos Aires, Autonomous City of Buenos Aires, AR, Argentina	22	/Argentina/Autonomous+City+of+Buenos+Aires/Buenos+Aires/Isla+Demarchi
+tE1XpXSYBZkSkw	14572	54.538	-2.761	Burn Banks, England, United Kingdom	7	/United+Kingdom/England/Burn+Banks
+O.xQvhOcBZWaZdY	549968	47.615	15.753	Spital, Styria, Austria	7	/Austria/Styria/Spital
+pxHprceaCZnz0g	38544	60.5	-1.159	Ulsta, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Ulsta
+XKlPG9abBZkOhXsoRw	24544633	42.55	-8.872	A Illa de Arousa, Spain	7	/Spain/A+Illa+de+Arousa
+7fUtU2mcB5z7.jPF4w	56057586	6.558	3.365	Shomolu, Lagos, Nigeria	9	/Nigeria/Lagos/Shomolu
+8oEmgG6eApu5tic	737409	41.15	-8.598	Bonfim, Porto, Porto, PT, Portugal	22	/Portugal/Porto/Porto/Bonfim
+eA7L0t6aApySyhg	330250	-40.74	-71.672	Correntoso, Neuquen, Argentina	7	/Argentina/Neuquen/Correntoso
+7SwRpluYA5nH4H9T7g	12591821	40.152	18.141	Lecce, Puglia, Italy	9	/Italy/Puglia/Lecce
+x8gVII.aApjbeA	33425	50.406	-4.833	Roche, England, United Kingdom	7	/United+Kingdom/England/Roche
+Ep2MyR2eAJnPp74	715753	43.693	12.819	Fossombrone, Marche, Italy	7	/Italy/Marche/Fossombrone
+CmSodQWeAJwF0x4	710151	43.541	12.053	Anghiari, Tuscany, Italy	7	/Italy/Tuscany/Anghiari
+6wOSLC6eBplRmSg	775321	27.996	-15.614	Tejada, Canary Islands, Spain	7	/Spain/Canary+Islands/Tejada
+NAEXy76bA5odahF_	2268954	27.75	85.333	Tokha, Central, Nepal	7	/Nepal/Central/Tokha
+gleaMhmbA5XO65Zm	2290788	30.623	76.384	Sirhind Fatehgarh Sahib, Punjab, India	7	/India/Punjab/Sirhind+Fatehgarh+Sahib
+u.K4vFmbApgwbXV1	2345238	23.664	32.757	Aswan, EG, Egypt	8	/Egypt/EG/Aswan
+a5Ka892YA5p9890NwA	12684769	46.392	6.203	Signy-Avenex, Switzerland	7	/Switzerland/Signy-Avenex
+AMt56rObBZnm0lNxRQ	24544216	35.188	26.224	Itanos, Greece	7	/Greece/Itanos
+MECKX9abBZ1kbw	24129	53.291	-1.419	Hundall, England, United Kingdom	7	/United+Kingdom/England/Hundall
+Ct5qDUOYBJyJCRF1xg	15002436	47.652	24.666	Valea Hotarului, Maramures, Romania	7	/Romania/Maramures/Valea+Hotarului
+7owoqtqbApgyVFEzDQ	23417972	40.074	-75.459	Chesterbrook, Pennsylvania, United States	7	/United+States/Pennsylvania/Chesterbrook
+IZRJD2uYApuXWLp6	1377323	-20.012	57.583	Grande Baie, Riviere du Rempart, Mauritius	7	/Mauritius/Riviere+du+Rempart/Grande+Baie
+krTkV3eYBZTDpuJu	1489234	-13.373	48.492	Ambato, Antsiranana, Madagascar	7	/Madagascar/Antsiranana/Ambato
+s1PpZcScB583xQ	56384	13.15	-59.423	Coles Pasture, Saint Philip, Barbados	7	/Barbados/Saint+Philip/Coles+Pasture
+In8Q9lWcBJS4I1yNLQ	55865065	41.019	29.023	Valide-i Atik, Umraniye, Istanbul, TR, Turkey	22	/Turkey/Istanbul/Umraniye/Valide-i+Atik
+NDjtbyyaAp5bBmg	332274	-34.599	-58.375	Torre de Los Ingleses, Buenos Aires, Autonomous City of Buenos Aires, AR, Argentina	22	/Argentina/Autonomous+City+of+Buenos+Aires/Buenos+Aires/Torre+de+Los+Ingleses
+EjoGD4.fAprxnJI	636384	48.934	12.039	Bad Abbach, Bavaria, Germany	7	/Germany/Bavaria/Bad+Abbach
+ylnzOGyeAJnyejun	7153322	48.715	6.264	Lorraine, FR, France	8	/France/FR/Lorraine
+W76nbKqfB53KKNo	661323	47.559	10.741	Hohenschwangau, Bavaria, Germany	7	/Germany/Bavaria/Hohenschwangau
+6BYnlY.aCZ0cyg	38128	49.949	-6.333	Tresco, England, United Kingdom	7	/United+Kingdom/England/Tresco
+3LSG4U2YA5lTJ_c	125525	19.393	-99.089	Ixtacalco, Distrito Federal, Mexico	7	/Mexico/Distrito+Federal/Ixtacalco
+Gjfzsa6YA5p4y1.T8w	12695965	50.857	-1.629	New Forest District, United Kingdom	7	/United+Kingdom/New+Forest+District
+Z7ZhmLGbB5s0LjN._A	26797230	11.07	-73.908	Santa Marta, Magdalena, Colombia	9	/Colombia/Magdalena/Santa+Marta
+XLjzvqybCZ_uYNCDaQ	28341501	14.706	100.784	Phra Phutthabat, Sara Buri, Thailand	9	/Thailand/Sara+Buri/Phra+Phutthabat
+USzm9pGYA5lckIjqZQ	12597200	46.675	-1.346	Vendee, Pays de la Loire, France	9	/France/Pays+de+la+Loire/Vendee
+UGpQyg2bBZX6M_Vk	2495426	41.388	-71.52	Snug Harbor, Wakefield, RI, US, United States	22	/United+States/RI/Wakefield/Snug+Harbor
+wk5DMo.dBpzu3lE	470192	39.933	20.25	Gjorgucat, Gjirokaster, Albania	7	/Albania/Gjirokaster/Gjorgucat
+yGBEaGGbApUd1ai8	2397083	41.39	-70.52	Edgartown, Massachusetts, United States	7	/United+States/Massachusetts/Edgartown
+m06gLAKbApw1HQ	23078	51.371	1.125	Herne Bay, England, United Kingdom	7	/United+Kingdom/England/Herne+Bay
+FiJm1.CYBJ5N5w	15205	55.736	-3.835	Carluke, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Carluke
+TbZQbI.bBZlVf6MlqQ	24543610	35.16	26.04	Sitia, Greece	7	/Greece/Sitia
+UVjvRpmbApgKonGh	2343713	38.293	26.375	Latzata, ?zmir, Turkey	7	/Turkey/?zmir/Latzata
+J_xOzSqRBpRvyoQ	878261	47.7	24.116	Poienile Glodului, Maramures, Romania	7	/Romania/Maramures/Poienile+Glodului
+MWb2jQ6bBZ8PJqar	2434241	32.837	-117.255	La Jolla, La Jolla, CA, US, United States	22	/United+States/CA/La+Jolla/La+Jolla
+TkkPWLWYAJruSsg	116663	20.516	-87.65	Cob?, Quintana Roo, Mexico	7	/Mexico/Quintana+Roo/Cob?
+zVKyRzieBp7t95s	772838	41.688	2.164	Sant Feliu de Codines, Catalonia, Spain	7	/Spain/Catalonia/Sant+Feliu+de+Codines
+gAblQZmcBZgTqBk	544754	48.231	13.92	Schallerbach, Upper Austria, Austria	7	/Austria/Upper+Austria/Schallerbach
+x_8wT9CYA5rOLDAzuw	12689219	36.804	-4.257	El Borge, Spain	7	/Spain/El+Borge
+qqbmUESbBJwpsrlJ	2501460	38.905	-77.431	Sully Plantation, Virginia, United States	7	/United+States/Virginia/Sully+Plantation
+l1zMysebB5TaoUxZyw	20152009	48.197	11.62	Schwabing-Freimann, Germany	7	/Germany/Schwabing-Freimann
+_wKX.OybApmqN1Uoxw	23509336	37.002	-110.173	Monument Valley, Utah, United States	7	/United+States/Utah/Monument+Valley
+v8lnv5uaAZR9qA	30881	57.167	-2.102	Old Aberdeen, Aberdeen, Scotland, GB, United Kingdom	22	/United+Kingdom/Scotland/Aberdeen/Old+Aberdeen
+g3boTLOcB5x6UieHkg	56025207	-1.309	34.231	Tarime, Mara, Tanzania	9	/Tanzania/Mara/Tarime
+uF6iVfmbAZw.0SpYqw	20069908	10.044	32.502	A`ali an Nil, SD, Sudan	8	/Sudan/SD/A`ali+an+Nil
+.1PEl5mbAZzxgel3KA	20070313	5.399	73.63	Lhaviyani, MV, Maldives	8	/Maldives/MV/Lhaviyani
+8Tny7zObA5rDJ6gR	2266871	26.151	56.322	Al Habalayn, Musandam, Oman	7	/Oman/Musandam/Al+Habalayn
+QEGDwkacBJUiwPJR3A	55926805	16.727	53.275	Hakam, Zufar, Oman	7	/Oman/Zufar/Hakam
+AaWTpjacB5w55fo	560743	53.343	-6.249	Dublin, DUB, Ireland	7	/Ireland/DUB/Dublin
+LsF.SR.QBZyHNXg	940066	49.246	30.111	Zhashkov, Cherkasy Oblast, Ukraine	7	/Ukraine/Cherkasy+Oblast/Zhashkov
+FkwsUgWbBZQYlyURCg	24865671	34.969	99.819	Asia	29	/Asia
+NRUKt.GbB50VULW8Hw	26198321	32.754	82.232	Nagari, Tibet, China	9	/China/Tibet/Nagari
+TKae6HSbBZug76OE	2474587	41.362	-71.481	Point Judith, Rhode Island, United States	7	/United+States/Rhode+Island/Point+Judith
+CUtCFm6bAphgclJL	2347256	36.76	10.215	Tunis, TN, Tunisia	8	/Tunisia/TN/Tunis
+P72cA1GbAZ4mFaGCvw	20229278	55.68	12.578	K?bmagergade, Copenhagen, Hovedstaden, DK, Denmark	22	/Denmark/Hovedstaden/Copenhagen/K?bmagergade
+PJx5gwmbCZ7.NOIuRg	28289297	37.281	127.013	Suwon-Si, Kyeongki-Do, South Korea	9	/South+Korea/Kyeongki-Do/Suwon-Si
+L6dBcPScAZs4MBk	507351	54.259	16.056	Mielno, West Pomeranian, Poland	7	/Poland/West+Pomeranian/Mielno
+5I7xx9ScBJU8hx43jg	55951768	27.184	77.991	Kothi Mina Bazar Area, Agra, UP, IN, India	22	/India/UP/Agra/Kothi+Mina+Bazar+Area
+dH1wG9eeBJ0Q4vk	751637	39.93	4.14	Alaior, Balearic Islands, Spain	7	/Spain/Balearic+Islands/Alaior
+zCI12FKYA5kD82yfCA	12591813	45.466	9.128	Milan, Lombardy, Italy	9	/Italy/Lombardy/Milan
+9MYHWASbA5tHcYYa	2279161	18.934	72.825	Kalba Devi, Mumbai, MAH, IN, India	22	/India/MAH/Mumbai/Kalba+Devi
+Nb44lYebA5VVXquz	2292339	24.913	79.595	Chhatarpur, Madhya Pradesh, India	7	/India/Madhya+Pradesh/Chhatarpur
+9c0YMS2YApvzJJkB	1377504	-20.049	57.533	Triolet, Pamplemousses, Mauritius	7	/Mauritius/Pamplemousses/Triolet
+nTqH4S.bBZ847xQL	2432105	43.893	-103.424	Keystone, South Dakota, United States	7	/United+States/South+Dakota/Keystone
+_IB75_uRAJ68LwM	812036	48.105	20.79	Miskolcz, Miskolc, Hungary	7	/Hungary/Miskolc/Miskolcz
+jFP112mYA5lIt59o8Q	12596350	47.499	19.051	Budapest V., Budapest, Hungary	9	/Hungary/Budapest/Budapest+V.
+FJcHu3KeB5gGvJc	764472	43.412	-3.408	Laredo, Cantabria, Spain	7	/Spain/Cantabria/Laredo
+otw4c9qbAZx6htnzqQ	20094374	53.476	-2.256	Castlefield, Manchester, England, GB, United Kingdom	22	/United+Kingdom/England/Manchester/Castlefield
+JYA6anycB5xUvMzJJA	56016001	1.55	110.357	Taman Central, Sarawak, Malaysia	7	/Malaysia/Sarawak/Taman+Central
+CWIBzumYAJXJjYlE	1199786	11.081	123.94	San Remigio, Central Visayas, Philippines	7	/Philippines/Central+Visayas/San+Remigio
+yf3KFk2YA5ry69Z1Ig	12677968	44.471	11.264	Casalecchio di Reno, Italy	7	/Italy/Casalecchio+di+Reno
+oNLy53qeAJlVawzy	7153341	45.262	7.92	Piedmont, IT, Italy	8	/Italy/IT/Piedmont
+JTwBaIadB5SriA4	468370	10.311	-65.888	Tacarigua de la laguna, Miranda, Venezuela	7	/Venezuela/Miranda/Tacarigua+de+la+laguna
+iBqeFFaeBph9SC4	774508	37.387	-6.001	Seville, Andalusia, Spain	7	/Spain/Andalusia/Seville
+oTOHw1ecB5zQRwA3ug	56005977	-7.605	110.218	Wanurejo, Central Java, Indonesia	7	/Indonesia/Central+Java/Wanurejo
+v85vGPqYBp0aTw	17170	56.287	-3.004	Craigrothie, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Craigrothie
+haKGInCbA5s9CSXEFQ	22724705	31.788	35.21	Makhane Yehuda, Jerusalem, Yerushalayim, IL, Israel	22	/Israel/Yerushalayim/Jerusalem/Makhane+Yehuda
+vat1JWKaB5jpPg	36463	51.524	-1.15	Streatley, England, United Kingdom	7	/United+Kingdom/England/Streatley
+v8L2OXKcB5wAf9EjKA	56015180	3.154	101.707	Golden Triangle, Kuala Lumpur, Kuala Lumpur, MY, Malaysia	22	/Malaysia/Kuala+Lumpur/Kuala+Lumpur/Golden+Triangle
+v5MevRqbBZyxJdC2	2409677	33.368	-79.28	Georgetown, South Carolina, United States	7	/United+States/South+Carolina/Georgetown
+cQEVd8OeApuN9lc	737511	38.752	-9.099	Braco de Prata, Lisbon, Lisbon, PT, Portugal	22	/Portugal/Lisbon/Lisbon/Braco+de+Prata
+3h7vg1qYA5.MdR8s	1236690	20.861	106.679	H?i Ph?ng, Hai Phong, Vietnam	7	/Vietnam/Hai+Phong/H?i+Ph?ng
+wqZRt1.cB5w6bD9sag	56035029	3.104	101.69	Kuala Lumpur, Kuala Lumpur, Kuala Lumpur, MY, Malaysia	22	/Malaysia/Kuala+Lumpur/Kuala+Lumpur/Kuala+Lumpur
+wPNEP3ycB53MLqE	561338	53.341	-6.307	Kilmainham, Dublin, DUB, IE, Ireland	22	/Ireland/DUB/Dublin/Kilmainham
+Xdq7damdB5qD.iI	466601	-23.541	-65.382	Tilcara, Jujuy, Argentina	7	/Argentina/Jujuy/Tilcara
+JRhhluuQBpymS18	970253	50.845	4.342	Grand' Place, Bruxelles, Capital Region of Brussels, BE, Belgium	22	/Belgium/Capital+Region+of+Brussels/Bruxelles/Grand'+Place
+6QbhwXObA5vq4TWiOg	22724587	25.275	55.318	Burj Nahar, Dubai, Dubai, AE, United Arab Emirates	22	/United+Arab+Emirates/Dubai/Dubai/Burj+Nahar
+eIvK3TWQCJlH	9953	48.883	-123.317	Sturdies Bay, British Columbia, Canada	7	/Canada/British+Columbia/Sturdies+Bay
+CJUq7GmaCZyCKnQ	380321	11.176	-60.795	Plymouth, Tobago, Trinidad and Tobago	7	/Trinidad+and+Tobago/Tobago/Plymouth
+ioo6mZmaBJlfUQ	35586	55.571	-2.645	St. Boswells, Scotland, United Kingdom	7	/United+Kingdom/Scotland/St.+Boswells
+wdB7cC2dCJsYg.I	497476	54.429	18.587	Jelitkowo, Sopot, Pomeranian, PL, Poland	22	/Poland/Pomeranian/Sopot/Jelitkowo
+N1hnnpWbApiWBplq	2344714	47.253	11.398	Tyrol, AT, Austria	8	/Austria/AT/Tyrol
+ln1o27.RBplCJ5k	875825	47.599	25.866	M?n?stirea Humorului, Suceava, Romania	7	/Romania/Suceava/M?n?stirea+Humorului
+UfZehqWbApjj8YeA	2347109	23.778	53.798	Abu Dhabi, AE, United Arab Emirates	8	/United+Arab+Emirates/AE/Abu+Dhabi
+BC_6VGqaBpiiX3w	374406	0.282	-78.283	Quiroga, Imbabura, Ecuador	7	/Ecuador/Imbabura/Quiroga
+.rCOzoieCZ.x_Xk	783060	46.597	7.907	Lauterbrunnen, Canton of Berne, Switzerland	7	/Switzerland/Canton+of+Berne/Lauterbrunnen
+nfvYpy.bBZ5qxcwj	2424465	37.502	-120.238	Hornitos, California, United States	7	/United+States/California/Hornitos
+SP_QFa2YA5qVNPhYSw	12678992	45.136	10.026	Cremona, Italy	7	/Italy/Cremona
+1kkiif.eBJobyOc	756801	42.255	3.076	Castell? d'Emp?ries, Catalonia, Spain	7	/Spain/Catalonia/Castell?+d'Emp?ries
+jpSJI9ueApkvZTI	735563	37.085	-8.257	Albufeira, Faro, Portugal	7	/Portugal/Faro/Albufeira
+zjdeYgScB5wVmAtoPg	56000135	-1.106	122.612	Banggai, Central Sulawesi, Indonesia	9	/Indonesia/Central+Sulawesi/Banggai
+HaiKgSacBJUaddfTOg	55925137	18.532	73.787	Shri Bhawani Nagar, Pune, MAH, IN, India	22	/India/MAH/Pune/Shri+Bhawani+Nagar
+.G2QKLObAZ19ll5ISg	20150617	45.436	12.345	Castello, Venice, VN, IT, Italy	22	/Italy/VN/Venice/Castello
+K1rps4mbA5veiJSQBQ	22723513	-12.101	-77.054	Orrantia del Mar, Lima, Lima
+ Metropolitan Area, PE, Peru	22	/Peru/Lima+Metropolitan+Area/Lima/Orrantia+del+Mar
+9Sifi86bA5uk2jehfw	22721244	-33.587	150.811	Cornwallis, New South Wales, Australia	7	/Australia/New+South+Wales/Cornwallis
+W7PEvbObBZ7iPch0	2424008	45.708	-121.51	Hood River, Oregon, United States	7	/United+States/Oregon/Hood+River
+Eoo.b9ucB5yxnsLFNg	56013560	2.919	103.167	Rompin, Pahang, Malaysia	9	/Malaysia/Pahang/Rompin
+BzF.XnuYCJiisx9p	1940375	25.467	56.36	Sharm, Fujairah, United Arab Emirates	7	/United+Arab+Emirates/Fujairah/Sharm
+6ZLxUo6cBJUrmRuNeg	55951770	27.186	77.998	Gokalpura, Agra, UP, IN, India	22	/India/UP/Agra/Gokalpura
+fT.oi9qcBJQhwoXTiQ	55863416	48.942	2.245	Argenteuil, Ile-de-France, France	7	/France/Ile-de-France/Argenteuil
+wEI2KFGQBJn2zDA	955481	36.092	28.084	Lindos, Notio Aigaio, Greece	7	/Greece/Notio+Aigaio/Lindos
+MJBET_CbCJ94W6_hWQ	29343144	46.454	11.974	Laste, Veneto, Italy	7	/Italy/Veneto/Laste
+XCWopFCfBZzQ3EQ	640090	53.988	11.201	Boltenhagen, Mecklenburg-Vorpommern, Germany	7	/Germany/Mecklenburg-Vorpommern/Boltenhagen
+TztHcO.bApkHIUphRQ	23512110	29.988	-90.109	Navarre, New Orleans, LA, US, United States	22	/United+States/LA/New+Orleans/Navarre
+Sah9B42YA5UroB10xQ	12906620	39.914	116.369	Ganshiqiao, Beijing, Beijing, CN, China	22	/China/Beijing/Beijing/Ganshiqiao
+FpJ8GT.cAp2AT4g	531376	46.276	13.888	Rib?ev Laz, Radovljica, Slovenia	7	/Slovenia/Radovljica/Rib?ev+Laz
+8zR6waaYA5zH3vOz	1205620	7.828	98.301	Ban Karon, Phuket, Thailand	7	/Thailand/Phuket/Ban+Karon
+8pSM_SqYAZwKDB02	1003349	16.783	96.166	Pazundaung, Yangon, Yangon, MM, Myanmar	22	/Myanmar/Yangon/Yangon/Pazundaung
+ZvIxXcaYBZ2h3gI	141398	19.461	-99.182	San ?lvaro, Azcapotzalco, DF, MX, Mexico	22	/Mexico/DF/Azcapotzalco/San+?lvaro
+T8pAqQ.YA5nXBFFFZg	12589709	42.804	-121.584	Klamath County, Oregon, United States	9	/United+States/Oregon/Klamath+County
+b2ehE2eeCZgLkGo	784678	46.605	7.921	Wengen, Canton of Berne, Switzerland	7	/Switzerland/Canton+of+Berne/Wengen
+e9TwjHCbB58CNvAyGg	26332343	43.675	-79.3	The Beach, Toronto, ON, CA, Canada	22	/Canada/ON/Toronto/The+Beach
+ytG9hJWbApjA.Kbe	2349628	-37.641	176.186	Mount Maunganui, Tauranga, Bay of Plenty, NZ, New Zealand	22	/New+Zealand/Bay+of+Plenty/Tauranga/Mount+Maunganui
+mpQmyYCfB5QAObY	668356	48.811	11.5	K?sching, Bavaria, Germany	7	/Germany/Bavaria/K?sching
+ZbAKOwqYA5qPEhx2DA	12686926	40.518	116.177	Yanqing, China	7	/China/Yanqing
+Liq4c1ecBJ05SLc	551760	48.21	16.343	Josefstadt, Vienna, Vienna, AT, Austria	22	/Austria/Vienna/Vienna/Josefstadt
+JGfP2J2dAZT7b9U	408892	-12.117	-77.035	Miraflores, Lima Metropolitan Area, Peru	7	/Peru/Lima+Metropolitan+Area/Miraflores
+zo6PsvCbA5oHeTf8	2269175	27.687	83.468	Butw?l, West, Nepal	7	/Nepal/West/Butw?l
+8RH.4t6bAZyLTwp1Wg	20095789	47.257	11.366	Hottinger Au, Innsbruck, TIR, AT, Austria	22	/Austria/TIR/Innsbruck/Hottinger+Au
+U3awOLSdAppozsQ	436099	-12.949	-38.366	Itapo?, Bahia, Brazil	7	/Brazil/Bahia/Itapo?
+vMaWn4KeBJjrqK4	754209	42.603	0.521	Venasque, Aragon, Spain	7	/Spain/Aragon/Venasque
+G.sJ.AmbB5SVxk.P7A	26805858	-9.587	-77.637	Huaraz, Ancash, Peru	9	/Peru/Ancash/Huaraz
+g0AKDVmcBJRV97p01g	55843765	48.848	2.353	Saint-Victor, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Saint-Victor
+XD1O8HCbApsl4UT_	2372914	42.991	-70.764	Cable Road, Rye, NH, US, United States	22	/United+States/NH/Rye/Cable+Road
+WtwWTHqcBJ0M2Oo	551398	47.556	10.687	Wei?haus, Tyrol, Austria	7	/Austria/Tyrol/Wei?haus
+gS0SALObApg.wg.z	2347173	12.202	102.657	Trat, TH, Thailand	8	/Thailand/TH/Trat
+.yLQb.WYA5mU0M_wiQ	12589304	35.708	-106.935	Sandoval County, New Mexico, United States	9	/United+States/New+Mexico/Sandoval+County
+UOkxqv6YCJ6N3pSJ	1922738	34.53	69.136	Kabul, Kabul, Afghanistan	7	/Afghanistan/Kabul/Kabul
+3WOIGvGbB5.oZYAWKg	26332805	46.813	-71.202	Place Royale, Quebec, QC, CA, Canada	22	/Canada/QC/Quebec/Place+Royale
+_0oY9dOYA5hoMw	12444	55.771	-2.007	Berwick-upon-Tweed, England, United Kingdom	7	/United+Kingdom/England/Berwick-upon-Tweed
+6roaSDKbBZ9B.fH2	2432214	20.782	-156.463	Kihei, Hawaii, United States	7	/United+States/Hawaii/Kihei
+tTxISoqYAJkmF.Yn	1154706	4.342	101.155	Kampar, Perak, Malaysia	7	/Malaysia/Perak/Kampar
+.6fq3fSbAZ4JFMleMw	20223086	43.144	-4.812	Fuente D?, Cantabria, Spain	7	/Spain/Cantabria/Fuente+D?
+FyegCIibCJxVV9lqqg	29081807	9.868	78.189	Silaiman, Tamil Nadu, India	7	/India/Tamil+Nadu/Silaiman
+2mR_SsebBJ5WvsyE	2521500	38.824	-98.474	Wilson, Kansas, United States	7	/United+States/Kansas/Wilson
+jzbL9.eeA5lKqN0	725194	38.018	12.513	Trapani, Sicily, Italy	7	/Italy/Sicily/Trapani
+Ne7swd2bBZiNCFTy	2449323	35.149	-90.048	Memphis, Tennessee, United States	7	/United+States/Tennessee/Memphis
+gGIzIliaBpknM4I	375732	-0.229	-78.524	Quito, Pichincha, Ecuador	7	/Ecuador/Pichincha/Quito
+0FPb_q.YA5WV4tVOFA	12906610	39.913	116.376	Fuyoujie, Beijing, Beijing, CN, China	22	/China/Beijing/Beijing/Fuyoujie
+j0mtETqbAJ8qtQ	21377	55.844	-3.048	Gorebridge, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Gorebridge
+PO6vYVKfAJXzXnw	619536	48.165	7.299	Riquewihr, Alsace, France	7	/France/Alsace/Riquewihr
+26jXYpSbCZtO9.Cmow	28751218	40.738	-73.927	Dutch Kills, New York, NY, US, United States	22	/United+States/NY/New+York/Dutch+Kills
+ukkcD.ycAJhaAzQ	514083	52.253	21.039	Praga, Warsaw, Masovian, PL, Poland	22	/Poland/Masovian/Warsaw/Praga
+6Ip7FQGbAphyuBLu	2347079	34.374	38.167	H'ims, SY, Syria	8	/Syria/SY/H'ims
+ExJ8sLubBZ2Tj8ZB	2417773	35.508	-121.023	Harmony, California, United States	7	/United+States/California/Harmony
+V7q22nabB5TLDGg4.g	26805947	-17.398	-69.929	Tarata, Tacna, Peru	9	/Peru/Tacna/Tarata
+_T58CgubBZvfw8Q_bg	24703044	1.344	103.841	Central Singapore, SG, Singapore	8	/Singapore/SG/Central+Singapore
+BV6N4imcBJSSq72jbA	55843800	48.863	2.37	R?publique Saint-Ambroise, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/R?publique+Saint-Ambroise
+eJeJbSSeA5tSxBA	727754	52.765	5.895	Blankenham, Overyssel, Netherlands	7	/Netherlands/Overyssel/Blankenham
+RtgZq8ObB5SlqfdttQ	26809622	0.06	-78.283	Pedro Moncayo, Pichincha, Ecuador	9	/Ecuador/Pichincha/Pedro+Moncayo
+c7XnwhKeBJn8qI0	755947	42.263	-8.783	Cangas, Galicia, Spain	7	/Spain/Galicia/Cangas
+kPNQfWGdAJR6lH8	418603	-13.294	-72.135	Urubamba, Cusco, Peru	7	/Peru/Cusco/Urubamba
+pozcUWmbBZorSYU6	2467321	32.803	-117.237	Pacific Beach, San Diego, CA, US, United States	22	/United+States/CA/San+Diego/Pacific+Beach
+umsQfqieA5S2pcU	728410	52.366	4.883	Jordaan, Amsterdam, NH, NL, Netherlands	22	/Netherlands/NH/Amsterdam/Jordaan
+d2TgKDefBJts1w	65748	19.938	-76.8	Ocujal, Santiago de Cuba, Cuba	7	/Cuba/Santiago+de+Cuba/Ocujal
+Wcnfi7OYApT8Xw	13881	52.533	-2.42	Bridgnorth, England, United Kingdom	7	/United+Kingdom/England/Bridgnorth
+DOld0SSRBZh8zOg	844738	59.425	24.628	Pikaliiva, Tallinn, Harju County, EE, Estonia	22	/Estonia/Harju+County/Tallinn/Pikaliiva
+7zNorFecBJVKkGqXrQ	55921161	-22.951	14.513	Walvis Bay Urban, Erongo, Namibia	9	/Namibia/Erongo/Walvis+Bay+Urban
+ypOUqhKYBJR1PHxx	1583672	-25.7	28.133	Lady Selborne, Pretoria, Gauteng, ZA, South Africa	22	/South+Africa/Gauteng/Pretoria/Lady+Selborne
+2vYQeWObCJynRthj8A	29081806	9.881	78.18	Puliyankulam, Tamil Nadu, India	7	/India/Tamil+Nadu/Puliyankulam
+9E3jBY.eAJmNMFZJ	7153343	40.061	8.979	Sardinia, IT, Italy	8	/Italy/IT/Sardinia
+UPF3FEWfAJuGaes	617017	48.831	-3.486	Ploumanach, Brittany, France	7	/France/Brittany/Ploumanach
+zQ3aANqfApUulRY	639664	49.057	13.035	B?brach, Bavaria, Germany	7	/Germany/Bavaria/B?brach
+ybNz8mebAZy8NPzcPQ	20089449	51.563	-0.179	North End, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/North+End
+FHOSwx.RApwZkg	83070	14.85	-91.533	Garibaldi, Quetzaltenango, Quetzaltenango, GT, Guatemala	22	/Guatemala/Quetzaltenango/Quetzaltenango/Garibaldi
+2HxBaGqbApjCCHV4	2346252	20.093	-15.296	Inchiri, MR, Mauritania	8	/Mauritania/MR/Inchiri
+.iMOE8WbApkkIWpR	2359350	39.756	-74.109	Barnegat Light, New Jersey, United States	7	/United+States/New+Jersey/Barnegat+Light
+jV6PqnaYBJ44ES90	1526415	29.494	34.891	Taba, Janub Sina', Egypt	7	/Egypt/Janub+Sina'/Taba
+pIsPJC.YA5ofTAsvZQ	12687768	39.779	2.71	S?ller, Spain	7	/Spain/S?ller
+9d2NL2SeAJobmLY	716428	42.766	11.117	Grosseto, Tuscany, Italy	7	/Italy/Tuscany/Grosseto
+p4dd0OybA5pc.E1wAw	22661477	43.144	-1.518	Baztan, Navarre, Spain	7	/Spain/Navarre/Baztan
+zJqE3PWcBJQUVnhuag	55843845	48.879	2.287	Ternes-Maillot, Paris, Ile-de-France, FR, France	22	/France/Ile-de-France/Paris/Ternes-Maillot
+fKPzbWebAZ4iCSGXBQ	20220094	41.379	2.167	El Raval, Barcelona, Catalonia, ES, Spain	22	/Spain/Catalonia/Barcelona/El+Raval
+5o3kJlCYA5l0chdyqA	863707	70.396	24.255	Kvalsund Kommune, Finnmark Fylke, Norway	9	/Norway/Finnmark+Fylke/Kvalsund+Kommune
+miF.S.mRAJpj.0g	816485	46.914	17.887	Tihany, Veszpr?m, Hungary	7	/Hungary/Veszpr?m/Tihany
+FfinupWbB5S35pDfqg	26809876	-2.351	-78.913	Compud, Ecuador	7	/Ecuador/Compud
+4CD8.IyaAp0t0TI	331106	-34.666	-58.45	Lacarra, Buenos Aires, Autonomous City of Buenos Aires, AR, Argentina	22	/Argentina/Autonomous+City+of+Buenos+Aires/Buenos+Aires/Lacarra
+0yKElaebAJRWcsow	2189781	6.033	80.218	Galle, Southern, Sri Lanka	7	/Sri+Lanka/Southern/Galle
+GFw7E2CbApiIt3mZ	2343843	40.184	29.058	Bursa, Bursa, Turkey	7	/Turkey/Bursa/Bursa
+K6pNcsabCZlJqtd9mw	28528662	35.659	139.704	Shibuya 2 Chome, Tokyo, Tokyo Prefecture, JP, Japan	22	/Japan/Tokyo+Prefecture/Tokyo/Shibuya+2+Chome
+8GxfU3CfApm8i4Y	635527	51.38	9.013	Arolsen, Hesse, Germany	7	/Germany/Hesse/Arolsen
+sxVPdWSYA5ksztSjxA	12597147	47.659	1.414	Loir-et-Cher, Centre, France	9	/France/Centre/Loir-et-Cher
+K0V2VP6QB5WiBh8	969190	50.351	5.454	Durbui, Luxemburg, Belgium	7	/Belgium/Luxemburg/Durbui
+b6MRMI6bBZ8foPHf	2435442	48.017	-114.224	Lakeside, Montana, United States	7	/United+States/Montana/Lakeside
+sLDXYvmcBJRdLpFf6w	55855472	42.696	23.332	Oborishte, Sofia, Sofiya-Grad, BG, Bulgaria	22	/Bulgaria/Sofiya-Grad/Sofia/Oborishte
+Z7KDlcSaB5Xkxg	36964	52.987	-3.96	Tanygrisiau, Wales, United Kingdom	7	/United+Kingdom/Wales/Tanygrisiau
+YYyKlJeeA5xqbcM	720846	38.576	14.808	Pollara, Sicily, Italy	7	/Italy/Sicily/Pollara
+lh9Ff9ebA5VqtoWy	2291336	27.466	77.647	Maholi, Uttar Pradesh, India	7	/India/Uttar+Pradesh/Maholi
+Q.azITWbBZRrnccC	2483031	37.849	-121.932	Rock City, California, United States	7	/United+States/California/Rock+City
+tzk8XoqaBJT6rg	35838	54.555	-0.792	Staithes, England, United Kingdom	7	/United+Kingdom/England/Staithes
+Xk3x9eOeCZ.p_OA	783061	46.257	8.839	Lavertezzo, Canton of Ticino, Switzerland	7	/Switzerland/Canton+of+Ticino/Lavertezzo
+bKFMmBqcB5w7342Fdg	56013576	2.246	102.243	Melaka Tengah, Melaka, Malaysia	9	/Malaysia/Melaka/Melaka+Tengah
+_d.OKQabAJ4Qgjhm	2121688	58.248	32.521	Kresttsy, Novgorodskaya Oblast, Russia	7	/Russia/Novgorodskaya+Oblast/Kresttsy
+4MgFVT6dAJTvqBk	418948	-13.37	-71.923	Lamay, Cusco, Peru	7	/Peru/Cusco/Lamay
+SF_JOt2bApkmVFvp	2352526	36.567	-118.088	Alabama Hills, California, United States	7	/United+States/California/Alabama+Hills
+1ZngPiSbBZiFRslJ	2442143	35.31	-120.826	Los Osos, California, United States	7	/United+States/California/Los+Osos
+5Jq0BmadBJtrylQ	457224	-29.368	-50.878	Gramado, Rio Grande do Sul, Brazil	7	/Brazil/Rio+Grande+do+Sul/Gramado
+pqpfHrubAp.5C1sTaw	23394581	46.86	-71.008	St.-laurent-de-l'?le-d'orl?ans, Quebec, Canada	7	/Canada/Quebec/St.-laurent-de-l'?le-d'orl?ans
+.3BX2WqYA5qouAgmzg	12643563	49.704	0.203	?tretat, France	7	/France/?tretat
+RzORhBObB5QINyjldA	26808948	10.609	-83.602	Colorado, Costa Rica	7	/Costa+Rica/Colorado
+Pf4TnuiaBpnhGxo	375972	-1.908	-78.641	Cebadas, Chimborazo, Ecuador	7	/Ecuador/Chimborazo/Cebadas
+ME5BvyyYA5lU3EVMCQ	12578018	25.19	101.824	Yunnan, CN, China	8	/China/CN/Yunnan
+SUMhHSGbAJTb3J3I	2189761	8.314	80.414	Anuradhapura, North Central, Sri Lanka	7	/Sri+Lanka/North+Central/Anuradhapura
+KGml3bacB5yZvpKVeA	56000010	14.39	-3.549	Bandiagara, Mopti, Mali	9	/Mali/Mopti/Bandiagara
+m.2jsLqbAplinT30	2351084	-37.4	175.938	Waihi Beach, Bay of Plenty, New Zealand	7	/New+Zealand/Bay+of+Plenty/Waihi+Beach
+ayxowz6bApjpio_asQ	23424961	38.858	71.262	Tajikistan	12	/Tajikistan
+S4m1ZfOcBJQIDxXlPA	55862693	3.204	101.682	Kampong Batu Muda Tambahan, Kuala Lumpur, Kuala Lumpur, MY, Malaysia	22	/Malaysia/Kuala+Lumpur/Kuala+Lumpur/Kampong+Batu+Muda+Tambahan
+lm7PlaKbCZmLLFMs_g	28583793	55.673	12.55	Copenhagen, Hovedstaden, Denmark	9	/Denmark/Hovedstaden/Copenhagen
+HgrhGEyeAZWhzq8	709859	37.31	13.576	Agrigento, Sicily, Italy	7	/Italy/Sicily/Agrigento
+q1DSzsebA5WZZnLa	2288109	8.74	76.714	Varkala, Kerala, India	7	/India/Kerala/Varkala
+ho6Vaa6RBZW2Zak	849012	44.529	14.476	Lusinpikolo, Primorsko-Goranska, Croatia	7	/Croatia/Primorsko-Goranska/Lusinpikolo
+q7T8c7SbBZsf5OAH	2471337	40.208	-123.785	Phillipsville, California, United States	7	/United+States/California/Phillipsville
+KaF9q1WeAJkf79Y	715356	37.929	12.328	Favignana, Sicily, Italy	7	/Italy/Sicily/Favignana
+ph_pl66bAZrujg	20653	52.695	-4.045	Friog, Wales, United Kingdom	7	/United+Kingdom/Wales/Friog
+7lnjxieQB56lXvU	962345	38.878	24.555	Skiros, Sterea Ellada, Greece	7	/Greece/Sterea+Ellada/Skiros
+Ju0_UpeRA57ynts	822396	48.15	17.116	Star? Mesto, Bratislava, Bratislavsky, SK, Slovakia	22	/Slovakia/Bratislavsky/Bratislava/Star?+Mesto
+cn4wTQ6dB5Q7FPE	468102	-34.604	-54.118	La Pedrera, Rocha, Uruguay	7	/Uruguay/Rocha/La+Pedrera
+sHkteamYAptHGCuX	1377440	-20.166	57.716	Poste de Flacq, Flacq, Mauritius	7	/Mauritius/Flacq/Poste+de+Flacq
+uAECyMeQBJv.Lq4	957858	37.566	22.806	Nauplion, Peloponnisos, Greece	7	/Greece/Peloponnisos/Nauplion
+i1ccZc.YCJoVm7NI	1967084	32.901	35.095	Akka, Hazafon, Israel	7	/Israel/Hazafon/Akka
+9gN6UF.bApkWUtkL	2351325	-36.868	174.725	Western Springs, Auckland, Auckland, NZ, New Zealand	22	/New+Zealand/Auckland/Auckland/Western+Springs
+ReXwY8GeBJQEXZA	758782	43.112	-1.674	Donamaria, Navarre, Spain	7	/Spain/Navarre/Donamaria
+W3z8ldaYA5rO.VmmiA	12643703	49.747	0.4	F?camp, France	7	/France/F?camp
+KvaCD3ObAp8LgPl0pw	23394685	46.851	-71.138	Ste.-P?tronille, Quebec, Canada	7	/Canada/Quebec/Ste.-P?tronille
+nXYr2HObAZ6IBFO_7w	20219882	40.421	-3.676	Goya, Madrid, Madrid, ES, Spain	22	/Spain/Madrid/Madrid/Goya
+ZTUHYNObB5t4_35cXA	26797317	1.05	-77.549	Ospina, Narino, Colombia	9	/Colombia/Narino/Ospina
+0Gwmq.2bCJ8AtF5oiA	29375156	48.514	-123.861	Capital, British Columbia, Canada	9	/Canada/British+Columbia/Capital
+RUxGk9qbAJ7zMPQ.	2123260	59.932	30.306	St. Petersburg, St. Peterburg, Russia	7	/Russia/St.+Peterburg/St.+Petersburg
+A4qpDWmbAJT.K2il	2189649	7.851	80.654	Dambulla, Central, Sri Lanka	7	/Sri+Lanka/Central/Dambulla
+S1xfVSycBJXESnb2zg	55967534	13.997	-0.074	Dori, Seno, Burkina Faso	9	/Burkina+Faso/Seno/Dori
+HBSrEbWYAJnnElbj	1154547	5.391	100.261	Ayer Itam, Pulau Pinang, Malaysia	7	/Malaysia/Pulau+Pinang/Ayer+Itam
+fQR.lKqYA5uUcA	12784	51.576	-4.047	Bishopston, Wales, United Kingdom	7	/United+Kingdom/Wales/Bishopston
+6K6vBMObAZ0yzXM7Mw	20150892	59.407	18.28	Broknas, Vaxholm, Stockholm, SE, Sweden	22	/Sweden/Stockholm/Vaxholm/Broknas
+pGJet2KcBJRC6rXwkw	55883285	20.637	-87.068	Zazil Ha, Playa del Carmen, QR, MX, Mexico	22	/Mexico/QR/Playa+del+Carmen/Zazil+Ha
+_mJAJCaYAJkcSks	115872	20.666	-88.566	Chich?n-Itz?, Yucatan, Mexico	7	/Mexico/Yucatan/Chich?n-Itz?
+58Wr7xueBpghP.c	774395	41.297	-3.748	Sep?lveda, Castille and Leon, Spain	7	/Spain/Castille+and+Leon/Sep?lveda
+yyj8fa2bCJ4l_4TzHA	29215719	28.648	77.229	Hauz Qazi, New Delhi, NCT, IN, India	22	/India/NCT/New+Delhi/Hauz+Qazi
+hfpSWOecBJUh71zkpw	12587070	-25.87	29.214	Witbank, Mpumalanga, South Africa	9	/South+Africa/Mpumalanga/Witbank
+dbVdyRmeA52J2fY	721222	40.611	14.523	Praiano, Campania, Italy	7	/Italy/Campania/Praiano
+1mMNrnabCZSXUQYhWA	28835030	35.432	129.326	Onsan-Eup, Ulsan, KR, South Korea	22	/South+Korea/Ulsan/Onsan-Eup
+PHC8292bBJ2FIILs	2516362	38.492	-105.918	Wellsville, Colorado, United States	7	/United+States/Colorado/Wellsville
+9IB0ESecBJXp91RAcw	55948145	13.727	100.531	Surawong, Bang Rak, Bangkok, TH, Thailand	22	/Thailand/Bangkok/Bang+Rak/Surawong
+cZRy5MqbCJ723Q	29258	57.223	-2.524	Monymusk, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Monymusk
+nP6K8KuaBpTxlw	37855	50.431	-3.681	Totnes, England, United Kingdom	7	/United+Kingdom/England/Totnes
+7r70OHmbA5sPeaFP9g	22723693	9.934	-84.077	Morazan, San Jose, San Jose, CR, Costa Rica	22	/Costa+Rica/San+Jose/San+Jose/Morazan
+gAW9.CybApjhqCx8	2349891	-36.856	174.818	Orakei, Auckland, Auckland, NZ, New Zealand	22	/New+Zealand/Auckland/Auckland/Orakei
+pEZ18beRB54HoQU	862705	61.243	10.439	?yer, Oppland Fylke, Norway	7	/Norway/Oppland+Fylke/?yer
+mIdkBbKfBZygY24	640723	52.397	13.038	Brandenburger Vorstadt, Potsdam, BB, DE, Germany	22	/Germany/BB/Potsdam/Brandenburger+Vorstadt
+GtNcmlycBJ1SgTI	551219	47.329	11.188	Seefeld, Tyrol, Austria	7	/Austria/Tyrol/Seefeld
+TDyYlRGbBZuLPhIB	2477348	44.216	-69.931	Purgatory, Litchfield, ME, US, United States	22	/United+States/ME/Litchfield/Purgatory
+cXNdo6SYA5mXW.a.vw	12591830	37.505	14.804	Catania, Sicily, Italy	9	/Italy/Sicily/Catania
+PDhX.yeQApkuzGg	935392	44.851	34.972	Sudak, Crimea, Ukraine	7	/Ukraine/Crimea/Sudak
+aWTCQV2YA5mFu4eF.g	20098406	55.016	12.084	Vordingborg, Sjaelland, Denmark	9	/Denmark/Sjaelland/Vordingborg
+GSgPxuCRBJ1BLsc	851303	56.95	24.1	Agenkalne Inlet, Riga, Riga, LV, Latvia	22	/Latvia/Riga/Riga/Agenkalne+Inlet
+OsY3JVOYAJnl_i3v	1152687	5.427	100.31	Pulau Tikus, Penang, Pulau Pinang, MY, Malaysia	22	/Malaysia/Pulau+Pinang/Penang/Pulau+Tikus
+Jk7RdXSbAJScXAK6	2189780	7.284	80.637	Kandy, Central, Sri Lanka	7	/Sri+Lanka/Central/Kandy
+HWBmewWeCZ932nA	783603	46.666	8.083	Oberl?ger, Canton of Berne, Switzerland	7	/Switzerland/Canton+of+Berne/Oberl?ger
+fxA55RKYBp9oQA	17348	52.981	-4.04	Croesor, Wales, United Kingdom	7	/United+Kingdom/Wales/Croesor
+KtMNqKiYAZX59Jf.	1094857	-28.646	153.612	Byron Bay, New South Wales, Australia	7	/Australia/New+South+Wales/Byron+Bay
+H9MbdtmbBZRjjKUAYw	24865779	55.673	12.554	Copenhagen West, Copenhagen, Hovedstaden, DK, Denmark	22	/Denmark/Hovedstaden/Copenhagen/Copenhagen+West
+8c72nDabApidvnIv	2347815	-18.613	27.298	Matabeleland North, ZW, Zimbabwe	8	/Zimbabwe/ZW/Matabeleland+North
+pXPDw0ibA5TXOi4D	2283648	28.642	77.213	Paharganj, New Delhi, NCT, IN, India	22	/India/NCT/New+Delhi/Paharganj
+mme9FSaRA5j_qCU	824382	52.092	23.732	Brest, Brestskaya Voblasts', Belarus	7	/Belarus/Brestskaya+Voblasts'/Brest
+o6pEoKCYA5nafCoZxw	12589302	36.5	-108.233	San Juan County, New Mexico, United States	9	/United+States/New+Mexico/San+Juan+County
+Rk5bzCeeBpiVdqE	774288	40.948	-4.116	Segovia, Castille and Leon, Spain	7	/Spain/Castille+and+Leon/Segovia
+18xpwlabAZzSrzukSQ	20094336	51.517	-0.088	Moorgate, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Moorgate
+3w7SnbqbAJQ7K3VL	2189514	6.134	80.107	Hikkaduwa, Southern, Sri Lanka	7	/Sri+Lanka/Southern/Hikkaduwa
+0.y2Qo.fCJVtqps	699608	47.828	7.946	Todtnau, Baden-Wurttemberg, Germany	7	/Germany/Baden-Wurttemberg/Todtnau
+C.JdRBObBZkMAKSJ	2452334	37.759	-122.418	Mission, San Francisco, CA, US, United States	22	/United+States/CA/San+Francisco/Mission
+HZh2yl2YA5nIFcYbUg	12588989	39.282	-94.408	Clay County, Missouri, United States	9	/United+States/Missouri/Clay+County
+Syoo5fuYB5_oPA	16373	50.999	-4.406	Clovelly, England, United Kingdom	7	/United+Kingdom/England/Clovelly
+pFMR1zuYA56M1SBg	1225479	18.149	97.939	Mae Sariang, Mae Hong Son, Thailand	7	/Thailand/Mae+Hong+Son/Mae+Sariang
+SflKP7ubA5tJifc6Aw	22726360	-36.824	174.799	Devonport, North Shore, Auckland, NZ, New Zealand	22	/New+Zealand/Auckland/North+Shore/Devonport
+K93IqL.fAZyBWyI	600783	46.762	5.683	Ladoye-sur-Seille, Franche-Comte, France	7	/France/Franche-Comte/Ladoye-sur-Seille
+kgfwLeCbA5XqC.D6	2297839	21.965	120.777	Hengchun Town, Taiwan, Taiwan	7	/Taiwan/Taiwan/Hengchun+Town
+GUQi0bGbApg_HENL	2343938	39.546	44.084	Do?ubayaz?t, A?r?, Turkey	7	/Turkey/A?r?/Do?ubayaz?t
+SSFpP6ieAJsOf3E	717132	44.069	9.836	Le Grazie, Liguria, Italy	7	/Italy/Liguria/Le+Grazie
+Yuj5VpyYA5rGCrLP_w	12602096	36.526	-5.765	Cadiz, Andalusia, Spain	9	/Spain/Andalusia/Cadiz
+2ryTmxGYAJUkaTsz	1199079	10.31	123.894	Cebu, Central Visayas, Philippines	7	/Philippines/Central+Visayas/Cebu
+EF3CwF.bAJRxPh8z	2189603	6.878	81.037	Ella, Uva, Sri Lanka	7	/Sri+Lanka/Uva/Ella
+cTSapgScBJXnSy97tg	55998921	49.29	-123.129	Coal Harbor, Vancouver, BC, CA, Canada	22	/Canada/BC/Vancouver/Coal+Harbor
+0s.WZR.cB5xgT6V6kw	56014567	3.148	101.705	Bandar Kuala Lumpur, Malaysia	7	/Malaysia/Bandar+Kuala+Lumpur
+NM2Wgx2RBJzvqEc	850547	45.333	14.433	Sussak, Sankt Veit Am Flaum, Primorsko-Goranska, HR, Croatia	22	/Croatia/Primorsko-Goranska/Sankt+Veit+Am+Flaum/Sussak
+Vy97fZqbA50ObOvk	2211387	33.606	73.052	R?walpindi, Punjab, Pakistan	7	/Pakistan/Punjab/R?walpindi
+PZmMmtybAphF7PX.	2347803	-15.664	23.945	Western, ZM, Zambia	8	/Zambia/ZM/Western
+oAXzyJubCZ.RsFfn0A	28379366	34.91	136.181	Koka-shi, Shiga Prefecture, Japan	7	/Japan/Shiga+Prefecture/Koka-shi
+lXMUVcGYA55ImeEz	1225976	12.576	99.944	Hua Hin, Prachuap Khiri Khan, Thailand	7	/Thailand/Prachuap+Khiri+Khan/Hua+Hin
+PJZdWiubA5vQiR0c	2276993	27.906	75.211	Dundlod, Rajasthan, India	7	/India/Rajasthan/Dundlod
+uCrhFf6bBJ5lYYF_	2522240	35.024	-110.696	Winslow, Arizona, United States	7	/United+States/Arizona/Winslow
+9s0A5m6bAZ51yQ7vbw	20229329	55.675	12.572	Mikkil Bryggers Gade, Copenhagen, Hovedstaden, DK, Denmark	22	/Denmark/Hovedstaden/Copenhagen/Mikkil+Bryggers+Gade
+ME8NaLWeB5XFXVw	769648	41.131	-3.808	Pedraza, Castille and Leon, Spain	7	/Spain/Castille+and+Leon/Pedraza
+UJg7WdOdB5laML4	465351	-25.138	-66.18	Escalchi, Salta, Argentina	7	/Argentina/Salta/Escalchi
+3vsbBnCbAZz59CLpMA	20094312	51.522	-0.105	Clerkenwell, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Clerkenwell
+mDSEyqKcCZvR.7g	587108	42.307	9.15	Corte, Corsica, France	7	/France/Corsica/Corte
+HxwL6YGaBZ.gKg	34307	50.719	-1.111	Seaview, England, United Kingdom	7	/United+Kingdom/England/Seaview
+64GLCbOaCZg1	3847	49.593	-57.912	Rocky Harbour, Newfoundland and Labrador, Canada	7	/Canada/Newfoundland+and+Labrador/Rocky+Harbour
+IUEoqY2bCZpUDNneFg	28676717	-36.848	174.764	Auckland Central, Auckland, Auckland, NZ, New Zealand	22	/New+Zealand/Auckland/Auckland/Auckland+Central
+IR1VIxaQBJ5PqTw	952427	38.171	24.023	Kato Souli, Attiki, Greece	7	/Greece/Attiki/Kato+Souli
+8pQpgpieA5o1GdM	726456	41.858	12.482	Ostiense, Rome, LZ, IT, Italy	22	/Italy/LZ/Rome/Ostiense
+4K_9HbueB54ypc8	762522	28.367	-16.72	Icod de Los Vinos, Canary Islands, Spain	7	/Spain/Canary+Islands/Icod+de+Los+Vinos
+jtAFk6CbAZ5aJGH.Gg	20225357	39.796	2.696	Port de S?ller, Balearic Islands, Spain	7	/Spain/Balearic+Islands/Port+de+S?ller
+yJEonuGcBJUxFp.uOw	55958689	9.903	78.142	Anupanadi, Madurai, TN, IN, India	22	/India/TN/Madurai/Anupanadi
+R45xi9GYA5kk9Ake7w	12591880	45.756	9.853	Bergamo, Lombardy, Italy	9	/Italy/Lombardy/Bergamo
+L1ZANF2bApgIVsJS	2347231	8.989	1.156	Tchaoudjo, Togo	26	/Togo/Tchaoudjo
+0nwpM8KbCZvrF3azUw	28751245	40.742	-73.989	Flatiron District, NY, US, United States	22	/United+States/NY/Flatiron+District
+jZBMuXabAJTYxtSN	2189687	6.97	80.782	Nuwara Eliya, Central, Sri Lanka	7	/Sri+Lanka/Central/Nuwara+Eliya
+qFSsWZWdAp7HLQ	43247	51.49	-0.138	Pimlico, London, England, GB, United Kingdom	22	/United+Kingdom/England/London/Pimlico
+XEXFr7iYBJl_daBF	1554434	-23.79	35.54	Praia do Tofo, Inhambane, Mozambique	7	/Mozambique/Inhambane/Praia+do+Tofo
+8XYmUpKbAJjWpaXk	2144810	30.082	90.552	Yangbajain, Tibet, China	7	/China/Tibet/Yangbajain
+_g8BnPebAZ1IlSylWw	20142481	46.558	11.713	Santa Cristina Val Gardena, Trentino-Alto Adige, Italy	7	/Italy/Trentino-Alto+Adige/Santa+Cristina+Val+Gardena
+HnPn0WqbA5RBKkML	2281815	12.619	80.19	Mamallapuram, Tamil Nadu, India	7	/India/Tamil+Nadu/Mamallapuram
+JhKlLGmcBJVouWZ4tw	55986200	41.886	-87.631	New Eastside, Chicago, IL, US, United States	22	/United+States/IL/Chicago/New+Eastside
+1_3Sbn2eA57adeE	722399	43.655	11.187	San Casciano in Val di Pesa, Tuscany, Italy	7	/Italy/Tuscany/San+Casciano+in+Val+di+Pesa
+6qluklSbAZ4vcPAzYQ	20229316	55.679	12.579	L?vstr?de, Copenhagen, Hovedstaden, DK, Denmark	22	/Denmark/Hovedstaden/Copenhagen/L?vstr?de
+fxHdGNKfAp.Q1.0	633138	46.012	-1.173	?le-d'Aix, Poitou-Charentes, France	7	/France/Poitou-Charentes/?le-d'Aix
+hOPnOjObAp0y6L6x	2314751	36.681	31.621	?enger, Antalya, Turkey	7	/Turkey/Antalya/?enger
+zifsGr6bCZsE3wtkLQ	2305218	24.15	120.682	???, Taichung City, Taiwan, TW, Taiwan	22	/Taiwan/Taiwan/Taichung+City/???
+5aXOUgOYApu8T7I	137853	15.87	-97.087	Puerto Escondido, Oaxaca, Mexico	7	/Mexico/Oaxaca/Puerto+Escondido
+WInl.HycCJ5KPTI	592389	44.561	6.082	Gap, Provence-Alpes-Cote d'Azur, France	7	/France/Provence-Alpes-Cote+d'Azur/Gap
+1bp5GFabApjhu5kR	2345750	18.821	76.766	Maharashtra, IN, India	8	/India/IN/Maharashtra
+a8Ln0SSbA5ke03x_	2255777	43.255	76.912	Almaty, Almaty, Kazakhstan	7	/Kazakhstan/Almaty/Almaty
+T__sH3WeBJQFvrk	758309	43.308	-5.054	Covadonga, Asturias, Spain	7	/Spain/Asturias/Covadonga
+NOGTKAebApgVsEft	2348992	-36.985	174.479	Karekare, Auckland, New Zealand	7	/New+Zealand/Auckland/Karekare
+hKFcdsabApgz6eC1	2345257	53.148	-6.815	Kildare, IE, Ireland	8	/Ireland/IE/Kildare
+dkKT_gecBJWoEyVpvA	55970458	34.089	-117.764	Arrow Corridor, Pomona, CA, US, United States	22	/United+States/CA/Pomona/Arrow+Corridor
+To8qcmebCJ9P7C74kA	29390303	41.012	28.981	Emin?n?, Istanbul, Turkey	9	/Turkey/Istanbul/Emin?n?
+qFJWqXWeCZglKyU	784985	46.582	7.071	Pringy, Canton of Fribourg, Switzerland	7	/Switzerland/Canton+of+Fribourg/Pringy
+hUZHd9GYA5mNgARFRA	12597155	48.859	2.346	Paris, Ile-de-France, France	9	/France/Ile-de-France/Paris
+SDW7xr6eCZ257l4	781693	47.377	8.521	Aussersihl, Zurich, ZH, CH, Switzerland	22	/Switzerland/ZH/Zurich/Aussersihl
+n0_x4Q2YA5r_sd4Bgw	12678832	44.448	11.424	San Lazzaro di Savena, Italy	7	/Italy/San+Lazzaro+di+Savena
+Vk_s1i6RBZUe.kM	849174	43.33	16.441	Milna, Splitsko-Dalmatinska, Croatia	7	/Croatia/Splitsko-Dalmatinska/Milna
+u3yJUcGYAZ3ILg1z	1017983	20.654	96.934	Yawnghwe, Shan State, Myanmar	7	/Myanmar/Shan+State/Yawnghwe
+ZJ7rF7ucBJWeAoZNxw	55944518	-22.952	-43.172	Urca, Rio de Janeiro, RJ, BR, Brazil	22	/Brazil/RJ/Rio+de+Janeiro/Urca
+xxdh4CObA5Tse1ui	2287506	13.688	79.343	Tirumala, Andhra Pradesh, India	7	/India/Andhra+Pradesh/Tirumala
+VmQb7xaYBJj2yr_L	1548332	-23.873	35.388	Inhambane, Inhambane, Mozambique	7	/Mozambique/Inhambane/Inhambane
+ocZUs7OYA54aVowk	1226251	9.454	100.032	Hua Thanon, Surat Thani, Thailand	7	/Thailand/Surat+Thani/Hua+Thanon
+fUPzDnybAJgxuUca	2144796	29.839	91.724	Maizhokunggar, Tibet, China	7	/China/Tibet/Maizhokunggar
+lyKaB76bAZ5mHz6lig	20220455	41.565	1.274	Albi?, Catalonia, Spain	7	/Spain/Catalonia/Albi?
+NDj88muRBJV6gA	85941	14.783	-90.966	Santa Apolonia, Chimaltenango, Guatemala	7	/Guatemala/Chimaltenango/Santa+Apolonia
+0vbdyHWYBJnLSm0	155677	9.354	-79.899	Col?n, Col?n, Panama	7	/Panama/Col?n/Col?n
+RSwI46adBJkuQ1I	455979	-9.391	-38.236	Paulo Afonso, Bahia, Brazil	7	/Brazil/Bahia/Paulo+Afonso
+q6wX7nibBZWzYudy	2495757	35.181	-101.931	Soncy, Amarillo, TX, US, United States	22	/United+States/TX/Amarillo/Soncy
+q1k13TKRBJyjvis	850824	44.518	14.503	Lusingrande, Primorsko-Goranska, Croatia	7	/Croatia/Primorsko-Goranska/Lusingrande
+7p6XyXebBZyhuhhh	2406041	37.801	-122.472	Fort Winfield Scott, San Francisco, CA, US, United States	22	/United+States/CA/San+Francisco/Fort+Winfield+Scott
+5HwnW8SaB5.9	3633	48.631	-68.119	Grand-M?tis, Quebec, Canada	7	/Canada/Quebec/Grand-M?tis
+2qAnuniYA55DN1wk	1225973	18.687	98.915	Hang Dong, Chiang Mai, Thailand	7	/Thailand/Chiang+Mai/Hang+Dong
+flWl5t.bApl9tU2K	2350125	-36.956	174.472	Piha, Auckland, New Zealand	7	/New+Zealand/Auckland/Piha
+AGVjgdGbAph7cuRr	2345876	32.984	129.967	Nagasaki Prefecture, JP, Japan	8	/Japan/JP/Nagasaki+Prefecture
+wO9OZYebApgB6tDr	2344814	17.361	97.677	Karan State, MM, Myanmar	8	/Myanmar/MM/Karan+State
+i_uwvLSbCJ.NyzlaHw	29390145	39.141	27.172	Bergama, ?zmir, Turkey	9	/Turkey/?zmir/Bergama
+UF_K9ViYA563vDGi	1225644	18.676	99.05	Saraphi, Chiang Mai, Thailand	7	/Thailand/Chiang+Mai/Saraphi
+mbhpl3CeAJm_Y8Q7	7153314	47.644	1.59	Centre, FR, France	8	/France/FR/Centre
+HkoiZmebCJ9OPECGiQ	29375176	44.853	-63.199	Halifax, Nova Scotia, Canada	9	/Canada/Nova+Scotia/Halifax
+g3APG0KdAp25LMQ	431382	-3.142	-60.009	Educandos, Manaus, AM, BR, Brazil	22	/Brazil/AM/Manaus/Educandos
+04tBYtOYA5qQn8Nt8A	12692685	40.913	-4.194	Segovia, Spain	7	/Spain/Segovia
+lOHVw0ObAZ2EpNU55w	20105484	44.316	9.176	San Fruttuoso, Liguria, Italy	7	/Italy/Liguria/San+Fruttuoso
+mWfUWEmbAZwUmXDbPQ	20070346	-13.939	-171.54	Va`a-o-Fonoti, WS, Samoa	8	/Samoa/WS/Va`a-o-Fonoti
+7BHfP0qbApjPLJV2	2344690	-39.792	-67.353	Rio Negro, AR, Argentina	8	/Argentina/AR/Rio+Negro
+l9SX7AKYAZW4Qw	10932	56.495	-4.165	Ardeonaig, Scotland, United Kingdom	7	/United+Kingdom/Scotland/Ardeonaig
+WtL1dQ.aBprmUw	37645	50.664	-4.743	Tintagel, England, United Kingdom	7	/United+Kingdom/England/Tintagel
+dg3X7gybAZ5P9R5fdQ	20226585	40.72	-3.95	Urbanizaci?n la Ponderosa de la Sierra, Madrid, Spain	7	/Spain/Madrid/Urbanizaci?n+la+Ponderosa+de+la+Sierra
+R8uKqBibApjMS.0s	2346312	-23.348	32.902	Gaza, MZ, Mozambique	8	/Mozambique/MZ/Gaza
+AJrHfxWdBp4cb2s	472571	42.508	1.541	Les Escaldes, Escaldes-Engordany, Andorra	7	/Andorra/Escaldes-Engordany/Les+Escaldes
+JpcIaX6eBJ5U_mg	752184	41.485	-2.531	Almaz?n, Castille and Leon, Spain	7	/Spain/Castille+and+Leon/Almaz?n
+IJxIpWebApVzj1Ug	2399553	35.825	-105.904	En Medio, New Mexico, United States	7	/United+States/New+Mexico/En+Medio
+AgBpNrmbCZ7dKQweiw	28297837	40.742	-73.984	Rose Hill, NY, US, United States	22	/United+States/NY/Rose+Hill
+nequlPydAJRMH60	418985	-13.632	-71.743	Lucre, Cusco, Peru	7	/Peru/Cusco/Lucre
+cPAJzrOYB588Fg	16331	52.236	-0.877	Cliftonville, Northampton, England, GB, United Kingdom	22	/United+Kingdom/England/Northampton/Cliftonville
+o7cgHhSbApubn_Sdqw	23701328	37.972	23.722	Areopagos Hill, Athens, Attiki, GR, Greece	22	/Greece/Attiki/Athens/Areopagos+Hill
+N2tdnj2YCJucEg	19789	50.775	0.152	Exceat, England, United Kingdom	7	/United+Kingdom/England/Exceat
+238YdaybBZs6O2w2	2475428	47.7	-122.522	Port Madison, Bainbridge Island, WA, US, United States	22	/United+States/WA/Bainbridge+Island/Port+Madison
+FqTlQwKbA5QpzNz7	2281786	13.005	77.567	Mallesvaram, Bangalore, KRN, IN, India	22	/India/KRN/Bangalore/Mallesvaram
+xavw.debBZjP234r	2444589	44.976	-110.7	Mammoth, Wyoming, United States	7	/United+States/Wyoming/Mammoth
+uGRdq_2bA5rbwr81tQ	22662225	47.546	9.683	Lindau, Bavaria, Germany	7	/Germany/Bavaria/Lindau
+L4bHilKcBJ3atXs	551765	48.221	16.383	Leopoldstadt, Vienna, Vienna, AT, Austria	22	/Austria/Vienna/Vienna/Leopoldstadt
+ZL99P7yYA5oE2AmdKQ	12695903	54.398	-3.377	Copeland Borough, United Kingdom	7	/United+Kingdom/Copeland+Borough
+lF8WtiOeAZl2Dzk	705618	54.212	8.926	Wesselburen, Schleswig-Holstein, Germany	7	/Germany/Schleswig-Holstein/Wesselburen
+cjJcGyufAZRCnD4	608450	46.224	-1.438	Loix, Poitou-Charentes, France	7	/France/Poitou-Charentes/Loix
+TQW1laKdA57Tk5w	422111	-3.128	-60.021	Aparecida, Manaus, AM, BR, Brazil	22	/Brazil/AM/Manaus/Aparecida
+OmnhqRqYA5k7C8ee_w	12590431	38.896	-78.199	Warren County, Virginia, United States	9	/United+States/Virginia/Warren+County
+nf2LtJeYAZ.Lt2hL	1031786	-6.916	107.616	Cikudapateuh, Bandung, West Java, ID, Indonesia	22	/Indonesia/West+Java/Bandung/Cikudapateuh
+TQ7PolKbCZ71yDduJw	28288903	32.782	-97.35	Stockyards, Fort Worth, TX, US, United States	22	/United+States/TX/Fort+Worth/Stockyards
+PHAazmiYAZU2maj8	1095028	-38.048	145.113	Chelsea, Melbourne, VIC, AU, Australia	22	/Australia/VIC/Melbourne/Chelsea
+NikJhWWeCZ_K_ig	783609	46.737	7.962	Oberried am Brienzersee, Canton of Berne, Switzerland	7	/Switzerland/Canton+of+Berne/Oberried+am+Brienzersee
+mTut8JCbCJwwQG1Yeg	29081882	9.605	77.728	Muvaraivenran, Tamil Nadu, India	7	/India/Tamil+Nadu/Muvaraivenran
+K5PSO4CYA5nIsyIVOw	12514855	20.51	-86.932	Cozumel International Airport, Mexico	7	/Mexico/Cozumel+International+Airport
+aI2cUm.fB5nvXw	66541	23.125	-82.328	Regla, Havana, CH, CU, Cuba	22	/Cuba/CH/Havana/Regla
+nseQiSiYCZ4GCQ	18293	52.744	-3.884	Dolgellau, Wales, United Kingdom	7	/United+Kingdom/Wales/Dolgellau
+P4OrbsWcBJSiIMzjTw	55863454	48.902	2.305	Clichy, Ile-de-France, France	7	/France/Ile-de-France/Clichy
+GGuH8nabApi3E_piFA	23424791	9.624	-84.253	Costa Rica	12	/Costa Rica
+IXbX0XSdAJU9hs4	419250	-14.197	-71.35	San Pedro, Cusco, Peru	7	/Peru/Cusco/San+Pedro
+xW323uWYA5lQfsI3Og	12621170	41.849	-8.773	Caminha, Viana do Castelo, Portugal	9	/Portugal/Viana+do+Castelo/Caminha
+Hkrn3v2bAphhCA	23412	52.452	-2.386	Highley, England, United Kingdom	7	/United+Kingdom/England/Highley
+zfVdD8ibBJxES9aD	2504815	29.193	-103.606	Terlingua Abaja, Texas, United States	7	/United+States/Texas/Terlingua+Abaja
+M2urF4qbA5XkgdA1	2295096	21.539	70.455	Junagadh, Gujarat, India	7	/India/Gujarat/Junagadh
+WuGlL1qbBpUW	2792	50.734	-56.104	Englee, Newfoundland and Labrador, Canada	7	/Canada/Newfoundland+and+Labrador/Englee
+8Y8wmZyQBJtv3wI	957870	38.033	23.783	N?a Alex?ndia, Athens, Attiki, GR, Greece	22	/Greece/Attiki/Athens/N?a+Alex?ndia
+FRT6_.ueAJ1iMy0	711665	39.214	9.11	Cagliari, Sardinia, Italy	7	/Ital
