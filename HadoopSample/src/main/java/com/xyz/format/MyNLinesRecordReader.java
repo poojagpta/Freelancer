@@ -1,4 +1,4 @@
-package com.uvwea.format;
+package com.xyz.format;
 
 import java.io.IOException;
 
