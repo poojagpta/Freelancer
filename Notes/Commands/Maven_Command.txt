@@ -39,3 +39,41 @@ Now can add dependency like this:
 Convert web maven project to dynamci web project:
 --------------------------------------------------
 mvn eclipse:eclipse -Dwtpversion=2.0
+
+Add third party jar to project: If third party jar is not public and not in central repository.
+----------------------------------
+1) Add third party jar to local repository 
+mvn install:install-file -Dfile=thirdparty/protobuf-socket-rpc-2.0.jar -DgroupId=com.googlecode.protobuf.socketrpc \
+    -DartifactId=protobuf-socket-rpc -Dversion=2.0 -Dpackaging=jar
+ 
+ 2) Add third party as system jar and specify the location. But in this case , in build of project jar need to be added in package using addjars-maven-plugin.
+  <dependency>
++      <groupId>com.googlecode.protobuf.socketrpc</groupId>
++      <artifactId>protobuf-socket-rpc</artifactId>
++      <version>2.0</version>
++      <scope>system</scope>
++      <systemPath>${project.basedir}/thirdparty/protobuf-socket-rpc-2.0.jar</systemPath>
++    </dependency>
+
+In build
+ <plugin>
++        <groupId>com.googlecode.addjars-maven-plugin</groupId>
++        <artifactId>addjars-maven-plugin</artifactId>
++        <version>1.0.5</version>
++        <executions>
++          <execution>
++            <goals>
++              <goal>add-jars</goal>
++            </goals>
++            <configuration>
++              <resources>
++                <resource>
++                  <directory>${basedir}/thirdparty</directory>
++                </resource>
++              </resources>
++            </configuration>
++          </execution>
++        </executions>
++      </plugin>
+    
+    
