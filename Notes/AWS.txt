@@ -4,15 +4,6 @@ Copy content from local to s3:
 aws s3 cp * s3://xx --recursive
 aws s3 sync . s3://xx
 
-
-Ubuntu Commands:
-find ~/dsc-cassandra-3.0.2/javadoc/org/apache/cassandra -name '*.html' -exec cp -t ~/dev/testNew/ {} +
-Find file size greater than 10M
-find . -size +25M -ls
-Find file size between 10M and 15M
-find . -size -1M -size +2M -ls
-
-
 List Object:
 -------------
 aws s3api list-objects --bucket xx --query 'Contents[].{Key: Key}'
