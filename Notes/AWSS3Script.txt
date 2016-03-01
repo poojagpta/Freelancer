@@ -1,0 +1,68 @@
+sudo apt-get install awscli
+Copy content from local to s3:
+
+aws s3 cp * s3://xx --recursive
+aws s3 sync . s3://xx
+
+
+Ubuntu Commands:
+find ~/dsc-cassandra-3.0.2/javadoc/org/apache/cassandra -name '*.html' -exec cp -t ~/dev/testNew/ {} +
+Find file size greater than 10M
+find . -size +25M -ls
+Find file size between 10M and 15M
+find . -size -1M -size +2M -ls
+
+
+List Object:
+-------------
+aws s3api list-objects --bucket xx --query 'Contents[].{Key: Key}'
+
+aws s3 ls s3://xx/  | wc -l 
+
+Find total size of bucket
+aws s3 ls s3://xxxx/2016-02-241715/ | awk 'BEGIN {total=0}{total+=$3}END{print total/1024/1024" MB"}'
+
+
+Remove object:
+----------------
+aws s3 rm s3://xx/ --recursive 
+aws s3api list-objects --bucket xx --output json --query "[sum(Contents[].Size), length(Contents[])]"
+
+aws dynamodb update-table --table-name IF7StatisticsName --provisioned-throughput ReadCapacityUnits=100,WriteCapacityUnits=500
+
+aws dynamodb describe-table --table-name IF7Statistics
+
+AWS data pipeline:
+--------------------
+aws datapipeline create-pipeline --name TestDatapipeline --unique-id DemoTest111
+aws datapipeline get-pipeline-definition --pipeline-id df-xx
+
+aws datapipeline describe-objects --pipeline-id df-xx
+
+
+Add parameter:
+---------------
+#{@scheduledStartTime}
+#{myInputData}/#{minusHours(@scheduledStartTime,1)}
+#{format(minusHours(@scheduledStartTime,1),'YYYY-MM-ddHHmm')}
+
+s3Distcp:
+-------------
+ 
+hadoop jar /home/hadoop/lib/emr-s3distcp-1.0.jar  --src s3://ubt.demostatdynamodbbackup/2016-02-241915/ --dest hdfs:////s3dispoutput --groupBy ".*([0-9]+-[0-9]+-[0-9]+)-[0-9]+\..*" --targetSize 256 --outputCodec=snappy
+
+hadoop jar /home/hadoop/lib/emr-s3distcp-1.0.jar  --src s3://ubt.demostatdynamodbbackup/2016-02-241915/ --dest hdfs:////s3dispoutput --groupBy ".*([0-9a-z]+-[0-9a-z]+-[0-9a-z]+)-[0-9a-z]+\.fsc" --targetSize 256 --outputCodec=snappy
+
+hadoop jar /home/hadoop/lib/emr-s3distcp-1.0.jar  --src s3://ubt.demostatdynamodbbackup/2016-02-241915/ --dest hdfs:////s3dispoutput --groupBy ".*(fsc)" --outputCodec=snappy --targetSize 128
+
+Use:
+
+aws emr add-steps --cluster-id j-3CKSVCDVA88YQ --steps Type=CUSTOM_JAR,Name="S3DistCp step",Jar=/home/hadoop/lib/emr-s3distcp-1.0.jar,\
+Args=["--src,s3://ubt.demostatdynamodb/","--dest,hdfs:////s3dispdynamodboutput","--groupBy,.*([0-9a-z]+)\.fsc","--outputCodec,snappy","--deleteOnSuccess"]
+
+Hadoop Cluster: Create tunnel
+------------------------------
+ssh -i ~/.ssh/ssh-key  -CND 8157 ec2-user@ec2-xx-xxx-xx-xx-xx.compute-1.amazonaws.com
+ssh -i ~/.ssh/ssh-key -C2TNv -D 8157 hadoop@ec2-xx-xxx-xx-xx-xx.compute-1.amazonaws.com
+
+Access on local machine web page: hadoop@ec2-xx-xxx-xx-xx-xx.compute-1.amazonaws.com:8088, 9101,9026
