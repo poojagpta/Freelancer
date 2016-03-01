@@ -48,4 +48,13 @@ Shell script:
 ------------
 ls -ltr --ignore=*.gz  if want to see file except .gz files
 
+
+Find the file larger than specified size:
+-----------------------------------------
+find ~/dsc-cassandra-3.0.2/javadoc/org/apache/cassandra -name '*.html' -exec cp -t ~/dev/testNew/ {} +
+Find file size greater than 10M
+find . -size +25M -ls
+Find file size between 10M and 15M
+find . -size -1M -size +2M -ls
+
   
