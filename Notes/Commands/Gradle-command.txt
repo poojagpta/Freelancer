@@ -1,0 +1,4 @@
+Create a  java prototype:
+
+gradle init --type java-library
+
