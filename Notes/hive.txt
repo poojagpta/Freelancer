@@ -1,0 +1,130 @@
+Create managed or external table
+
+Managed table:
+Create table product(id int, name string, price float);
+LOAD	DATA	INPATH	'/user/tom/data.txt'	INTO	table	product;
+
+Here, file will be created in /user/hive/warehouse/product/*. When drop/ delete table data will be deleted.
+
+
+External Table
+CREATE	EXTERNAL	TABLE	external_table	(dummy	STRING)
+		LOCATION	'/user/tom/external_table';
+LOAD	DATA	INPATH	'/user/tom/data.txt'	INTO	TABLE	external_table;
+
+create external table product1 (productName string,productId float)
+row format delimited fields terminated by ','
+stored as textfile location '/usr/hive/data';
+Note: The data will automatically inserted into table
+
+Hive Storage format: Row format and file format
+
+Row Format
+----------
+
+Create table product(id int, name string, price float)
+ROW FORMAT DELIMITED
+	FIELDS	TERMINATED	BY	'\001'
+	COLLECTION	ITEMS	TERMINATED	BY	'\002'
+	MAP	KEYS	TERMINATED	BY	'\003'
+	LINES	TERMINATED	BY	'\n'
+STORED	AS	TEXTFILE;
+
+With serde:
+
+CREATE	TABLE	stations	(usaf	STRING,	wban	STRING,	name	STRING)
+ROW	FORMAT	SERDE	'org.apache.hadoop.hive.contrib.serde2.RegexSerDe'
+WITH	SERDEPROPERTIES	(
+		"input.regex"	=	"(\\d{6})	(\\d{5})	(.{29})	.*"
+);
+
+FileFormat:
+------------
+SET	hive.exec.compress.output=true;
+SET	avro.output.codec=snappy;
+
+Create table Product(id int, name string, price float) stored as AVRO
+
+Partitioned table:
+------------------
+CREATE	TABLE	logs	(ts	BIGINT,	line	STRING)
+PARTITIONED	BY	(dt	STRING,	country	STRING);
+
+LOAD	DATA	LOCAL	INPATH	'input/hive/partitions/file1'
+INTO	TABLE	logs
+PARTITION	(dt='2001-01-01',	country='GB');
+
+In this data is partitioned on data and then by country. Therefore, all data of one date and country will be present in 1 file.
+
+Bucketing table
+---------------
+CREATE	TABLE	bucketed_users	(id	INT,	name	STRING)
+CLUSTERED	BY	(id)	INTO	4	BUCKETS;
+
+Here, Cluster by will create 4 bucket.
+It enable data in bucketing. Useful for executing queries (performing joins when left table and right table has same bucket number) and helpful in sampling data for generating analysis.
+Here, data of particular range as (0-4) reside in 1 file and other range (5-10) in other file.
+
+The data in bucket can further be sorted using command
+CREATE	TABLE	bucketed_users	(id	INT,	name	STRING)
+CLUSTERED	BY	(id)	SORTED	BY	(id	ASC)	INTO	4	BUCKETS;
+
+Sorting and Distribution:
+-------------------------
+
+FROM	records2
+	SELECT	year,	temperature
+	DISTRIBUTE	BY	year
+	SORT	BY	year	ASC,	temperature	DESC;
+
+Output:
+1949				111
+1949				78
+1950				22
+1950				0
+1950				-11
+
+SORT	BY 	produces	a	sorted	file	per	reducer.
+In case, want to control which reducer a particular row goes. For example, perform aggregation on all row of a year. Therefore, each year row must go to same reducer. This is acheived by DISTRIBUTED BY.
+
+If	the	columns	for	 SORT	BY 	and	 DISTRIBUTE	BY 	are	the	same,	you	can	use	 CLUSTER	BY 	as	a
+shorthand	for	specifying	both.
+
+MapReduce Script:
+------------------
+FROM	records2
+	SELECT	TRANSFORM(year,	temperature,	quality)
+	USING	'is_good_quality.py'
+	AS	year,	temperature;
+FROM	(
+		FROM	records2
+		MAP	year,	temperature,	quality
+		USING	'is_good_quality.py'
+		AS	year,	temperature)	map_output
+REDUCE	year,	temperature
+USING	'max_temperature_reduce.py'
+AS	year,	temperature;
+
+Semi-joins:
+------------
+SELECT	*
+FROM	things
+WHERE	things.id	IN	(SELECT	id	from	sales);
+
+Map joins:
+------------
+
+SELECT	sales.*,	things.*
+FROM	sales	JOIN	things	ON	(sales.id	=	things.id);
+
+If one table is small enough to	fit in memory,as things	is here,Hive can load it into memory to	perform	the join in each of the mappers.This is called a map join.
+
+View:
+-----
+CREATE	VIEW	valid_records
+AS
+SELECT	*
+FROM	records2
+WHERE	temperature	!=	9999	AND	quality	IN	(0,	1,	4,	5,	9);
+See description:
+DESCRIBE	EXTENDED <view-name>
