@@ -1,6 +1,7 @@
 Create managed or external table
 
 Managed table:
+----------------
 Create table product(id int, name string, price float);
 LOAD	DATA	INPATH	'/user/tom/data.txt'	INTO	table	product;
 
@@ -8,17 +9,38 @@ Here, file will be created in /user/hive/warehouse/product/*. When drop/ delete 
 
 
 External Table
+---------------
 CREATE	EXTERNAL	TABLE	external_table	(dummy	STRING)
 		LOCATION	'/user/tom/external_table';
 LOAD	DATA	INPATH	'/user/tom/data.txt'	INTO	TABLE	external_table;
 
+Simple table:
+-------------
 create external table product1 (productName string,productId float)
 row format delimited fields terminated by ','
 stored as textfile location '/usr/hive/data';
 Note: The data will automatically inserted into table
 
-Hive Storage format: Row format and file format
+Partition table:
+----------------
+1. Create simple table let's say product1 as shown above.
 
+2. Then create partitioned table
+create external table product_partition (productId float)
+partitioned by (productName string)
+row format delimited fields terminated by ','
+stored as textfile location '/usr/hive/partition';
+3. Set property
+set hive.exec.dynamic.partition=true
+set hive.exec.dynamic.partition.mode=nonstrict
+
+4. Load data from non-partition to partition
+
+insert into table product_partition partition(productname)
+select * from product1;
+
+
+Hive Storage format: Row format and file format
 Row Format
 ----------
 
