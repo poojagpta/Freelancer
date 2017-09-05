@@ -68,3 +68,6 @@ chown root:root adb
  cd /etc/udev/rules.d/
 
 sudo apt-get remove mtpfs mtp-tools
+
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
