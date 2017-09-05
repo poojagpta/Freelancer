@@ -1,0 +1,15 @@
+1. Set up local machine--> 
+   a. Release tagging
+      1. Auto Incremental number
+      2. Release Jar file persist on maven
+      3. Think abt date timezone saving (rite now not done)
+     
+   b. Create a warmer script for seting up a new machine or incremental one 
+       1. How to send message when process is killed or restarted
+     
+    
+   c. 443 port open
+   d. Dev/Production --> Interact
+   e. Functional Testing 
+   f. Http strickly for local/ Https for production
+   g. Merging branch --have to learn myself....will do it today
