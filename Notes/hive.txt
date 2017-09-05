@@ -150,3 +150,9 @@ FROM	records2
 WHERE	temperature	!=	9999	AND	quality	IN	(0,	1,	4,	5,	9);
 See description:
 DESCRIBE	EXTENDED <view-name>
+
+Hive Thrift Server:
+-------------------
+hive --service hiveserver2
+netstat -nl | grep 10000
+For remotely access hive using JDBC,ODBC connections
