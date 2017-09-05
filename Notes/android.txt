@@ -1,0 +1,70 @@
+Publish app on google play
+https://play.google.com/apps/publish
+
+1. Signing the key with keystore
+  a. Create a public certificate using below command
+    
+   keytool -export -rfc -keystore  locfind-app2  -alias locfind-app2 -file demo-certificate1.pem
+
+   Keystore alias: locfind-app2 (locfind-app2) 
+   keystore password: demo1***
+   key password: app1***
+ 
+ 
+2. APK file locfind-app
+a. Sign the APK with this keystore
+b. Also generate the private key store using below command:
+   java -jar pepk.jar --keystore=locfind-app --alias=locfind-app1 --output=encrypted_private_key_path --   encryptionkey=eb10fe8f7c7c9df715022017b00c6471f8ba8170b13049a11e6c09ffe3056a104a3bbe4ac5a955f4ba4fe93fc8cef27558a3eb9d2a529a2092761fb833b656cd48b9de6a
+
+   Keystore alias: locfind-app1 (locfind-app)   
+   keystore password: demo4**
+   key password: app4**
+
+ 
+
+3. http://image.online-convert.com/ --convert 512X512 icon image, should be in png image
+
+
+Working:
+sudo cp /tmp/android.rules /etc/udev/rules.d/51-android.rules
+sudo chmod 644   /etc/udev/rules.d/51-android.rules
+sudo chown root. /etc/udev/rules.d/51-android.rules
+sudo service udev restart
+sudo killall adb
+
+chown root:root adb 
+  523  chmod 4550 adb 
+  524  ls -ltr
+  525  ./adb devices
+  526  ./adb devices
+  527  lsusb
+  528  lsusb
+  529  lsusb
+  530  lsusb
+  531  ls -l /dev/bus/usb/004/002
+  532  ls -l /dev/bus/usb/004/001
+  533  ls -l /dev/bus/usb/003/{004,005}
+  534  ls -l /dev/bus/usb/003/{004,005,002}
+  535  ls -l /dev/bus/usb/003/{004,005,002}
+  536  ls -l /dev/bus/usb/002/001
+  537  ls -l /dev/bus/usb/001/001
+  538  udevadm control --reload-rules
+  539  service udev restart
+  540  ./adb devices
+  541  ./adb devices
+  542  adb kill-server
+  543  ./adb  kill-server
+  544  ./adb  start-server
+  545  ./adb devices
+  546  ./adb logcat >logcat.txt
+  547  ls
+  548  rm -rf logcat.txt 
+  549  ./adb logcat >logcat.txt
+  550  rm -rf logcat.txt 
+  551  ./adb devices
+  552  cd /lib/udev/rule
+  553  cd /lib/udev/rules.d/
+
+ cd /etc/udev/rules.d/
+
+sudo apt-get remove mtpfs mtp-tools
