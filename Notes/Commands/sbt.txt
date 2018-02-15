@@ -1,0 +1,4 @@
+Create new project using sbt:
+sbt new sbt/scala-seed.g8
+
+Need to specify the projectName.  
