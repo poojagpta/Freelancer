@@ -1,4 +1,15 @@
+Install sbt:
+------------
+brew install sbt 
+
 Create new project using sbt:
+------------------------------
 sbt new sbt/scala-seed.g8
 
 Need to specify the projectName.  
+
+Running sbt project:
+--------------------
+sbt clean
+sbt compile
+sbt run
