@@ -4,7 +4,7 @@ Add new project to Github:
  
 2. Now go to project directory on local machine and follow steps as below:
 git init
-git add .
+git add .  If need to undo this then (git reset . or git reset filename)
 git commit -m "first commit"
 git remote add origin https://github.com/poojagpta/HadoopPurchaseTrend.git
 git push -u origin master 
