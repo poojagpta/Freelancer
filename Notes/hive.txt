@@ -1,3 +1,10 @@
+Optimize parameters:
+
+set hive.optimize.sort.dynamic.partition=true;
+set hive.exec.reducers.max=1500;
+set hive.auto.convert.join=true
+
+
 Create managed or external table
 
 Managed table:
