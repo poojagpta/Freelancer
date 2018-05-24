@@ -27,6 +27,12 @@ Remove file:
 -----------
 git rm -r src/
 
+Undo your local changes:
+-------------------------
+git stash (Save for later usage)
+git checkout -- <file name>
+git reset --hard (discard all local changes)
+
 Merge the files from branch to master:
 ----------------------------------------
 For fast-forward merge, use below command:
