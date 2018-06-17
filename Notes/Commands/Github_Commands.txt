@@ -31,6 +31,7 @@ Undo your local changes:
 -------------------------
 git stash (Save for later usage)
 git checkout -- <file name>
+git reset . (remove all add in files and we need to add in files again)
 git reset --hard (discard all local changes)
 
 Merge the files from branch to master:
