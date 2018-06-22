@@ -163,3 +163,8 @@ Hive Thrift Server:
 hive --service hiveserver2
 netstat -nl | grep 10000
 For remotely access hive using JDBC,ODBC connections
+
+Add Jar file:
+--------------
+add jar hdfs://<path> or
+add jar <local_path>
