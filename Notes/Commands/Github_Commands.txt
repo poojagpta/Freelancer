@@ -44,3 +44,7 @@ Look into changes in fast-forward merge and then commit the code
 
 If we want to take all changed from test branch and then merge to master use below command:
 git merge --strategy-option theirs test -m "merge test to master"
+
+Tagging a branch:
+==================
+git tag -a v1.4 -m "my version 1.4"
