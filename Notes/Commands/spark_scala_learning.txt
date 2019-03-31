@@ -1,0 +1,15 @@
+1. Reduce in spark using scala :
+
+val new_agg_df = daily_df.join(
+     agg_df,
+     join_seq.map(c => daily_df(c) <=> agg_df(c)).reduceLeft( _&&_ ),
+     “fullouter”)
+     
+2. Union of 2 DF require column to be in same order, so 2 nd df is arrange as 1st one:
+
+ agg_df.columns.union(new_df,
+ .select(
+       agg_df.columns.toList.head, agg_df.columns.toList.tail: _*
+     ))  
+     
+3.      
