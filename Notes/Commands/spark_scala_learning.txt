@@ -12,4 +12,11 @@ val new_agg_df = daily_df.join(
        agg_df.columns.toList.head, agg_df.columns.toList.tail: _*
      ))  
      
-3.      
+3. When OOM because of shuffle partitions:
+spark.shuffle.io.preferDirectBufs='false'
+spark.sql.shuffle.partitions = increase
+spark.shuffle.registration.timeout: '600000'
+
+4. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
+Skewness can also be removed in here.
+ 
