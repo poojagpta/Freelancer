@@ -13,8 +13,8 @@ val new_agg_df = daily_df.join(
      ))  
 
 3. Align to table schema       
-   val schema = sqlContext.table("dse.resources_daily_cost_sum").schema
-   val ff=finalDMLResourceTable.select(schema.fieldNames.map { finalDMLResourceTable(_) }:_*)
+   val schema = sqlContext.table("table_name").schema
+   val ff=finalTableDF.select(schema.fieldNames.map { finalTableDF(_) }:_*)
      
 4. When OOM because of shuffle partitions:
 spark.shuffle.io.preferDirectBufs='false'
