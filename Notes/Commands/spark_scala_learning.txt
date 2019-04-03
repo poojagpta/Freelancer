@@ -11,12 +11,16 @@ val new_agg_df = daily_df.join(
  .select(
        agg_df.columns.toList.head, agg_df.columns.toList.tail: _*
      ))  
+
+3. Align to table schema       
+   val schema = sqlContext.table("dse.resources_daily_cost_sum").schema
+   val ff=finalDMLResourceTable.select(schema.fieldNames.map { finalDMLResourceTable(_) }:_*)
      
-3. When OOM because of shuffle partitions:
+4. When OOM because of shuffle partitions:
 spark.shuffle.io.preferDirectBufs='false'
 spark.sql.shuffle.partitions = increase
 spark.shuffle.registration.timeout: '600000'
 
-4. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
+5. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
 Skewness can also be removed in here.
  
