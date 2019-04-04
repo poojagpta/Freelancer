@@ -15,12 +15,16 @@ val new_agg_df = daily_df.join(
 3. Align to table schema       
    val schema = sqlContext.table("table_name").schema
    val ff=finalTableDF.select(schema.fieldNames.map { finalTableDF(_) }:_*)
+   
+4. Increase the broadcast memory so that we can move from sort merge join to broadcast join:
+
+ spark.conf.set("spark.sql.autoBroadcastJoinThreshold", 1024*1024*broadCastThresholdSizeInMB)
      
-4. When OOM because of shuffle partitions:
+5. When OOM because of shuffle partitions:
 spark.shuffle.io.preferDirectBufs='false'
 spark.sql.shuffle.partitions = increase
 spark.shuffle.registration.timeout: '600000'
 
-5. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
+6. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
 Skewness can also be removed in here.
  
