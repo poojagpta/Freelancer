@@ -2,3 +2,6 @@ Create a  java prototype:
 
 gradle init --type java-library
 
+Integrate docker with gradle like create DockerFile/tag it/Push the image:
+
+com.bmuschko:gradle-docker-plugin:2.5
