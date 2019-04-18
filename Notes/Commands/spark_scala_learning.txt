@@ -28,3 +28,7 @@ spark.shuffle.registration.timeout: '600000'
 6. Adaptive executions: New feature in spark, runtime decide on joining type (sort merge/broadcast hash join).
 Skewness can also be removed in here.
  
+7. Add below for Adding dependency for juypter:
+%AddJar s3n://netflix-dataoven-prod/genie/jars/brickhouse.jar
+Internal 
+%AddDep netflix-core.jar
