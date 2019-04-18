@@ -32,3 +32,8 @@ Skewness can also be removed in here.
 %AddJar s3n://netflix-dataoven-prod/genie/jars/brickhouse.jar
 Internal 
 %AddDep netflix-core.jar
+
+8. Add jar to spark sql function: 
+sparkContext.sql or spark.sql("""ADD JAR s3n://netflix-dataoven-prod/genie/jars/brickhouse.jar""")
+CREATE TEMPORARY FUNCTION COMBINE AS 'brickhouse.udf.collect.CombineUDF';
+CREATE TEMPORARY FUNCTION CAST_ARRAY AS 'brickhouse.udf.collect.CastArrayUDF';
