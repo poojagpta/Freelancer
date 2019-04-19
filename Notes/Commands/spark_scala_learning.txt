@@ -37,3 +37,6 @@ Internal
 sparkContext.sql or spark.sql("""ADD JAR s3n://netflix-dataoven-prod/genie/jars/brickhouse.jar""")
 CREATE TEMPORARY FUNCTION COMBINE AS 'brickhouse.udf.collect.CombineUDF';
 CREATE TEMPORARY FUNCTION CAST_ARRAY AS 'brickhouse.udf.collect.CastArrayUDF';
+
+9. Filter condition in scala:
+link_cache.filter(!$"destination_id".isin(root_list:_*)
