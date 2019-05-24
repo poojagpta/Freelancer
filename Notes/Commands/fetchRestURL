@@ -1,0 +1,234 @@
+package com.netflix.dei.cia.etlengtools.jira
+
+import dea.spark.SparkApp
+import java.io.{BufferedReader, InputStreamReader}
+import java.nio.charset.StandardCharsets
+
+
+import com.netflix.data.utils.DateTime
+import org.apache.http.HttpHeaders
+import org.apache.http.client.methods.{CloseableHttpResponse, HttpGet}
+import org.apache.http.client.utils.URIBuilder
+import org.apache.http.impl.client.HttpClientBuilder
+import org.json.{JSONArray, JSONObject}
+import org.apache.commons.codec.binary.Base64
+import org.apache.spark.sql.{DataFrame, SaveMode}
+
+import scala.collection.mutable.ListBuffer
+
+object JiraCloudIssueHistory extends SparkApp{
+
+  lazy val waitTime: Int = argsMap.getOrElse("waitTime", "30").toInt
+  lazy val dest: String = argsMap getOrElse("dest", "etl.tsr_jira_issues_f")
+  lazy val tokenId: String = argsMap getOrElse("api_token", "hijn80vKjxiJgvYuQfGI0876")
+  lazy val userName: String = argsMap.getOrElse("username", "poojag@netflixcontractors.com")
+  lazy val restUrl: String = argsMap.getOrElse("restUrl", "https://tsr-jira.atlassian.net/rest/api/3/search?jql=&expand=names,renderedFields")
+  lazy val maxPageLength: Int = argsMap.getOrElse("maxPageLength", "100").toInt
+  lazy val maxRDDPartitions: Int = argsMap.getOrElse("maxRDDPartitions", "100").toInt
+  lazy val dateInt:String = argsMap.getOrElse("dateInt", DateTime.getCurrentDateInt.toString)
+
+  lazy val log = org.apache.log4j.LogManager.getRootLogger
+
+  def run(): Unit = {
+
+    log.debug(sc.getConf)
+
+
+    val df: DataFrame = spark.read.json(sc.parallelize(getRawResponse(restUrl,maxPageLength,waitTime,userName,tokenId), maxRDDPartitions))
+
+      if(! df.head(1).isEmpty){
+      df.createOrReplaceTempView("jiraIssue")
+
+      //Transform
+      val result = sqlContext.sql(sqlJiraIssues)
+
+      //Load
+      result
+        .write.mode(SaveMode.Overwrite)
+        .insertInto(dest)
+    }
+
+  }
+
+  /**
+    *
+    * @param restUrl
+    * @param projectName
+    * @param repoName
+    * @param domainName
+    * @param maxPageLength
+    * @param waitTime
+    * @param username
+    * @param password
+    * @return
+    *
+    * This method will extract raw json from fetched response
+    */
+  def getRawResponse(restUrl: String, maxPageLength:Int,waitTime:Int,username:String,tokenId:String): Seq[String] = {
+
+    val pageIterator = createIterator(restUrl, maxPageLength, username,tokenId)
+
+    pageIterator.flatMap { page =>
+      if (page != null)
+        Thread.sleep(waitTime.toInt)
+
+      (0 until page.length).map { i =>
+        val resultItem = page.getJSONObject(i)
+        resultItem.append("other_fields", resultItem.toString)
+        resultItem.toString
+      }
+    }.toSeq
+  }
+
+  def createIterator(url: String, maxPageLength: Int, username:String,tokenId:String): Iterator[JSONArray] = {
+    var startVal = 0
+    val startAt: String = "startAt"
+    val basicAuth = "Basic "
+    val maxResults="maxResults"
+    val total ="total"
+    var totalVal=Integer.MAX_VALUE
+    val issues = "issues"
+
+    new Iterator[JSONArray] {
+      def next: JSONArray = {
+
+        val auth = username + ":" + tokenId
+        val client = HttpClientBuilder.create.build
+
+
+        val builder = new URIBuilder(url)
+
+        builder.addParameter(startAt, startVal.toString)
+
+        println(System.currentTimeMillis())
+
+        val request = new HttpGet(builder.build)
+        val encodedAuth = Base64.encodeBase64(auth.getBytes(StandardCharsets.ISO_8859_1))
+
+        val authHeader = basicAuth + new String(encodedAuth)
+        request.setHeader(HttpHeaders.AUTHORIZATION, authHeader)
+        request.addHeader("Content-Type", "application/json")
+
+        val response: CloseableHttpResponse = client.execute(request)
+        val result: StringBuilder = new StringBuilder
+
+        println(builder.build().toString)
+        val rd = new BufferedReader(new InputStreamReader(response.getEntity.getContent))
+        var line = ""
+        while (
+          line != null
+        ) {
+          result.append(line)
+          line = rd.readLine()
+        }
+
+        try {
+          val obj: JSONObject = new JSONObject(result.toString)
+
+          if (obj.has(startAt)) {
+            startVal = obj.getInt(startAt)
+          } else {
+            startVal = 0
+          }
+
+          if (obj.has(maxResults)) {
+            startVal += obj.getInt(maxResults)
+          }
+
+
+          if (obj.has(total)) {
+            totalVal = obj.getInt(total)
+          }
+
+          if (obj.has(issues)) {
+            obj.getJSONArray(issues)
+          } else {
+            new JSONArray()
+          }
+        } catch {
+          case e: Exception => {
+            println("No rows returned from JIRA rest-api for project")
+            totalVal = 0
+            new JSONArray()
+          }
+        }
+      }
+
+      def hasNext: Boolean = {
+        if(startVal<totalVal) true else false
+      }
+    }
+  }
+
+  lazy val sqlJiraIssues: String =
+    s"""
+       |SELECT
+       |  fields.project.key          as project_key,
+       |  id                          as issue_id,
+       |  key                         as issue_key,
+       |  self                        as issue_url,
+       |  fields.created              as created_date,
+       |  fields.resolutiondate       as resolution_date,
+       |  fields.customfield_10126    as impact_ended_date,
+       |  fields.issueType.name       as issue_type,
+       |  fields.priority.name        as priority,
+       |  fields.resolution.name      as resolution,
+       |  fields.status.name          as status,
+       |  fields.summary              as summary,
+       |  fields.updated              as updated_date,
+       |  fields.assignee.name        as assignee,
+       |  fields.creator.name         as creator,
+       |  fields.customfield_10400    as comment_count,
+       |  fields.customfield_12300.name as pre_owner,
+       |  fields.customfield_11800.name as tier3_owner,
+       |  fields.parent.key           as parent_key,
+       |  fields.customfield_10308    as corp_jira_url,
+       |  fields.customfield_10302    as internal_kb_url,
+       |  fields.customfield_10301    as help_center_url,
+       |  fields.labels               as labels,
+       |  other_fields                as other_properties,
+       |  ${dateInt}                  as snapshot_dateint
+       |  FROM jiraIssue
+     """.stripMargin
+
+  val targetCommitSchema = "etl"
+  val targetCommitTable = "tsr_jira_issues_f"
+  val targetCommitSchemaDotTable = s"$targetCommitSchema.$targetCommitTable"
+  val targetCommitDDL =
+    s"""
+       |use $targetCommitSchema;
+       |
+       |drop table if exists $targetCommitSchemaDotTable;
+       |CREATE EXTERNAL TABLE IF NOT EXISTS  $targetCommitTable(
+       |  project_key             STRING comment 'JIRA project key e.g. CONTENT',
+       |  issue_id                STRING comment 'JIRA ID',
+       |  issue_key               STRING comment 'JIRA Issue Key e.g. CONTENT-1001',
+       |  issue_url               STRING comment 'JIRA URL for this issue',
+       |  created_date            STRING comment 'Store fields.created',
+       |  resolution_date         STRING comment 'store the resolution date',
+       |  impact_ended_date       STRING comment 'Store fields.customfield_10126',
+       |  issue_type              STRING comment 'Store fields.outwardissue.issuetype,name',
+       |  priority                STRING comment 'Store fields.priority',
+       |  resolution              STRING comment 'Store field fields.resolution',
+       |  status                  STRING comment 'store as fields.status',
+       |  summary                 STRING  comment 'Store fields.summary',
+       |  updated_date            STRING comment '(fields.updated)',
+       |  assignee			          STRING comment '(fields.assignee.name)',
+       |  creator 			          STRING comment '(fields.creator.name)',
+       |  comment_count 		      STRING comment '(fields.customfield_10400)',
+       |  pre_owner 			        STRING comment '(fields.customfield_12300.name)',
+       |  tier3_owner 			      STRING comment '(fields.customfield_11800.name)',
+       |  parent_key 			        STRING comment '(fields.parent.key)',
+       |  corp_jira_url			      STRING comment '(fields.customfield_10308)',
+       |  internal_kb_url		      STRING comment '(fields.customfield_10302)',
+       |  help_center_url		      STRING comment '(fields.customfield_10301)',
+       |  labels				          ARRAY<STRING> comment '(fields.labels)',
+       |  other_properties        ARRAY<STRING> COMMENT 'Store the entire JSON file'
+       |)
+       |  PARTITIONED BY (snapshot_dateint  int  comment 'Store snapshot dateint')
+       |  STORED as PARQUET
+       |  LOCATION 's3://netflix-dataoven-prod-users/hive/warehouse/etl.db/tsr_jira_issues_f/v2/'
+    """.stripMargin
+}
+
+
