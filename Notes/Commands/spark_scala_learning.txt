@@ -51,7 +51,7 @@ Spark create session specify conf:
  val sparkSession = SparkSession
           .builder()
           .config(sparkConf)
-          .appName("Agg Content Metrics Time Grain Monthly")
+          .appName("Test")
           .enableHiveSupport()
           .config("hive.exec.dynamic.partition", "true")
           .config("hive.exec.dynamic.partition.mode", "nonstrict")
