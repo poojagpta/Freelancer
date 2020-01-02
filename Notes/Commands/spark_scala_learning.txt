@@ -40,3 +40,19 @@ CREATE TEMPORARY FUNCTION CAST_ARRAY AS 'brickhouse.udf.collect.CastArrayUDF';
 
 9. Filter condition in scala:
 link_cache.filter(!$"destination_id".isin(root_list:_*)
+
+Spark Shell setting conf:
+--------------------------
+spark.conf.set("hive.exec.dynamic.partition", "true")
+spark.conf.set("hive.exec.dynamic.partition.mode", "nonstrict")
+
+Spark create session specify conf:
+----------------------------------
+ val sparkSession = SparkSession
+          .builder()
+          .config(sparkConf)
+          .appName("Agg Content Metrics Time Grain Monthly")
+          .enableHiveSupport()
+          .config("hive.exec.dynamic.partition", "true")
+          .config("hive.exec.dynamic.partition.mode", "nonstrict")
+          .getOrCreate()
