@@ -64,4 +64,8 @@ Spark create session specify conf:
           .config("spark.sql.hive.convertMetastoreParquet","false")
           .getOrCreate()
 
+Spark command line:
+-------------------
+Add external jar using 
+scala> :require json-20140107.jar
 
