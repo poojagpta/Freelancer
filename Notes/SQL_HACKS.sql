@@ -10,7 +10,7 @@
 
 SELECT * FROM
 (select get_json_object(regexp_replace(devices, '\\[|\\]', ''), '$.esn') AS dd, *  from
-sbschema.roku_fact_web_logs12 
+table1
 where  date_key='2020-04-26' AND action not in ('Pageview')) t
 WHERE dd is NULL
 AND COALESCE(devices,'') NOT IN ('','[{}]')
